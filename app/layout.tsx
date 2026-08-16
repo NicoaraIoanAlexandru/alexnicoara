@@ -15,8 +15,55 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title:
     "Alex Nicoară | AI Product Developer & Cybersecurity Engineer",
+
   description:
-    "Building digital products, securing systems and challenging limits through technology and endurance.",
+    "Alex Nicoară builds secure digital products combining artificial intelligence, cybersecurity engineering and modern software architecture.",
+
+  keywords: [
+    "AI Product Developer",
+    "Cybersecurity Engineer",
+    "Digital Product Development",
+    "AI Solutions",
+    "Cybersecurity Consulting",
+    "Next.js Developer",
+    "Secure Software Architecture",
+    "Cloud Security",
+    "Network Security",
+  ],
+
+  authors: [
+    {
+      name: "Alex Nicoară",
+    },
+  ],
+
+  creator: "Alex Nicoară",
+
+  metadataBase: new URL(
+    "https://alexnicoara.com"
+  ),
+
+  openGraph: {
+    title:
+      "Alex Nicoară | AI Product Developer & Cybersecurity Engineer",
+
+    description:
+      "Building secure digital products with AI, modern engineering and cybersecurity expertise.",
+
+    type: "website",
+
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Alex Nicoară | AI Product Developer & Cybersecurity Engineer",
+
+    description:
+      "Building secure digital products with AI, modern engineering and cybersecurity expertise.",
+  },
 };
 
 export default function RootLayout({
