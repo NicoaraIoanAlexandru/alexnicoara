@@ -65,6 +65,7 @@
 
   "FeaturedProjects": {
     "badge": "Proiecte reprezentative",
+    "visitPlatform": "Vezi platforma live ↗",
     "title": "Produse digitale construite de la idee până în producție.",
     "description": "Aplicații reale care combină ingineria modernă, arhitectura sigură și fluxurile de lucru bazate pe AI.",
     "caseStudy": "Studiu de caz",

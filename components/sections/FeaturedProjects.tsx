@@ -10,7 +10,6 @@ export function FeaturedProjects() {
   return (
     <Section>
       <Container>
-
         <div
           id="projects"
           className="scroll-mt-24"
@@ -76,21 +75,36 @@ export function FeaturedProjects() {
                   className="
                     mt-5
                     text-2xl
-                    sm:text-3xl
                     font-semibold
                     text-white
+                    sm:text-3xl
                   "
                 >
-                  {t("projectTitle")}
+                  <a
+                    href="https://72ore-swim4dreams.ro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      transition
+                      hover:text-cyan-400
+                      focus-visible:outline-none
+                      focus-visible:ring-2
+                      focus-visible:ring-cyan-400
+                      focus-visible:ring-offset-2
+                      focus-visible:ring-offset-[#050505]
+                    "
+                  >
+                    {t("projectTitle")}
+                  </a>
                 </h3>
 
                 <p
                   className="
                     mt-6
                     text-base
-                    sm:text-lg
                     leading-relaxed
                     text-white/60
+                    sm:text-lg
                   "
                 >
                   {t("projectDescription1")}
@@ -100,9 +114,9 @@ export function FeaturedProjects() {
                   className="
                     mt-4
                     text-base
-                    sm:text-lg
                     leading-relaxed
                     text-white/60
+                    sm:text-lg
                   "
                 >
                   {t("projectDescription2")}
@@ -123,6 +137,29 @@ export function FeaturedProjects() {
                   <Badge>Stripe</Badge>
                   <Badge>Vercel</Badge>
                 </div>
+
+                <a
+                  href="https://72ore-swim4dreams.ro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    mt-8
+                    inline-flex
+                    items-center
+                    text-sm
+                    font-medium
+                    text-cyan-400
+                    transition
+                    hover:text-cyan-300
+                    focus-visible:outline-none
+                    focus-visible:ring-2
+                    focus-visible:ring-cyan-400
+                    focus-visible:ring-offset-2
+                    focus-visible:ring-offset-[#050505]
+                  "
+                >
+                  {t("visitPlatform")}
+                </a>
               </div>
 
               {/* PROJECT VIDEO */}
@@ -180,7 +217,6 @@ export function FeaturedProjects() {
             </div>
           </div>
         </div>
-
       </Container>
     </Section>
   );

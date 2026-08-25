@@ -65,6 +65,7 @@
 
   "FeaturedProjects": {
     "badge": "Featured Projects",
+    "visitPlatform": "Visit Live Platform ↗",
     "title": "Digital products built from idea to production.",
     "description": "Real-world applications combining modern engineering, secure architecture and AI-driven workflows.",
     "caseStudy": "Case Study",
