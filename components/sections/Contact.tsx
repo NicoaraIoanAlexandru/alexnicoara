@@ -1,15 +1,20 @@
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import {useTranslations} from "next-intl";
+
+import {Badge} from "@/components/ui/Badge";
+import {Button} from "@/components/ui/Button";
+import {Container} from "@/components/ui/Container";
+import {Section} from "@/components/ui/Section";
 
 export function Contact() {
+  const t = useTranslations("Contact");
+
   return (
     <Section>
       <Container>
-
         <div
+          id="contact"
           className="
+            scroll-mt-24
             rounded-3xl
             border
             border-white/10
@@ -20,11 +25,9 @@ export function Contact() {
             lg:p-16
           "
         >
-
           <Badge>
-            Start a Project
+            {t("badge")}
           </Badge>
-
 
           <h2
             className="
@@ -39,11 +42,10 @@ export function Contact() {
               lg:text-6xl
             "
           >
-            Let's build secure
-              <br />
-              digital products.
+            {t("headline1")}
+            <br />
+            {t("headline2")}
           </h2>
-
 
           <p
             className="
@@ -55,11 +57,8 @@ export function Contact() {
               text-white/60
             "
           >
-            I help teams build AI-powered solutions,
-              secure platforms and scalable digital products.
-            Available for selected projects and collaborations.
+            {t("description")}
           </p>
-
 
           <div
             className="
@@ -70,21 +69,82 @@ export function Contact() {
               gap-4
             "
           >
-
             <Button href="mailto:nicoara.ioan.alexandru@gmail.com">
-              Start a Conversation →
+              {t("conversation")}
             </Button>
-
 
             <Button href="https://www.linkedin.com/in/nicoara-ioan-alexandru-44a59978/">
-              Connect on LinkedIn →
+              {t("linkedin")}
             </Button>
-
           </div>
 
+          <div
+            className="
+              mx-auto
+              mt-12
+              grid
+              max-w-2xl
+              gap-6
+              border-t
+              border-white/10
+              pt-8
+              sm:grid-cols-2
+            "
+          >
+            <div>
+              <p
+                className="
+                  text-xs
+                  uppercase
+                  tracking-[0.25em]
+                  text-white/40
+                "
+              >
+                {t("emailLabel")}
+              </p>
 
+              <a
+                href="mailto:nicoara.ioan.alexandru@gmail.com"
+                className="
+                  mt-3
+                  block
+                  text-[12px]
+                  text-white/70
+                  transition
+                  hover:text-cyan-400
+                  min-[360px]:text-sm
+                  sm:text-base
+                "
+              >
+                nicoara.ioan.alexandru@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <p
+                className="
+                  text-xs
+                  uppercase
+                  tracking-[0.25em]
+                  text-white/40
+                "
+              >
+                {t("whatsappLabel")}
+              </p>
+
+              <p
+                className="
+                  mt-3
+                  text-sm
+                  text-white/70
+                  sm:text-base
+                "
+              >
+                {t("whatsappValue")}
+              </p>
+            </div>
+          </div>
         </div>
-
       </Container>
     </Section>
   );

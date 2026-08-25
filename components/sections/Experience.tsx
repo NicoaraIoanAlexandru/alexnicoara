@@ -1,58 +1,62 @@
-import { Badge } from "@/components/ui/Badge";
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import {useTranslations} from "next-intl";
 
-const milestones = [
-  {
-    year: "10+ YEARS",
-    title: "Enterprise Security Engineering",
-    description:
-      "Designing and securing enterprise environments through network security, cloud infrastructure and modern security practices.",
-  },
-  {
-    year: "2026",
-    title: "Digital Product Builder",
-    description:
-      "Building complete digital platforms from concept to production, including architecture, development, payments and administration workflows.",
-  },
-  {
-    year: "72 HOURS",
-    title: "Endurance Engineering",
-    description:
-      "A real-world endurance project combining discipline, resilience and execution under extreme physical and mental conditions.",
-  },
-  {
-    year: "TODAY",
-    title: "AI-Powered Product Development",
-    description:
-      "Creating secure digital products by combining artificial intelligence, modern engineering and practical business execution.",
-  },
-];
+import {Badge} from "@/components/ui/Badge";
+import {Container} from "@/components/ui/Container";
+import {Section} from "@/components/ui/Section";
 
 export function Experience() {
+  const t = useTranslations("Experience");
+
+  const milestones = [
+    {
+      id: "security",
+      year: t("security.year"),
+      title: t("security.title"),
+      description: t("security.description"),
+    },
+    {
+      id: "builder",
+      year: t("builder.year"),
+      title: t("builder.title"),
+      description: t("builder.description"),
+    },
+    {
+      id: "endurance",
+      year: t("endurance.year"),
+      title: t("endurance.title"),
+      description: t("endurance.description"),
+    },
+    {
+      id: "ai",
+      year: t("ai.year"),
+      title: t("ai.title"),
+      description: t("ai.description"),
+    },
+  ];
+
   return (
     <Section>
       <Container>
 
         <div className="mb-16">
           <Badge>
-            Experience
+            {t("badge")}
           </Badge>
 
           <h2
             className="
               mt-6
               max-w-4xl
-              text-4xl
+              text-3xl
               font-semibold
               tracking-tight
               text-white
               sm:text-5xl
             "
           >
-            Engineering experience.
+            {t("headline1")}
             <br />
-            Real-world execution.
+            {t("headline2")}
           </h2>
 
           <p
@@ -64,11 +68,9 @@ export function Experience() {
               text-white/60
             "
           >
-            A journey built across enterprise security, digital products
-            and endurance challenges.
+            {t("description")}
           </p>
         </div>
-
 
         <div
           className="
@@ -77,21 +79,20 @@ export function Experience() {
             lg:grid-cols-2
           "
         >
-
           {milestones.map((item) => (
             <div
-              key={item.title}
+              key={item.id}
               className="
                 rounded-3xl
                 border
                 border-white/10
                 bg-white/[0.03]
-                p-8
+                p-6
+                sm:p-8
                 transition
                 hover:bg-white/[0.05]
               "
             >
-
               <p
                 className="
                   text-xs
@@ -102,7 +103,6 @@ export function Experience() {
               >
                 {item.year}
               </p>
-
 
               <h3
                 className="
@@ -115,7 +115,6 @@ export function Experience() {
                 {item.title}
               </h3>
 
-
               <p
                 className="
                   mt-4
@@ -125,10 +124,8 @@ export function Experience() {
               >
                 {item.description}
               </p>
-
             </div>
           ))}
-
         </div>
 
       </Container>

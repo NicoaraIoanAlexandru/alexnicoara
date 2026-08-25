@@ -1,68 +1,71 @@
-import { Badge } from "@/components/ui/Badge";
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import {useTranslations} from "next-intl";
 
-const services = [
-  {
-    title: "AI Product Development",
-    description:
-      "Building intelligent digital products using AI workflows, automation and modern software architecture.",
-    tags: [
-      "AI Integration",
-      "Automation",
-      "Product Architecture",
-    ],
-  },
-  {
-    title: "Cybersecurity Engineering",
-    description:
-      "Designing and securing enterprise environments with modern networking, cloud and security practices.",
-    tags: [
-      "Network Security",
-      "Cloud Security",
-      "Security Architecture",
-    ],
-  },
-  {
-    title: "Digital Product Delivery",
-    description:
-      "Transforming ideas into production-ready platforms with scalable architecture and reliable deployment.",
-    tags: [
-      "Full-stack Development",
-      "Next.js",
-      "Cloud Deployment",
-    ],
-  },
-];
+import {Badge} from "@/components/ui/Badge";
+import {Container} from "@/components/ui/Container";
+import {Section} from "@/components/ui/Section";
 
 export function Services() {
+  const t = useTranslations("Services");
+
+  const services = [
+    {
+      id: "ai",
+      title: t("ai.title"),
+      description: t("ai.description"),
+      tags: [
+        t("ai.tag1"),
+        t("ai.tag2"),
+        t("ai.tag3"),
+      ],
+    },
+    {
+      id: "security",
+      title: t("security.title"),
+      description: t("security.description"),
+      tags: [
+        t("security.tag1"),
+        t("security.tag2"),
+        t("security.tag3"),
+      ],
+    },
+    {
+      id: "delivery",
+      title: t("delivery.title"),
+      description: t("delivery.description"),
+      tags: [
+        t("delivery.tag1"),
+        t("delivery.tag2"),
+        t("delivery.tag3"),
+      ],
+    },
+  ];
+
   return (
     <Section>
       <Container>
-
-        <div>
-
+        <div
+          id="services"
+          className="scroll-mt-24"
+        >
           <Badge>
-            Services
+            {t("badge")}
           </Badge>
-
 
           <h2
             className="
               mt-6
               max-w-4xl
-              text-4xl
+              text-3xl
               font-semibold
               tracking-tight
               text-white
               sm:text-5xl
             "
           >
-            Building secure products
+            {t("headline1")}
             <br />
-            from idea to production.
+            {t("headline2")}
           </h2>
-
 
           <p
             className="
@@ -73,11 +76,8 @@ export function Services() {
               text-white/60
             "
           >
-            I help businesses transform ideas into secure,
-            scalable digital solutions by combining AI,
-            engineering and cybersecurity expertise.
+            {t("description")}
           </p>
-
 
           <div
             className="
@@ -87,19 +87,18 @@ export function Services() {
               lg:grid-cols-3
             "
           >
-
             {services.map((service) => (
               <div
-                key={service.title}
+                key={service.id}
                 className="
                   rounded-3xl
                   border
                   border-white/10
                   bg-white/[0.03]
-                  p-8
+                  p-6
+                  sm:p-8
                 "
               >
-
                 <h3
                   className="
                     text-2xl
@@ -110,7 +109,6 @@ export function Services() {
                   {service.title}
                 </h3>
 
-
                 <p
                   className="
                     mt-5
@@ -120,7 +118,6 @@ export function Services() {
                 >
                   {service.description}
                 </p>
-
 
                 <div
                   className="
@@ -136,18 +133,10 @@ export function Services() {
                     </Badge>
                   ))}
                 </div>
-
-
               </div>
             ))}
-
-
           </div>
-
-
         </div>
-
-
       </Container>
     </Section>
   );

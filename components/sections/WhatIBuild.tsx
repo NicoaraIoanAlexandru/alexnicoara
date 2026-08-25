@@ -1,60 +1,64 @@
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import {useTranslations} from "next-intl";
 
-const services = [
-  {
-    title: "AI-Powered Products",
-    description:
-      "Transforming ideas into intelligent digital products using AI workflows, automation and modern software architecture.",
-    tags: [
-      "AI Integration",
-      "Automation",
-      "Product Development",
-    ],
-  },
-  {
-    title: "Cybersecurity & Infrastructure",
-    description:
-      "Designing and securing enterprise environments with modern networking, cloud and security engineering practices.",
-    tags: [
-      "Network Security",
-      "Cloud Security",
-      "Enterprise Systems",
-    ],
-  },
-  {
-    title: "Digital Platforms",
-    description:
-      "Building high-performance websites and platforms focused on user experience, reliability and business growth.",
-    tags: [
-      "Next.js",
-      "Modern Web",
-      "Scalable Architecture",
-    ],
-  },
-];
+import {Container} from "@/components/ui/Container";
+import {Section} from "@/components/ui/Section";
 
 export function WhatIBuild() {
+  const t = useTranslations("WhatIBuild");
+
+  const services = [
+    {
+      id: "ai",
+      title: t("ai.title"),
+      description: t("ai.description"),
+      tags: [
+        t("ai.tag1"),
+        t("ai.tag2"),
+        t("ai.tag3"),
+      ],
+    },
+    {
+      id: "security",
+      title: t("security.title"),
+      description: t("security.description"),
+      tags: [
+        t("security.tag1"),
+        t("security.tag2"),
+        t("security.tag3"),
+      ],
+    },
+    {
+      id: "platforms",
+      title: t("platforms.title"),
+      description: t("platforms.description"),
+      tags: [
+        t("platforms.tag1"),
+        t("platforms.tag2"),
+        t("platforms.tag3"),
+      ],
+    },
+  ];
+
   return (
     <Section>
       <Container>
 
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.3em] text-white/40">
-            What I Build
+            {t("eyebrow")}
           </p>
 
           <h2
             className="
               mt-4
-              text-4xl
+              text-3xl
               font-semibold
               tracking-tight
               text-white
               sm:text-5xl
             "
           >
-            Digital products engineered for performance and trust.
+            {t("title")}
           </h2>
 
           <p
@@ -65,39 +69,36 @@ export function WhatIBuild() {
               text-white/60
             "
           >
-            I combine artificial intelligence, cybersecurity and modern
-            engineering to create secure digital solutions for ambitious teams
-            and businesses.
+            {t("description")}
           </p>
         </div>
 
-
         <div
           className="
-            mt-16
+            mt-12
+            sm:mt-16
             grid
             gap-6
             md:grid-cols-3
           "
         >
-
           {services.map((service) => (
             <div
-              key={service.title}
+              key={service.id}
               className="
                 group
                 rounded-3xl
                 border
                 border-white/10
                 bg-white/[0.03]
-                p-8
+                p-6
                 transition
                 duration-300
                 hover:border-white/20
                 hover:bg-white/[0.06]
+                sm:p-8
               "
             >
-
               <h3
                 className="
                   text-2xl
@@ -107,7 +108,6 @@ export function WhatIBuild() {
               >
                 {service.title}
               </h3>
-
 
               <p
                 className="
@@ -119,9 +119,7 @@ export function WhatIBuild() {
                 {service.description}
               </p>
 
-
               <div className="mt-8 flex flex-wrap gap-2">
-
                 {service.tags.map((tag) => (
                   <span
                     key={tag}
@@ -138,12 +136,9 @@ export function WhatIBuild() {
                     {tag}
                   </span>
                 ))}
-
               </div>
-
             </div>
           ))}
-
         </div>
 
       </Container>

@@ -1,128 +1,168 @@
 "use client";
 
-import { motion } from "framer-motion";
+import {motion, useReducedMotion} from "framer-motion";
 import Image from "next/image";
+import {useLocale, useTranslations} from "next-intl";
 
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import {Badge} from "@/components/ui/Badge";
+import {Button} from "@/components/ui/Button";
+import {Container} from "@/components/ui/Container";
+import {Section} from "@/components/ui/Section";
 
 export function Hero() {
+  const t = useTranslations("Hero");
+  const locale = useLocale();
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <Section>
       <Container>
-        <div className="grid items-center gap-16 lg:grid-cols-2">
-
+        <div
+          className="
+            grid
+            items-center
+            gap-12
+            lg:grid-cols-[1.15fr_0.85fr]
+            xl:grid-cols-2
+            xl:gap-16
+          "
+        >
           {/* LEFT SIDE - CONTENT */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={
+              shouldReduceMotion
+                ? false
+                : {opacity: 0, y: 20}
+            }
+            animate={{opacity: 1, y: 0}}
+            transition={
+              shouldReduceMotion
+                ? {duration: 0}
+                : {duration: 0.6}
+            }
           >
             <Badge>
-              Alex Nicoară Studio
+              {t("studio")}
             </Badge>
 
             <h1
               className="
                 mt-6
                 max-w-4xl
-                text-5xl
+                text-4xl
                 font-semibold
                 leading-tight
                 tracking-tight
                 text-white
-                sm:text-6xl
-                lg:text-6xl
+                sm:text-5xl
+                lg:text-[44px]
+                xl:text-6xl
               "
             >
-              Building digital products.
+              {t("headline1")}
               <br />
-              Securing systems.
+
+              {t("headline2")}
               <br />
-              Challenging limits.
+
+              {t("headline3")}
             </h1>
 
             <p
               className="
-                mt-8
+                mt-6
                 max-w-xl
-                text-lg
+                text-base
                 leading-relaxed
                 text-white/60
+                sm:text-lg
               "
             >
-              I help businesses transform ideas into secure digital products
-              using AI, modern engineering and enterprise-grade technology.
+              {t("description")}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/contact">
-                Start a Project →
+            <div
+              className="
+                mt-7
+                flex
+                flex-col
+                items-start
+                gap-3
+                sm:flex-row
+                sm:flex-wrap
+              "
+            >
+              <Button href={`/${locale}#contact`}>
+                {t("primaryCta")}
               </Button>
 
-              <Button href="/projects">
-                Explore My Work →
+              <Button href={`/${locale}#projects`}>
+                {t("secondaryCta")}
               </Button>
             </div>
 
-
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Badge>
-                AI Product Developer
+                {t("role1")}
               </Badge>
 
               <Badge>
-                Cybersecurity Engineer
+                {t("role2")}
               </Badge>
 
               <Badge>
-                Digital Builder
+                {t("role3")}
               </Badge>
             </div>
 
-
-            <div className="mt-10 grid max-w-lg grid-cols-3 gap-6">
+            <div className="mt-8 grid max-w-lg grid-cols-3 gap-6">
               <div>
                 <p className="text-2xl font-semibold text-white">
-                  10+
+                  {t("yearsValue")}
                 </p>
+
                 <p className="text-xs text-white/40">
-                  Years Engineering
+                  {t("yearsLabel")}
                 </p>
               </div>
 
               <div>
                 <p className="text-2xl font-semibold text-white">
-                  72h
+                  {t("enduranceValue")}
                 </p>
+
                 <p className="text-xs text-white/40">
-                  Endurance Project
+                  {t("enduranceLabel")}
                 </p>
               </div>
 
               <div>
                 <p className="text-2xl font-semibold text-white">
-                  3+
+                  {t("productsValue")}
                 </p>
+
                 <p className="text-xs text-white/40">
-                  Digital Products
+                  {t("productsLabel")}
                 </p>
               </div>
             </div>
-
           </motion.div>
-
 
           {/* RIGHT SIDE - IMAGE */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
+            initial={
+              shouldReduceMotion
+                ? false
+                : {opacity: 0, scale: 0.95}
+            }
+            animate={{opacity: 1, scale: 1}}
+            transition={
+              shouldReduceMotion
+                ? {duration: 0}
+                : {duration: 0.8}
+            }
             className="relative"
           >
-
             <div
               className="
                 relative
@@ -134,16 +174,14 @@ export function Hero() {
                 bg-black
               "
             >
-
               <Image
                 src="/alex_hero.jpeg"
-                alt="Alex Nicoară"
+                alt={t("imageAlt")}
                 fill
                 priority
-                className="object-cover object-[center_40%] scale-105"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="scale-105 object-cover object-[center_40%]"
+                sizes="(max-width: 1023px) 100vw, 50vw"
               />
-
 
               <div
                 className="
@@ -155,7 +193,6 @@ export function Hero() {
                   to-transparent
                 "
               />
-
 
               <div
                 className="
@@ -173,13 +210,10 @@ export function Hero() {
                   backdrop-blur
                 "
               >
-                AI · Security · Endurance
+                {t("imageBadge")}
               </div>
-
             </div>
-
           </motion.div>
-
         </div>
       </Container>
     </Section>

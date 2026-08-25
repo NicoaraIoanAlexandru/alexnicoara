@@ -66,16 +66,23 @@ export default function Image() {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             fontSize: 62,
             fontWeight: 700,
             lineHeight: 1.15,
           }}
         >
-          AI Product Developer
-          <br />
-          Cybersecurity Engineer
-          <br />
-          Digital Builder
+          <div style={{ display: "flex" }}>
+            AI Product Developer
+          </div>
+
+          <div style={{ display: "flex" }}>
+            Cybersecurity Engineer
+          </div>
+
+          <div style={{ display: "flex" }}>
+            Digital Builder
+          </div>
         </div>
 
         <div

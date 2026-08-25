@@ -1,5 +1,179 @@
 {
-  "HomePage": {
-    "title": "Construiesc produse digitale. Securizez sisteme. Depășesc limite."
+  "Navbar": {
+    "projects": "Proiecte",
+    "services": "Servicii",
+    "about": "Despre mine",
+    "contact": "Contact",
+    "language": "EN",
+    "openMenu": "Deschide meniul de navigare",
+    "closeMenu": "Închide meniul de navigare",
+    "navigationLabel": "Navigare principală",
+    "switchToRomanian": "Schimbă limba în română",
+    "switchToEnglish": "Schimbă limba în engleză"
+  },
+
+  "Hero": {
+    "studio": "Alex Nicoară Studio",
+    "headline1": "Construiesc produse digitale.",
+    "headline2": "Securizez sisteme.",
+    "headline3": "Depășesc limite.",
+    "description": "Ajut companiile să transforme idei în produse digitale sigure, folosind inteligență artificială, inginerie modernă și tehnologii enterprise.",
+    "primaryCta": "Începe un proiect →",
+    "secondaryCta": "Vezi proiectele mele →",
+    "role1": "AI Product Developer",
+    "role2": "Cybersecurity Engineer",
+    "role3": "Digital Builder",
+    "yearsValue": "10+",
+    "yearsLabel": "Ani în inginerie",
+    "enduranceValue": "72h",
+    "enduranceLabel": "Proiect de anduranță",
+    "productsValue": "3+",
+    "productsLabel": "Produse digitale",
+    "imageAlt": "Alex Nicoară",
+    "imageBadge": "AI · Securitate · Anduranță"
+  },
+
+  "WhatIBuild": {
+    "eyebrow": "Ce construiesc",
+    "title": "Produse digitale construite pentru performanță și încredere.",
+    "description": "Combin inteligența artificială, securitatea cibernetică și ingineria modernă pentru a crea soluții digitale sigure pentru echipe și companii ambițioase.",
+
+    "ai": {
+      "title": "Produse bazate pe AI",
+      "description": "Transform idei în produse digitale inteligente folosind fluxuri AI, automatizare și arhitectură software modernă.",
+      "tag1": "Integrare AI",
+      "tag2": "Automatizare",
+      "tag3": "Dezvoltare de produs"
+    },
+
+    "security": {
+      "title": "Cybersecurity & Infrastructură",
+      "description": "Proiectez și securizez infrastructuri enterprise folosind tehnologii moderne de networking, cloud și inginerie de securitate.",
+      "tag1": "Network Security",
+      "tag2": "Cloud Security",
+      "tag3": "Sisteme Enterprise"
+    },
+
+    "platforms": {
+      "title": "Platforme digitale",
+      "description": "Construiesc website-uri și platforme performante, orientate spre experiența utilizatorului, fiabilitate și creșterea businessului.",
+      "tag1": "Next.js",
+      "tag2": "Modern Web",
+      "tag3": "Arhitectură scalabilă"
+    }
+  },
+
+  "FeaturedProjects": {
+    "badge": "Proiecte reprezentative",
+    "title": "Produse digitale construite de la idee până în producție.",
+    "description": "Aplicații reale care combină ingineria modernă, arhitectura sigură și fluxurile de lucru bazate pe AI.",
+    "caseStudy": "Studiu de caz",
+    "projectTitle": "Platforma Swim4Dreams",
+    "projectDescription1": "Un ecosistem digital complet construit pentru un eveniment real de anduranță.",
+    "projectDescription2": "Conceput pentru a gestiona înscrieri, plăți securizate, fluxurile participanților, administrarea și procesarea rezultatelor într-un singur ecosistem.",
+    "feature1": "Înscriere participanți",
+    "feature2": "Plăți securizate",
+    "feature3": "Dashboard operațional de administrare",
+    "feature4": "Gestionarea rezultatelor și clasamentelor",
+    "feature5": "Experiență multilingvă",
+    "mobileFirst": "MOBILE-FIRST"
+  },
+
+  "About": {
+    "badge": "Despre mine",
+    "headline1": "Mentalitate de inginer.",
+    "headline2": "Mentalitate de builder.",
+    "headline3": "Disciplina anduranței.",
+    "paragraph1": "Sunt inginer de securitate cibernetică și dezvoltator de produse digitale, concentrat pe construirea unor soluții sigure și scalabile.",
+    "paragraph2": "Activitatea mea combină securitatea enterprise, dezvoltarea asistată de AI și implementarea produselor în lumea reală — de la infrastructuri securizate până la platforme digitale complete.",
+    "paragraph3": "Dincolo de tehnologie, aplic în construirea sistemelor aceeași disciplină pe care am dezvoltat-o în sporturile de anduranță: reziliență, fiabilitate și gândire pe termen lung.",
+    "yearsValue": "10+",
+    "yearsLabel": "Ani în inginerie",
+    "enduranceValue": "72h",
+    "enduranceLabel": "Proiect de anduranță",
+    "productsValue": "3+",
+    "productsLabel": "Produse digitale"
+  },
+
+  "Experience": {
+    "badge": "Experiență",
+    "headline1": "Experiență în inginerie.",
+    "headline2": "Execuție în lumea reală.",
+    "description": "Un parcurs construit la intersecția dintre securitate enterprise, produse digitale și provocări de anduranță.",
+
+    "security": {
+      "year": "10+ ANI",
+      "title": "Enterprise Security Engineering",
+      "description": "Proiectarea și securizarea infrastructurilor enterprise prin network security, cloud infrastructure și practici moderne de securitate."
+    },
+
+    "builder": {
+      "year": "2026",
+      "title": "Digital Product Builder",
+      "description": "Construirea unor platforme digitale complete, de la concept până în producție, incluzând arhitectură, dezvoltare, plăți și fluxuri administrative."
+    },
+
+    "endurance": {
+      "year": "72 ORE",
+      "title": "Endurance Engineering",
+      "description": "Un proiect real de anduranță care combină disciplina, reziliența și capacitatea de execuție în condiții fizice și mentale extreme."
+    },
+
+    "ai": {
+      "year": "ASTĂZI",
+      "title": "AI-Powered Product Development",
+      "description": "Construirea unor produse digitale sigure prin combinarea inteligenței artificiale, ingineriei moderne și execuției orientate spre business."
+    }
+  },
+
+  "Services": {
+    "badge": "Servicii",
+    "headline1": "Construiesc produse sigure",
+    "headline2": "de la idee până în producție.",
+    "description": "Ajut companiile să transforme ideile în soluții digitale sigure și scalabile, combinând AI, inginerie și expertiză în securitate cibernetică.",
+
+    "ai": {
+      "title": "AI Product Development",
+      "description": "Construiesc produse digitale inteligente folosind fluxuri AI, automatizare și arhitectură software modernă.",
+      "tag1": "Integrare AI",
+      "tag2": "Automatizare",
+      "tag3": "Arhitectură de produs"
+    },
+
+    "security": {
+      "title": "Cybersecurity Engineering",
+      "description": "Proiectez și securizez infrastructuri enterprise folosind tehnologii moderne de networking, cloud și securitate.",
+      "tag1": "Network Security",
+      "tag2": "Cloud Security",
+      "tag3": "Security Architecture"
+    },
+
+    "delivery": {
+      "title": "Digital Product Delivery",
+      "description": "Transform idei în platforme pregătite pentru producție, cu arhitectură scalabilă și deployment fiabil.",
+      "tag1": "Full-stack Development",
+      "tag2": "Next.js",
+      "tag3": "Cloud Deployment"
+    }
+  },
+
+  "Contact": {
+    "badge": "Începe un proiect",
+    "headline1": "Hai să construim",
+    "headline2": "produse digitale sigure.",
+    "description": "Ajut echipele să construiască soluții bazate pe AI, platforme sigure și produse digitale scalabile. Sunt disponibil pentru proiecte și colaborări selectate.",
+    "conversation": "Hai să discutăm →",
+    "linkedin": "Conectează-te pe LinkedIn →",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "Disponibil la cerere"
+  },
+
+  "Footer": {
+    "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",
+    "projects": "Proiecte",
+    "services": "Servicii",
+    "contact": "Contact",
+    "rights": "Toate drepturile rezervate."
   }
 }

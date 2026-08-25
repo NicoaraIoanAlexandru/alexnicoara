@@ -1,39 +1,39 @@
-import { Container } from "@/components/ui/Container";
+import Link from "next/link";
+import {useLocale, useTranslations} from "next-intl";
+
+import {Container} from "@/components/ui/Container";
 
 export function Footer() {
-  return (
-    <footer
-      className="
-        border-t
-        border-white/10
-        py-10
-      "
-    >
-      <Container>
+  const t = useTranslations("Footer");
+  const locale = useLocale();
+  const year = new Date().getFullYear();
 
+  return (
+    <footer className="border-t border-white/10">
+      <Container>
         <div
           className="
             flex
             flex-col
             gap-8
-            sm:flex-row
-            sm:items-center
-            sm:justify-between
+            py-10
+            md:flex-row
+            md:items-center
+            md:justify-between
           "
         >
-
           <div>
-
-            <p
+            <Link
+              href={`/${locale}`}
               className="
                 text-lg
                 font-semibold
+                tracking-tight
                 text-white
               "
             >
               Alex Nicoară
-            </p>
-
+            </Link>
 
             <p
               className="
@@ -42,65 +42,53 @@ export function Footer() {
                 text-white/40
               "
             >
-              AI Product Developer · Cybersecurity Engineer · Digital Builder
+              {t("descriptor")}
             </p>
-
           </div>
 
-
-
-          <div
+          <nav
             className="
               flex
+              flex-wrap
               gap-6
               text-sm
-              text-white/50
+              text-white/60
             "
           >
-
-            <a
-              href="#projects"
+            <Link
+              href={`/${locale}#projects`}
               className="transition hover:text-white"
             >
-              Projects
-            </a>
+              {t("projects")}
+            </Link>
 
-
-            <a
-              href="#services"
+            <Link
+              href={`/${locale}#services`}
               className="transition hover:text-white"
             >
-              Services
-            </a>
+              {t("services")}
+            </Link>
 
-
-            <a
-              href="#contact"
+            <Link
+              href={`/${locale}#contact`}
               className="transition hover:text-white"
             >
-              Contact
-            </a>
-
-          </div>
-
+              {t("contact")}
+            </Link>
+          </nav>
         </div>
-
-
 
         <div
           className="
-            mt-8
             border-t
             border-white/10
-            pt-6
-            text-sm
-            text-white/30
+            py-6
+            text-xs
+            text-white/40
           "
         >
-          © {new Date().getFullYear()} Alex Nicoară. All rights reserved.
+          © {year} Alex Nicoară. {t("rights")}
         </div>
-
-
       </Container>
     </footer>
   );

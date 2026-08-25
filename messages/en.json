@@ -1,5 +1,179 @@
 {
-  "HomePage": {
-    "title": "Building digital products. Securing systems. Challenging limits."
+  "Navbar": {
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "language": "RO",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "navigationLabel": "Main navigation",
+    "switchToRomanian": "Switch language to Romanian",
+    "switchToEnglish": "Switch language to English"
+  },
+
+  "Hero": {
+    "studio": "Alex Nicoară Studio",
+    "headline1": "Building digital products.",
+    "headline2": "Securing systems.",
+    "headline3": "Challenging limits.",
+    "description": "I help businesses transform ideas into secure digital products using AI, modern engineering and enterprise-grade technology.",
+    "primaryCta": "Start a Project →",
+    "secondaryCta": "Explore My Work →",
+    "role1": "AI Product Developer",
+    "role2": "Cybersecurity Engineer",
+    "role3": "Digital Builder",
+    "yearsValue": "10+",
+    "yearsLabel": "Years Engineering",
+    "enduranceValue": "72h",
+    "enduranceLabel": "Endurance Project",
+    "productsValue": "3+",
+    "productsLabel": "Digital Products",
+    "imageAlt": "Alex Nicoară",
+    "imageBadge": "AI · Security · Endurance"
+  },
+
+  "WhatIBuild": {
+    "eyebrow": "What I Build",
+    "title": "Digital products engineered for performance and trust.",
+    "description": "I combine artificial intelligence, cybersecurity and modern engineering to create secure digital solutions for ambitious teams and businesses.",
+
+    "ai": {
+      "title": "AI-Powered Products",
+      "description": "Transforming ideas into intelligent digital products using AI workflows, automation and modern software architecture.",
+      "tag1": "AI Integration",
+      "tag2": "Automation",
+      "tag3": "Product Development"
+    },
+
+    "security": {
+      "title": "Cybersecurity & Infrastructure",
+      "description": "Designing and securing enterprise environments with modern networking, cloud and security engineering practices.",
+      "tag1": "Network Security",
+      "tag2": "Cloud Security",
+      "tag3": "Enterprise Systems"
+    },
+
+    "platforms": {
+      "title": "Digital Platforms",
+      "description": "Building high-performance websites and platforms focused on user experience, reliability and business growth.",
+      "tag1": "Next.js",
+      "tag2": "Modern Web",
+      "tag3": "Scalable Architecture"
+    }
+  },
+
+  "FeaturedProjects": {
+    "badge": "Featured Projects",
+    "title": "Digital products built from idea to production.",
+    "description": "Real-world applications combining modern engineering, secure architecture and AI-driven workflows.",
+    "caseStudy": "Case Study",
+    "projectTitle": "Swim4Dreams Platform",
+    "projectDescription1": "A complete digital ecosystem engineered for a real-world endurance event.",
+    "projectDescription2": "Built to manage registrations, secure payments, participant workflows, administration and results processing from a single ecosystem.",
+    "feature1": "Participant registration",
+    "feature2": "Secure payments",
+    "feature3": "Admin operations dashboard",
+    "feature4": "Results & rankings management",
+    "feature5": "Multilingual experience",
+    "mobileFirst": "MOBILE-FIRST"
+  },
+
+  "About": {
+    "badge": "Background",
+    "headline1": "Engineering mindset.",
+    "headline2": "Builder mentality.",
+    "headline3": "Endurance discipline.",
+    "paragraph1": "I am a cybersecurity engineer and digital product builder focused on creating secure, scalable solutions.",
+    "paragraph2": "My work combines enterprise security, AI-driven development and real-world product execution — from secure infrastructure to complete digital platforms.",
+    "paragraph3": "Beyond technology, I apply the same discipline from endurance sports to building systems that require resilience, reliability and long-term thinking.",
+    "yearsValue": "10+",
+    "yearsLabel": "Years Engineering",
+    "enduranceValue": "72h",
+    "enduranceLabel": "Endurance Project",
+    "productsValue": "3+",
+    "productsLabel": "Digital Products"
+  },
+
+  "Experience": {
+    "badge": "Experience",
+    "headline1": "Engineering experience.",
+    "headline2": "Real-world execution.",
+    "description": "A journey built across enterprise security, digital products and endurance challenges.",
+
+    "security": {
+      "year": "10+ YEARS",
+      "title": "Enterprise Security Engineering",
+      "description": "Designing and securing enterprise environments through network security, cloud infrastructure and modern security practices."
+    },
+
+    "builder": {
+      "year": "2026",
+      "title": "Digital Product Builder",
+      "description": "Building complete digital platforms from concept to production, including architecture, development, payments and administration workflows."
+    },
+
+    "endurance": {
+      "year": "72 HOURS",
+      "title": "Endurance Engineering",
+      "description": "A real-world endurance project combining discipline, resilience and execution under extreme physical and mental conditions."
+    },
+
+    "ai": {
+      "year": "TODAY",
+      "title": "AI-Powered Product Development",
+      "description": "Creating secure digital products by combining artificial intelligence, modern engineering and practical business execution."
+    }
+  },
+
+  "Services": {
+    "badge": "Services",
+    "headline1": "Building secure products",
+    "headline2": "from idea to production.",
+    "description": "I help businesses transform ideas into secure, scalable digital solutions by combining AI, engineering and cybersecurity expertise.",
+
+    "ai": {
+      "title": "AI Product Development",
+      "description": "Building intelligent digital products using AI workflows, automation and modern software architecture.",
+      "tag1": "AI Integration",
+      "tag2": "Automation",
+      "tag3": "Product Architecture"
+    },
+
+    "security": {
+      "title": "Cybersecurity Engineering",
+      "description": "Designing and securing enterprise environments with modern networking, cloud and security practices.",
+      "tag1": "Network Security",
+      "tag2": "Cloud Security",
+      "tag3": "Security Architecture"
+    },
+
+    "delivery": {
+      "title": "Digital Product Delivery",
+      "description": "Transforming ideas into production-ready platforms with scalable architecture and reliable deployment.",
+      "tag1": "Full-stack Development",
+      "tag2": "Next.js",
+      "tag3": "Cloud Deployment"
+    }
+  },
+
+  "Contact": {
+    "badge": "Start a Project",
+    "headline1": "Let's build secure",
+    "headline2": "digital products.",
+    "description": "I help teams build AI-powered solutions, secure platforms and scalable digital products. Available for selected projects and collaborations.",
+    "conversation": "Start a Conversation →",
+    "linkedin": "Connect on LinkedIn →",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "Available on request"
+  },
+
+  "Footer": {
+    "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved."
   }
 }
