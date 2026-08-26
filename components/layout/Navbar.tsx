@@ -1,6 +1,7 @@
 "use client";
 
 import {useState} from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {useLocale, useTranslations} from "next-intl";
 import {Menu, X} from "lucide-react";
@@ -30,9 +31,9 @@ export function Navbar() {
     hover:text-white
     focus-visible:outline-none
     focus-visible:ring-2
-    focus-visible:ring-cyan-400
+    focus-visible:ring-[var(--brand-cyan)]
     focus-visible:ring-offset-4
-    focus-visible:ring-offset-black
+    focus-visible:ring-offset-[#05080b]
   `;
 
   const languageLinkClassName = `
@@ -45,9 +46,9 @@ export function Navbar() {
     transition
     focus-visible:outline-none
     focus-visible:ring-2
-    focus-visible:ring-cyan-400
+    focus-visible:ring-[var(--brand-cyan)]
     focus-visible:ring-offset-2
-    focus-visible:ring-offset-black
+    focus-visible:ring-offset-[#05080b]
   `;
 
   const mobileLinkClassName = `
@@ -60,7 +61,7 @@ export function Navbar() {
     transition
     hover:text-white
     focus-visible:outline-none
-    focus-visible:text-cyan-300
+    focus-visible:text-[var(--brand-cyan)]
   `;
 
   return (
@@ -71,8 +72,9 @@ export function Navbar() {
         z-50
         border-b
         border-white/10
-        bg-black/80
-        backdrop-blur-xl"
+        bg-[#05080b]/85
+        backdrop-blur-xl
+      "
     >
       <Container>
         <nav
@@ -89,21 +91,64 @@ export function Navbar() {
             href={`/${locale}`}
             onClick={closeMenu}
             className="
-              rounded-sm
-              text-lg
-              font-semibold
-              tracking-tight
-              text-white
-              transition
-              hover:text-cyan-300
+              group
+              flex
+              items-center
+              gap-3
+              rounded-md
               focus-visible:outline-none
               focus-visible:ring-2
-              focus-visible:ring-cyan-400
+              focus-visible:ring-[var(--brand-cyan)]
               focus-visible:ring-offset-4
-              focus-visible:ring-offset-black
+              focus-visible:ring-offset-[#05080b]
             "
           >
-            Alex Nicoară
+            <span
+              className="
+                relative
+                flex
+                h-10
+                w-10
+                shrink-0
+                items-center
+                justify-center
+                overflow-hidden
+                rounded-full
+                border
+                border-[rgba(0,240,248,0.22)]
+                bg-black
+                shadow-[0_0_18px_rgba(0,240,248,0.08)]
+                transition
+                duration-300
+                group-hover:border-[rgba(0,240,248,0.45)]
+                group-hover:shadow-[0_0_24px_rgba(0,240,248,0.15)]
+              "
+            >
+              <Image
+                src="/alex-logo.png"
+                alt=""
+                width={40}
+                height={40}
+                className="
+                  h-full
+                  w-full
+                  object-cover
+                "
+              />
+            </span>
+
+            <span
+              className="
+                text-lg
+                font-semibold
+                tracking-tight
+                text-white
+                transition
+                group-hover:text-[var(--brand-cyan)]
+              "
+            >
+              Alex Nicoară
+            </span>
           </Link>
 
           {/* DESKTOP NAVIGATION */}
@@ -153,8 +198,8 @@ export function Navbar() {
                 px-4
                 py-2
                 text-white/70
-                hover:border-cyan-400/40
-                hover:text-cyan-300
+                hover:border-[rgba(0,240,248,0.40)]
+                hover:text-[var(--brand-cyan)]
               `}
             >
               {nextLocale.toUpperCase()}
@@ -163,7 +208,6 @@ export function Navbar() {
 
           {/* MOBILE ACTIONS */}
           <div className="flex items-center gap-3 md:hidden">
-            {/* LANGUAGE */}
             <Link
               href={`/${nextLocale}`}
               onClick={closeMenu}
@@ -179,7 +223,6 @@ export function Navbar() {
               {nextLocale.toUpperCase()}
             </Link>
 
-            {/* HAMBURGER */}
             <button
               type="button"
               onClick={() => setIsOpen((current) => !current)}
@@ -201,13 +244,14 @@ export function Navbar() {
                 border-white/10
                 text-white
                 transition
-                hover:border-white/20
+                hover:border-[rgba(0,240,248,0.28)]
                 hover:bg-white/[0.05]
+                hover:text-[var(--brand-cyan)]
                 focus-visible:outline-none
                 focus-visible:ring-2
-                focus-visible:ring-cyan-400
+                focus-visible:ring-[var(--brand-cyan)]
                 focus-visible:ring-offset-2
-                focus-visible:ring-offset-black
+                focus-visible:ring-offset-[#05080b]
               "
             >
               {isOpen ? (
@@ -230,7 +274,7 @@ export function Navbar() {
             w-full
             border-b
             border-white/10
-            bg-[#050505]/95
+            bg-[#05080b]/95
             backdrop-blur-xl
             md:hidden
           "
@@ -280,7 +324,7 @@ export function Navbar() {
                   transition
                   hover:text-white
                   focus-visible:outline-none
-                  focus-visible:text-cyan-300
+                  focus-visible:text-[var(--brand-cyan)]
                 "
               >
                 {t("contact")}

@@ -1,18 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505;
-  --foreground: #ffffff;
+  /* Core backgrounds */
+  --background: #05080b;
+  --background-deep: #07131a;
+  --background-olive: #0a0f0d;
 
-  --surface: #0f172a;
-  --surface-light: #111827;
+  /* Surfaces */
+  --surface: #0b161d;
+  --surface-light: #101d24;
+  --surface-olive: #1b2119;
 
-  --muted: #94a3b8;
+  /* Typography */
+  --foreground: #f5f7f8;
+  --muted: #a6b0b5;
 
-  --accent-tech: #3b82f6;
-  --accent-ocean: #06b6d4;
+  /* Brand colors */
+  --brand-cyan: #00f0f8;
+  --brand-cyan-soft: #00c7d4;
+  --brand-cyan-dark: #007c91;
 
+  /* Secondary endurance / natural accent */
+  --brand-olive: #252d22;
+  --brand-olive-soft: #343f2d;
+
+  /* Legacy aliases */
+  --accent-tech: var(--brand-cyan);
+  --accent-ocean: var(--brand-cyan-soft);
+
+  /* Borders */
   --border: rgba(255, 255, 255, 0.08);
+  --border-brand: rgba(0, 240, 248, 0.16);
 }
 
 * {
@@ -21,16 +39,54 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
   min-height: 100vh;
-  background: var(--background);
+
+  background:
+    radial-gradient(
+      circle at 82% 8%,
+      rgba(0, 240, 248, 0.11) 0%,
+      rgba(0, 199, 212, 0.05) 18%,
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 12% 42%,
+      rgba(52, 63, 45, 0.14) 0%,
+      rgba(37, 45, 34, 0.07) 20%,
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 78% 78%,
+      rgba(0, 124, 145, 0.07) 0%,
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #05080b 0%,
+      #07131a 30%,
+      #081116 48%,
+      #0a0f0d 68%,
+      #061016 84%,
+      #05080b 100%
+    );
+
+  background-color: var(--background);
+
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+
+  font-family:
+    var(--font-geist-sans),
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  color-scheme: dark;
 }
 
 ::selection {
-  background: var(--accent-ocean);
-  color: #050505;
+  background: var(--brand-cyan);
+  color: #031012;
 }

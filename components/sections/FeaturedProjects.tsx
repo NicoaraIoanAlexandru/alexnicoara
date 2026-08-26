@@ -51,6 +51,7 @@ export function FeaturedProjects() {
               border
               border-white/10
               bg-white/[0.03]
+              hover:shadow-[0_0_32px_rgba(0,240,248,0.07)]
               p-6
               sm:p-8
               lg:p-12

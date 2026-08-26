@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {useLocale, useTranslations} from "next-intl";
 
@@ -8,8 +9,25 @@ export function Footer() {
   const locale = useLocale();
   const year = new Date().getFullYear();
 
+  const footerLinkClassName = `
+    rounded-sm
+    transition
+    hover:text-[var(--brand-cyan)]
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-[var(--brand-cyan)]
+    focus-visible:ring-offset-4
+    focus-visible:ring-offset-[#05080b]
+  `;
+
   return (
-    <footer className="border-t border-white/10">
+    <footer
+      className="
+        border-t
+        border-white/10
+        bg-[#05080b]/70
+      "
+    >
       <Container>
         <div
           className="
@@ -22,23 +40,77 @@ export function Footer() {
             md:justify-between
           "
         >
+          {/* BRAND */}
           <div>
             <Link
               href={`/${locale}`}
               className="
-                text-lg
-                font-semibold
-                tracking-tight
-                text-white
+                group
+                inline-flex
+                items-center
+                gap-3
+                rounded-md
+                focus-visible:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[var(--brand-cyan)]
+                focus-visible:ring-offset-4
+                focus-visible:ring-offset-[#05080b]
               "
             >
-              Alex Nicoară
+              <span
+                className="
+                  relative
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  overflow-hidden
+                  rounded-full
+                  border
+                  border-[rgba(0,240,248,0.18)]
+                  bg-black
+                  shadow-[0_0_18px_rgba(0,240,248,0.06)]
+                  transition
+                  duration-300
+                  group-hover:border-[rgba(0,240,248,0.38)]
+                  group-hover:shadow-[0_0_24px_rgba(0,240,248,0.12)]
+                "
+              >
+                <Image
+                  src="/alex-logo.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="
+                    h-full
+                    w-full
+                    object-cover
+                  "
+                />
+              </span>
+
+              <span
+                className="
+                  text-lg
+                  font-semibold
+                  tracking-tight
+                  text-white
+                  transition
+                  group-hover:text-[var(--brand-cyan)]
+                "
+              >
+                Alex Nicoară
+              </span>
             </Link>
 
             <p
               className="
-                mt-2
+                mt-3
+                max-w-md
                 text-sm
+                leading-relaxed
                 text-white/40
               "
             >
@@ -46,7 +118,9 @@ export function Footer() {
             </p>
           </div>
 
+          {/* FOOTER NAVIGATION */}
           <nav
+            aria-label="Footer navigation"
             className="
               flex
               flex-wrap
@@ -57,27 +131,28 @@ export function Footer() {
           >
             <Link
               href={`/${locale}#projects`}
-              className="transition hover:text-white"
+              className={footerLinkClassName}
             >
               {t("projects")}
             </Link>
 
             <Link
               href={`/${locale}#services`}
-              className="transition hover:text-white"
+              className={footerLinkClassName}
             >
               {t("services")}
             </Link>
 
             <Link
               href={`/${locale}#contact`}
-              className="transition hover:text-white"
+              className={footerLinkClassName}
             >
               {t("contact")}
             </Link>
           </nav>
         </div>
 
+        {/* COPYRIGHT */}
         <div
           className="
             border-t

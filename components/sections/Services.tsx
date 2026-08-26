@@ -93,9 +93,15 @@ export function Services() {
                 className="
                   rounded-3xl
                   border
-                  border-white/10
+                  border-[rgba(0,240,248,0.14)]
                   bg-white/[0.03]
                   p-6
+                  shadow-[0_0_24px_rgba(0,240,248,0.035)]
+                  transition
+                  duration-300
+                  hover:border-[rgba(0,240,248,0.30)]
+                  hover:bg-white/[0.05]
+                  hover:shadow-[0_0_32px_rgba(0,240,248,0.07)]
                   sm:p-8
                 "
               >

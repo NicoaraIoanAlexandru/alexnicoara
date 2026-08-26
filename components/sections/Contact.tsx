@@ -17,8 +17,9 @@ export function Contact() {
             scroll-mt-24
             rounded-3xl
             border
-            border-white/10
+            border-[rgba(0,240,248,0.14)]
             bg-white/[0.03]
+            shadow-[0_0_24px_rgba(0,240,248,0.035)]
             p-8
             text-center
             sm:p-12
