@@ -1,7 +1,23 @@
 import { ImageResponse } from "next/og";
 
-export const alt =
-  "Alex Nicoară | AI Product Developer & Cybersecurity Engineer";
+const copy = {
+  en: {
+    alt: "Alex Nicoară | AI Product Developer & Cybersecurity Engineer",
+    tagline: [
+      "Building digital products.",
+      "Securing systems.",
+      "Challenging limits.",
+    ],
+  },
+  ro: {
+    alt: "Alex Nicoară | Dezvoltator de produse AI și Inginer de securitate cibernetică",
+    tagline: [
+      "Construiesc produse digitale.",
+      "Securizez sisteme.",
+      "Depășesc limite.",
+    ],
+  },
+};
 
 export const size = {
   width: 1200,
@@ -10,7 +26,32 @@ export const size = {
 
 export const contentType = "image/png";
 
-export default function Image() {
+export async function generateImageMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = copy[locale as "en" | "ro"] ?? copy.en;
+
+  return [
+    {
+      id: "og",
+      alt: t.alt,
+      size,
+      contentType,
+    },
+  ];
+}
+
+export default async function Image({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = copy[locale as "en" | "ro"] ?? copy.en;
+
   return new ImageResponse(
     (
       <div
@@ -94,17 +135,11 @@ export default function Image() {
             color: "rgba(255,255,255,0.65)",
           }}
         >
-          <div style={{ display: "flex" }}>
-            Building digital products.
-          </div>
+          <div style={{ display: "flex" }}>{t.tagline[0]}</div>
 
-          <div style={{ display: "flex" }}>
-            Securing systems.
-          </div>
+          <div style={{ display: "flex" }}>{t.tagline[1]}</div>
 
-          <div style={{ display: "flex" }}>
-            Challenging limits.
-          </div>
+          <div style={{ display: "flex" }}>{t.tagline[2]}</div>
         </div>
 
         <div
