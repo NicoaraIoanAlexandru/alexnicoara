@@ -169,6 +169,60 @@ export function FeaturedProjects() {
 
             </div>
           </div>
+
+          {/* SECONDARY PROOF CARD */}
+          <div
+            className="
+              mt-6
+              rounded-2xl
+              border
+              border-white/10
+              bg-white/[0.02]
+              p-6
+              sm:p-8
+            "
+          >
+            <p
+              className="
+                text-xs
+                uppercase
+                tracking-[0.3em]
+                text-white/40
+              "
+            >
+              {t("secondaryEyebrow")}
+            </p>
+
+            <h3
+              className="
+                mt-3
+                text-xl
+                font-semibold
+                text-white
+              "
+            >
+              {t("secondaryTitle")}
+            </h3>
+
+            <p
+              className="
+                mt-3
+                max-w-2xl
+                text-sm
+                leading-relaxed
+                text-white/60
+              "
+            >
+              {t("secondaryDescription")}
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Badge>Next.js 16</Badge>
+              <Badge>Supabase</Badge>
+              <Badge>Stripe</Badge>
+              <Badge>TypeScript</Badge>
+            </div>
+          </div>
         </div>
       </Container>
     </Section>

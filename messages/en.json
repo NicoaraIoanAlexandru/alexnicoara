@@ -77,7 +77,10 @@
     "feature3": "Admin operations dashboard",
     "feature4": "Results & rankings management",
     "feature5": "Multilingual experience",
-    "mobileFirst": "MOBILE-FIRST"
+    "mobileFirst": "MOBILE-FIRST",
+    "secondaryEyebrow": "Selected Work",
+    "secondaryTitle": "MarilenaFitCoach — Coaching Platform",
+    "secondaryDescription": "A full digital coaching platform for client onboarding, training, nutrition and progress tracking — with secure payments, client workflows and an administration dashboard."
   },
 
   "About": {

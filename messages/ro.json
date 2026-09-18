@@ -77,7 +77,10 @@
     "feature3": "Dashboard operațional de administrare",
     "feature4": "Gestionarea rezultatelor și clasamentelor",
     "feature5": "Experiență multilingvă",
-    "mobileFirst": "MOBILE-FIRST"
+    "mobileFirst": "MOBILE-FIRST",
+    "secondaryEyebrow": "Proiect selectat",
+    "secondaryTitle": "MarilenaFitCoach — Platformă de coaching",
+    "secondaryDescription": "O platformă digitală completă pentru onboarding, antrenamente, nutriție și urmărirea progresului clienților — cu plăți securizate, fluxuri dedicate și panou de administrare."
   },
 
   "About": {
