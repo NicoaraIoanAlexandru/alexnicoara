@@ -1,6 +1,6 @@
 "use client";
 
-import {useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {useLocale, useTranslations} from "next-intl";
@@ -13,12 +13,32 @@ export function Navbar() {
   const locale = useLocale();
 
   const [isOpen, setIsOpen] = useState(false);
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
 
   const nextLocale = locale === "en" ? "ro" : "en";
 
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+        menuToggleRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
 
   const languageLabel =
     nextLocale === "ro"
@@ -224,6 +244,7 @@ export function Navbar() {
             </Link>
 
             <button
+              ref={menuToggleRef}
               type="button"
               onClick={() => setIsOpen((current) => !current)}
               aria-label={

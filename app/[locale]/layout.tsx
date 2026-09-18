@@ -128,6 +128,15 @@ export async function generateMetadata({
   };
 }
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Alex Nicoară",
+  url: siteUrl,
+  jobTitle: "AI Product Developer | Cybersecurity Engineer | Digital Builder",
+  sameAs: ["https://www.linkedin.com/in/nicoara-ioan-alexandru-44a59978/"],
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -147,6 +156,11 @@ export default async function LocaleLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-full antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(personJsonLd)}}
+        />
+
         <NextIntlClientProvider messages={messages}>
           <Navbar />
 

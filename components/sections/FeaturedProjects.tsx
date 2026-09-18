@@ -3,6 +3,7 @@ import {useTranslations} from "next-intl";
 import {Badge} from "@/components/ui/Badge";
 import {Container} from "@/components/ui/Container";
 import {Section} from "@/components/ui/Section";
+import {ProjectVideo} from "@/components/sections/ProjectVideo";
 
 export function FeaturedProjects() {
   const t = useTranslations("FeaturedProjects");
@@ -66,7 +67,7 @@ export function FeaturedProjects() {
                     text-sm
                     uppercase
                     tracking-[0.35em]
-                    text-cyan-400/80
+                    text-[var(--brand-cyan)]/80
                   "
                 >
                   {t("caseStudy")}
@@ -87,10 +88,10 @@ export function FeaturedProjects() {
                     rel="noopener noreferrer"
                     className="
                       transition
-                      hover:text-cyan-400
+                      hover:text-[var(--brand-cyan)]
                       focus-visible:outline-none
                       focus-visible:ring-2
-                      focus-visible:ring-cyan-400
+                      focus-visible:ring-[var(--brand-cyan)]
                       focus-visible:ring-offset-2
                       focus-visible:ring-offset-[#050505]
                     "
@@ -149,12 +150,12 @@ export function FeaturedProjects() {
                     items-center
                     text-sm
                     font-medium
-                    text-cyan-400
+                    text-[var(--brand-cyan)]
                     transition
-                    hover:text-cyan-300
+                    hover:text-[var(--brand-cyan-soft)]
                     focus-visible:outline-none
                     focus-visible:ring-2
-                    focus-visible:ring-cyan-400
+                    focus-visible:ring-[var(--brand-cyan)]
                     focus-visible:ring-offset-2
                     focus-visible:ring-offset-[#050505]
                   "
@@ -164,56 +165,7 @@ export function FeaturedProjects() {
               </div>
 
               {/* PROJECT VIDEO */}
-              <div
-                className="
-                  relative
-                  flex
-                  h-[520px]
-                  items-center
-                  justify-center
-                  overflow-hidden
-                  rounded-2xl
-                  border
-                  border-white/10
-                  bg-black
-                  sm:h-[600px]
-                "
-              >
-                <video
-                  src="/swim4dreams_video.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  className="
-                    h-full
-                    w-auto
-                    object-contain
-                  "
-                />
-
-                <div
-                  className="
-                    absolute
-                    bottom-4
-                    left-4
-                    rounded-full
-                    border
-                    border-white/10
-                    bg-black/60
-                    px-4
-                    py-2
-                    text-xs
-                    uppercase
-                    tracking-[0.15em]
-                    text-white/70
-                    backdrop-blur
-                  "
-                >
-                  {t("mobileFirst")}
-                </div>
-              </div>
+              <ProjectVideo badgeLabel={t("mobileFirst")} />
 
             </div>
           </div>

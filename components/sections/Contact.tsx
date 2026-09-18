@@ -112,7 +112,7 @@ export function Contact() {
                   text-[12px]
                   text-white/70
                   transition
-                  hover:text-cyan-400
+                  hover:text-[var(--brand-cyan)]
                   min-[360px]:text-sm
                   sm:text-base
                 "

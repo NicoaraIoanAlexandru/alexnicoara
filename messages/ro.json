@@ -35,31 +35,31 @@
 
   "WhatIBuild": {
     "eyebrow": "Ce construiesc",
-    "title": "Produse digitale construite pentru performanță și încredere.",
-    "description": "Combin inteligența artificială, securitatea cibernetică și ingineria modernă pentru a crea soluții digitale sigure pentru echipe și companii ambițioase.",
+    "title": "Genul de produse digitale pe care le creez.",
+    "description": "O privire asupra sistemelor pe care le construiesc — acolo unde inteligența artificială, ingineria de securitate și arhitectura modernă se întâlnesc.",
 
     "ai": {
       "title": "Produse bazate pe AI",
-      "description": "Transform idei în produse digitale inteligente folosind fluxuri AI, automatizare și arhitectură software modernă.",
-      "tag1": "Integrare AI",
-      "tag2": "Automatizare",
-      "tag3": "Dezvoltare de produs"
+      "description": "Produse inteligente cu AI integrat în miezul experienței, nu adăugat ulterior.",
+      "tag1": "Funcționalități AI-native",
+      "tag2": "Automatizare inteligentă",
+      "tag3": "Interfețe adaptive"
     },
 
     "security": {
-      "title": "Cybersecurity & Infrastructură",
-      "description": "Proiectez și securizez infrastructuri enterprise folosind tehnologii moderne de networking, cloud și inginerie de securitate.",
-      "tag1": "Network Security",
-      "tag2": "Cloud Security",
-      "tag3": "Sisteme Enterprise"
+      "title": "Infrastructură digitală securizată",
+      "description": "Sisteme construite pe o fundație security-first — rețele, medii cloud și fluxuri de date proiectate să reziste amenințărilor reale.",
+      "tag1": "Arhitectură securizată",
+      "tag2": "Reziliență cloud",
+      "tag3": "Design orientat spre risc"
     },
 
     "platforms": {
-      "title": "Platforme digitale",
-      "description": "Construiesc website-uri și platforme performante, orientate spre experiența utilizatorului, fiabilitate și creșterea businessului.",
-      "tag1": "Next.js",
-      "tag2": "Modern Web",
-      "tag3": "Arhitectură scalabilă"
+      "title": "Platforme de înaltă performanță",
+      "description": "Platforme web rapide și fiabile, construite să funcționeze sub trafic real și presiune reală de business.",
+      "tag1": "Inginerie de performanță",
+      "tag2": "Fiabilitate",
+      "tag3": "Sisteme scalabile"
     }
   },
 
@@ -129,32 +129,32 @@
 
   "Services": {
     "badge": "Servicii",
-    "headline1": "Construiesc produse sigure",
-    "headline2": "de la idee până în producție.",
-    "description": "Ajut companiile să transforme ideile în soluții digitale sigure și scalabile, combinând AI, inginerie și expertiză în securitate cibernetică.",
+    "headline1": "Cu ce mă poți angaja",
+    "headline2": "să te ajut.",
+    "description": "Trei moduri de a colabora cu mine — ca partener de produs AI, consultant de securitate sau partener de livrare end-to-end.",
 
     "ai": {
       "title": "AI Product Development",
-      "description": "Construiesc produse digitale inteligente folosind fluxuri AI, automatizare și arhitectură software modernă.",
-      "tag1": "Integrare AI",
-      "tag2": "Automatizare",
-      "tag3": "Arhitectură de produs"
+      "description": "Proiectez și construiesc funcționalități și produse bazate pe AI pentru afacerea ta, de la prototip până în producție.",
+      "tag1": "Descoperire & scop",
+      "tag2": "Dezvoltare funcționalități AI",
+      "tag3": "Implementare în producție"
     },
 
     "security": {
-      "title": "Cybersecurity Engineering",
-      "description": "Proiectez și securizez infrastructuri enterprise folosind tehnologii moderne de networking, cloud și securitate.",
-      "tag1": "Network Security",
-      "tag2": "Cloud Security",
-      "tag3": "Security Architecture"
+      "title": "Consultanță Cybersecurity",
+      "description": "Evaluez, securizez și consiliez asupra sistemelor și infrastructurii tale pentru a reduce riscul real.",
+      "tag1": "Audituri de securitate",
+      "tag2": "Hardening infrastructură",
+      "tag3": "Consultanță continuă"
     },
 
     "delivery": {
       "title": "Digital Product Delivery",
-      "description": "Transform idei în platforme pregătite pentru producție, cu arhitectură scalabilă și deployment fiabil.",
-      "tag1": "Full-stack Development",
-      "tag2": "Next.js",
-      "tag3": "Cloud Deployment"
+      "description": "Duc produsul tău de la idee la o platformă live, pregătită pentru producție — arhitectură, dezvoltare și deployment incluse.",
+      "tag1": "Dezvoltare full-stack",
+      "tag2": "Deployment & lansare",
+      "tag3": "Suport post-lansare"
     }
   },
 

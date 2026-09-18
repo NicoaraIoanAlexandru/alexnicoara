@@ -35,31 +35,31 @@
 
   "WhatIBuild": {
     "eyebrow": "What I Build",
-    "title": "Digital products engineered for performance and trust.",
-    "description": "I combine artificial intelligence, cybersecurity and modern engineering to create secure digital solutions for ambitious teams and businesses.",
+    "title": "The kind of digital products I create.",
+    "description": "A look at the systems I build — where artificial intelligence, security engineering and modern architecture come together.",
 
     "ai": {
       "title": "AI-Powered Products",
-      "description": "Transforming ideas into intelligent digital products using AI workflows, automation and modern software architecture.",
-      "tag1": "AI Integration",
-      "tag2": "Automation",
-      "tag3": "Product Development"
+      "description": "Intelligent products with AI woven into the core experience, not bolted on as an afterthought.",
+      "tag1": "AI-Native Features",
+      "tag2": "Intelligent Automation",
+      "tag3": "Adaptive Interfaces"
     },
 
     "security": {
-      "title": "Cybersecurity & Infrastructure",
-      "description": "Designing and securing enterprise environments with modern networking, cloud and security engineering practices.",
-      "tag1": "Network Security",
-      "tag2": "Cloud Security",
-      "tag3": "Enterprise Systems"
+      "title": "Secure Digital Infrastructure",
+      "description": "Systems built on a security-first foundation — networks, cloud environments and data flows designed to withstand real threats.",
+      "tag1": "Hardened Architecture",
+      "tag2": "Cloud Resilience",
+      "tag3": "Threat-Aware Design"
     },
 
     "platforms": {
-      "title": "Digital Platforms",
-      "description": "Building high-performance websites and platforms focused on user experience, reliability and business growth.",
-      "tag1": "Next.js",
-      "tag2": "Modern Web",
-      "tag3": "Scalable Architecture"
+      "title": "High-Performance Platforms",
+      "description": "Fast, reliable web platforms engineered to perform under real traffic and real business pressure.",
+      "tag1": "Performance Engineering",
+      "tag2": "Reliability",
+      "tag3": "Scalable Systems"
     }
   },
 
@@ -129,32 +129,32 @@
 
   "Services": {
     "badge": "Services",
-    "headline1": "Building secure products",
-    "headline2": "from idea to production.",
-    "description": "I help businesses transform ideas into secure, scalable digital solutions by combining AI, engineering and cybersecurity expertise.",
+    "headline1": "What you can hire me",
+    "headline2": "to deliver.",
+    "description": "Three ways to work with me — as an AI product partner, a security advisor, or an end-to-end delivery partner.",
 
     "ai": {
       "title": "AI Product Development",
-      "description": "Building intelligent digital products using AI workflows, automation and modern software architecture.",
-      "tag1": "AI Integration",
-      "tag2": "Automation",
-      "tag3": "Product Architecture"
+      "description": "I design and build AI-powered features and products for your business, from prototype to production.",
+      "tag1": "Discovery & Scoping",
+      "tag2": "AI Feature Development",
+      "tag3": "Production Deployment"
     },
 
     "security": {
-      "title": "Cybersecurity Engineering",
-      "description": "Designing and securing enterprise environments with modern networking, cloud and security practices.",
-      "tag1": "Network Security",
-      "tag2": "Cloud Security",
-      "tag3": "Security Architecture"
+      "title": "Cybersecurity Consulting",
+      "description": "I assess, harden and advise on your systems and infrastructure to reduce real-world risk.",
+      "tag1": "Security Audits",
+      "tag2": "Infrastructure Hardening",
+      "tag3": "Ongoing Advisory"
     },
 
     "delivery": {
       "title": "Digital Product Delivery",
-      "description": "Transforming ideas into production-ready platforms with scalable architecture and reliable deployment.",
-      "tag1": "Full-stack Development",
-      "tag2": "Next.js",
-      "tag3": "Cloud Deployment"
+      "description": "I take your product from idea to a live, production-ready platform — architecture, build and deployment included.",
+      "tag1": "Full-Stack Build",
+      "tag2": "Deployment & Launch",
+      "tag3": "Post-Launch Support"
     }
   },
 

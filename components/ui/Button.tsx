@@ -24,10 +24,10 @@ export function Button({
     font-medium
     text-black
     transition
-    hover:bg-cyan-400
+    hover:bg-[var(--brand-cyan)]
     focus-visible:outline-none
     focus-visible:ring-2
-    focus-visible:ring-cyan-400
+    focus-visible:ring-[var(--brand-cyan)]
     focus-visible:ring-offset-2
     focus-visible:ring-offset-black
   `;

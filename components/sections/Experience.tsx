@@ -102,7 +102,7 @@ export function Experience() {
                   text-xs
                   uppercase
                   tracking-[0.3em]
-                  text-cyan-400/80
+                  text-[var(--brand-cyan)]/80
                 "
               >
                 {item.year}
