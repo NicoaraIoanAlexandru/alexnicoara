@@ -7,6 +7,7 @@ import {useLocale, useTranslations} from "next-intl";
 import {Menu, X} from "lucide-react";
 
 import {Container} from "@/components/ui/Container";
+import {handleHashLinkClick, scrollToHash} from "@/lib/scrollToHash";
 
 export function Navbar() {
   const t = useTranslations("Navbar");
@@ -39,6 +40,48 @@ export function Navbar() {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const html = document.documentElement.style;
+    const body = document.body.style;
+    const previousHtmlOverflow = html.overflow;
+    const previousBodyOverflow = body.overflow;
+    const previousBodyPosition = body.position;
+    const previousBodyTop = body.top;
+    const previousBodyWidth = body.width;
+    const scrollY = window.scrollY;
+
+    html.overflow = "hidden";
+    body.overflow = "hidden";
+    body.position = "fixed";
+    body.top = `-${scrollY}px`;
+    body.width = "100%";
+
+    return () => {
+      html.overflow = previousHtmlOverflow;
+      body.overflow = previousBodyOverflow;
+      body.position = previousBodyPosition;
+      body.top = previousBodyTop;
+      body.width = previousBodyWidth;
+      window.scrollTo(0, scrollY);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!window.location.hash) {
+      return;
+    }
+
+    const frame = requestAnimationFrame(() => {
+      scrollToHash(window.location.hash);
+    });
+
+    return () => cancelAnimationFrame(frame);
+  }, []);
 
   const languageLabel =
     nextLocale === "ro"
@@ -184,27 +227,31 @@ export function Navbar() {
           >
             <Link
               href={`/${locale}#projects`}
+              onClick={(event) => handleHashLinkClick(event, `/${locale}#projects`)}
               className={desktopLinkClassName}
             >
               {t("projects")}
             </Link>
 
             <Link
-              href={`/${locale}#services`}
-              className={desktopLinkClassName}
-            >
-              {t("services")}
-            </Link>
-
-            <Link
               href={`/${locale}#about`}
+              onClick={(event) => handleHashLinkClick(event, `/${locale}#about`)}
               className={desktopLinkClassName}
             >
               {t("about")}
             </Link>
 
             <Link
+              href={`/${locale}#services`}
+              onClick={(event) => handleHashLinkClick(event, `/${locale}#services`)}
+              className={desktopLinkClassName}
+            >
+              {t("services")}
+            </Link>
+
+            <Link
               href={`/${locale}#contact`}
+              onClick={(event) => handleHashLinkClick(event, `/${locale}#contact`)}
               className={desktopLinkClassName}
             >
               {t("contact")}
@@ -295,8 +342,7 @@ export function Navbar() {
             w-full
             border-b
             border-white/10
-            bg-[#05080b]/95
-            backdrop-blur-xl
+            bg-[#05080b]
             md:hidden
           "
         >
@@ -312,31 +358,43 @@ export function Navbar() {
             >
               <Link
                 href={`/${locale}#projects`}
-                onClick={closeMenu}
+                onClick={(event) => {
+                  handleHashLinkClick(event, `/${locale}#projects`);
+                  closeMenu();
+                }}
                 className={mobileLinkClassName}
               >
                 {t("projects")}
               </Link>
 
               <Link
-                href={`/${locale}#services`}
-                onClick={closeMenu}
-                className={mobileLinkClassName}
-              >
-                {t("services")}
-              </Link>
-
-              <Link
                 href={`/${locale}#about`}
-                onClick={closeMenu}
+                onClick={(event) => {
+                  handleHashLinkClick(event, `/${locale}#about`);
+                  closeMenu();
+                }}
                 className={mobileLinkClassName}
               >
                 {t("about")}
               </Link>
 
               <Link
+                href={`/${locale}#services`}
+                onClick={(event) => {
+                  handleHashLinkClick(event, `/${locale}#services`);
+                  closeMenu();
+                }}
+                className={mobileLinkClassName}
+              >
+                {t("services")}
+              </Link>
+
+              <Link
                 href={`/${locale}#contact`}
-                onClick={closeMenu}
+                onClick={(event) => {
+                  handleHashLinkClick(event, `/${locale}#contact`);
+                  closeMenu();
+                }}
                 className="
                   py-4
                   text-lg

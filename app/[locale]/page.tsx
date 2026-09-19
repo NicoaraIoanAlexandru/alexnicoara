@@ -18,7 +18,7 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   return (
-    <main>
+    <>
       <Hero />
 
       <WhatIBuild />
@@ -32,6 +32,6 @@ export default async function HomePage({
       <Services />
 
       <Contact />
-    </main>
+    </>
   );
 }

@@ -90,13 +90,7 @@
     "headline3": "Disciplina anduranței.",
     "paragraph1": "Sunt inginer de securitate cibernetică și dezvoltator de produse digitale, concentrat pe construirea unor soluții sigure și scalabile.",
     "paragraph2": "Activitatea mea combină securitatea enterprise, dezvoltarea asistată de AI și implementarea produselor în lumea reală — de la infrastructuri securizate până la platforme digitale complete.",
-    "paragraph3": "Dincolo de tehnologie, aplic în construirea sistemelor aceeași disciplină pe care am dezvoltat-o în sporturile de anduranță: reziliență, fiabilitate și gândire pe termen lung.",
-    "yearsValue": "10+",
-    "yearsLabel": "Ani în inginerie",
-    "enduranceValue": "72h",
-    "enduranceLabel": "Proiect de anduranță",
-    "productsValue": "3+",
-    "productsLabel": "Produse digitale"
+    "paragraph3": "Dincolo de tehnologie, aplic în construirea sistemelor aceeași disciplină pe care am dezvoltat-o în sporturile de anduranță: reziliență, fiabilitate și gândire pe termen lung."
   },
 
   "Experience": {
@@ -168,9 +162,7 @@
     "description": "Ajut echipele să construiască soluții bazate pe AI, platforme sigure și produse digitale scalabile. Sunt disponibil pentru proiecte și colaborări selectate.",
     "conversation": "Hai să discutăm →",
     "linkedin": "Conectează-te pe LinkedIn →",
-    "emailLabel": "Email",
-    "whatsappLabel": "WhatsApp",
-    "whatsappValue": "Disponibil la cerere"
+    "emailLabel": "Email"
   },
 
   "Footer": {

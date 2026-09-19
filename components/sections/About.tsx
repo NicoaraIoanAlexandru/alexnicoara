@@ -71,47 +71,6 @@ export function About() {
               >
                 {t("paragraph3")}
               </p>
-
-              <div
-                className="
-                  mt-10
-                  grid
-                  grid-cols-3
-                  gap-6
-                "
-              >
-
-                <div>
-                  <p className="text-3xl font-semibold text-white">
-                    {t("yearsValue")}
-                  </p>
-
-                  <p className="mt-2 text-sm text-white/40">
-                    {t("yearsLabel")}
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-3xl font-semibold text-white">
-                    {t("enduranceValue")}
-                  </p>
-
-                  <p className="mt-2 text-sm text-white/40">
-                    {t("enduranceLabel")}
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-3xl font-semibold text-white">
-                    {t("productsValue")}
-                  </p>
-
-                  <p className="mt-2 text-sm text-white/40">
-                    {t("productsLabel")}
-                  </p>
-                </div>
-
-              </div>
             </div>
 
           </div>

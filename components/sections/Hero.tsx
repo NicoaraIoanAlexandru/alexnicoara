@@ -121,7 +121,7 @@ export function Hero() {
                   {t("yearsValue")}
                 </p>
 
-                <p className="text-xs text-white/40">
+                <p className="text-xs text-white/50">
                   {t("yearsLabel")}
                 </p>
               </div>
@@ -131,7 +131,7 @@ export function Hero() {
                   {t("enduranceValue")}
                 </p>
 
-                <p className="text-xs text-white/40">
+                <p className="text-xs text-white/50">
                   {t("enduranceLabel")}
                 </p>
               </div>
@@ -141,7 +141,7 @@ export function Hero() {
                   {t("productsValue")}
                 </p>
 
-                <p className="text-xs text-white/40">
+                <p className="text-xs text-white/50">
                   {t("productsLabel")}
                 </p>
               </div>

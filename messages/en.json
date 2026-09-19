@@ -90,13 +90,7 @@
     "headline3": "Endurance discipline.",
     "paragraph1": "I am a cybersecurity engineer and digital product builder focused on creating secure, scalable solutions.",
     "paragraph2": "My work combines enterprise security, AI-driven development and real-world product execution — from secure infrastructure to complete digital platforms.",
-    "paragraph3": "Beyond technology, I apply the same discipline from endurance sports to building systems that require resilience, reliability and long-term thinking.",
-    "yearsValue": "10+",
-    "yearsLabel": "Years Engineering",
-    "enduranceValue": "72h",
-    "enduranceLabel": "Endurance Project",
-    "productsValue": "3+",
-    "productsLabel": "Digital Products"
+    "paragraph3": "Beyond technology, I apply the same discipline from endurance sports to building systems that require resilience, reliability and long-term thinking."
   },
 
   "Experience": {
@@ -168,9 +162,7 @@
     "description": "I help teams build AI-powered solutions, secure platforms and scalable digital products. Available for selected projects and collaborations.",
     "conversation": "Start a Conversation →",
     "linkedin": "Connect on LinkedIn →",
-    "emailLabel": "Email",
-    "whatsappLabel": "WhatsApp",
-    "whatsappValue": "Available on request"
+    "emailLabel": "Email"
   },
 
   "Footer": {

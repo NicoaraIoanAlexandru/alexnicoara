@@ -83,67 +83,38 @@ export function Contact() {
             className="
               mx-auto
               mt-12
-              grid
               max-w-2xl
-              gap-6
               border-t
               border-white/10
               pt-8
-              sm:grid-cols-2
             "
           >
-            <div>
-              <p
-                className="
-                  text-xs
-                  uppercase
-                  tracking-[0.25em]
-                  text-white/40
-                "
-              >
-                {t("emailLabel")}
-              </p>
+            <p
+              className="
+                text-xs
+                uppercase
+                tracking-[0.25em]
+                text-white/50
+              "
+            >
+              {t("emailLabel")}
+            </p>
 
-              <a
-                href="mailto:nicoara.ioan.alexandru@gmail.com"
-                className="
-                  mt-3
-                  block
-                  text-[12px]
-                  text-white/70
-                  transition
-                  hover:text-[var(--brand-cyan)]
-                  min-[360px]:text-sm
-                  sm:text-base
-                "
-              >
-                nicoara.ioan.alexandru@gmail.com
-              </a>
-            </div>
-
-            <div>
-              <p
-                className="
-                  text-xs
-                  uppercase
-                  tracking-[0.25em]
-                  text-white/40
-                "
-              >
-                {t("whatsappLabel")}
-              </p>
-
-              <p
-                className="
-                  mt-3
-                  text-sm
-                  text-white/70
-                  sm:text-base
-                "
-              >
-                {t("whatsappValue")}
-              </p>
-            </div>
+            <a
+              href="mailto:nicoara.ioan.alexandru@gmail.com"
+              className="
+                mt-3
+                block
+                text-[12px]
+                text-white/70
+                transition
+                hover:text-[var(--brand-cyan)]
+                min-[360px]:text-sm
+                sm:text-base
+              "
+            >
+              nicoara.ioan.alexandru@gmail.com
+            </a>
           </div>
         </div>
       </Container>

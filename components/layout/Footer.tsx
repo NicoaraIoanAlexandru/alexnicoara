@@ -111,7 +111,7 @@ export function Footer() {
                 max-w-md
                 text-sm
                 leading-relaxed
-                text-white/40
+                text-white/50
               "
             >
               {t("descriptor")}
@@ -159,7 +159,7 @@ export function Footer() {
             border-white/10
             py-6
             text-xs
-            text-white/40
+            text-white/50
           "
         >
           © {year} Alex Nicoară. {t("rights")}

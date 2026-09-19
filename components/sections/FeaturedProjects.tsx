@@ -187,7 +187,7 @@ export function FeaturedProjects() {
                 text-xs
                 uppercase
                 tracking-[0.3em]
-                text-white/40
+                text-white/50
               "
             >
               {t("secondaryEyebrow")}

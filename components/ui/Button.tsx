@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import {handleHashLinkClick} from "@/lib/scrollToHash";
+
 export function Button({
   href,
   children,
@@ -48,6 +50,7 @@ export function Button({
   return (
     <Link
       href={href}
+      onClick={(event) => handleHashLinkClick(event, href)}
       className={className}
     >
       {children}
