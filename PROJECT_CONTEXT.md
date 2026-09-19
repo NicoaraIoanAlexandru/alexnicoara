@@ -1,6 +1,6 @@
 # Alex Nicoară Studio Project Context
 
-_Generated: 2026-09-17. Updated: 2026-09-18. Verify `git log` and `git status` for current repository state before making time-sensitive assumptions._
+_Generated: 2026-09-17. Updated: 2026-09-18, 2026-09-19 (targeted corrections only — Vercel deployment workflow confirmed, WhatsApp contact removal reflected; see inline "updated" tags). Verify `git log` and `git status` for current repository state before making time-sensitive assumptions._
 
 ## 1. Project purpose
 
@@ -25,7 +25,7 @@ _Generated: 2026-09-17. Updated: 2026-09-18. Verify `git log` and `git status` f
 - **i18n (VERIFIED):** `next-intl` ^4.13.6.
 - **Animation (VERIFIED per package.json; usage NOT AUDITED in this pass):** `framer-motion` ^13.1.0 is a dependency; actual usage sites not inspected — check `Hero.tsx`/`Navbar.tsx` (both `"use client"`) for confirmation.
 - **Icons:** `lucide-react` `^1.31.0` — ASSUMPTION/NOT VALIDATED: this version number looks unusually low for lucide-react's actual release history; worth double-checking `package-lock.json` if icon behavior seems off.
-- **Deployment (VERIFIED via Vercel API, `list_teams`/`list_projects`):** repo has a GitHub remote (`github.com/NicoaraIoanAlexandru/alexnicoara`) and a linked Vercel project named `alexnicoara` (`prj_s3rIqxloVZ6nJApDWyFTswzSCTbQ`) under team `nicoaraioanalexandrus-projects` (hobby plan), linked to the same GitHub repo. No local `.vercel/` directory exists in this working copy (link is account/API-side, not a local project link file) — deployment branch/workflow specifics (preview vs. production triggers) were NOT further inspected.
+- **Deployment (VERIFIED via Vercel API, updated 2026-09-19):** repo has a GitHub remote (`github.com/NicoaraIoanAlexandru/alexnicoara`) and a linked Vercel project named `alexnicoara` (`prj_s3rIqxloVZ6nJApDWyFTswzSCTbQ`) under team `nicoaraioanalexandrus-projects` (hobby plan). No local `.vercel/` directory exists in this working copy (link is account/API-side). Deployment workflow now confirmed via `list_deployments`: `main` is the production branch (all historical `target: production` deployments carry `githubCommitRef: "main"`); pushing to `main` automatically triggers a production build/deploy with no separate promotion step; any other branch deploys as a Preview. Production is currently live on commit `05bd5d0`.
 - **Verified external services:** GitHub (git remote) and Vercel (project link, confirmed via API) — see §11.
 
 ## 4. Repository / architecture overview
@@ -38,7 +38,7 @@ _Generated: 2026-09-17. Updated: 2026-09-18. Verify `git log` and `git status` f
 - **Layout components (VERIFIED, `components/layout/`):** `Navbar.tsx` (`"use client"`), `Footer.tsx`.
 - **SEO files (VERIFIED, `app/`):** `robots.ts`, `sitemap.ts`, `opengraph-image.tsx` (locale-aware, added in latest commit), `icon.png`, `apple-icon.png`.
 - **Assets/media (VERIFIED, `public/`):** `alex-logo.png` (131KB, 320×320 — resized from 1.3MB/1070×1070; still transparent PNG, displayed at 40×40 in `Navbar.tsx`/`Footer.tsx`), `alex_hero.jpeg` (284KB), `swim4dreams_admin.png` (704KB), `swim4dreams_video.mp4` (1.8MB, 18s loop, H.264/no audio — trimmed and re-encoded from 6.1MB/100s), `swim4dreams_poster.jpg` (new, 40KB — poster frame for `ProjectVideo.tsx`). Default Next.js SVG placeholders (`file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg`) were grepped for references (none found) and removed from `public/`.
-- **Service/contact/lead flows (VERIFIED):** `Contact.tsx` provides a `mailto:nicoara.ioan.alexandru@gmail.com` button, a LinkedIn profile link, and a WhatsApp value displayed as text (not a clickable `wa.me` link — NOT VALIDATED if intentional). No server-side form handler, no email service (Resend/SendGrid/etc.) found.
+- **Service/contact/lead flows (VERIFIED, updated 2026-09-19):** `Contact.tsx` provides a `mailto:nicoara.ioan.alexandru@gmail.com` button and a LinkedIn profile link. The previously-flagged non-clickable WhatsApp value was removed as part of the Product Excellence Sprint 1/1B (commit `05bd5d0`) rather than wired up, since no real WhatsApp destination existed. No server-side form handler, no email service (Resend/SendGrid/etc.) found.
 
 ## 5. Bilingual/i18n behavior
 
@@ -72,7 +72,7 @@ _Generated: 2026-09-17. Updated: 2026-09-18. Verify `git log` and `git status` f
 ## 8. Conversion / lead-generation state
 
 - **Current CTAs (VERIFIED):** `Contact.tsx` — "start a conversation" mailto button and LinkedIn button; a live project link (`https://72ore-swim4dreams.ro`) appears twice in `FeaturedProjects.tsx`.
-- **Contact flow (VERIFIED):** no in-site form; purely `mailto:` + external LinkedIn link + displayed (non-linked) WhatsApp value. No lead is captured or stored anywhere in this codebase.
+- **Contact flow (VERIFIED, updated 2026-09-19):** no in-site form; purely `mailto:` + external LinkedIn link. The non-linked WhatsApp value was removed (see §4/§14). No lead is captured or stored anywhere in this codebase.
 - **Service positioning (VERIFIED, existence only):** `Services.tsx` renders on the homepage; content not read in this pass.
 - **Trust/credibility sections (VERIFIED, existence only):** `About.tsx` and `Experience.tsx` render on the homepage as credibility-building sections; content not read in this pass.
 - **Missing conversion elements (OPEN QUESTION, not invented):** no analytics, no CRM/email-capture integration, no case-study detail pages beyond the one featured project link found. Whether this is intentional (early stage) or a gap is a business decision, not something to assume.
@@ -98,7 +98,7 @@ _Generated: 2026-09-17. Updated: 2026-09-18. Verify `git log` and `git status` f
 
 - **GitHub (VERIFIED):** remote `https://github.com/NicoaraIoanAlexandru/alexnicoara.git`.
 - **Vercel (VERIFIED via API):** a Vercel project named `alexnicoara` (`prj_s3rIqxloVZ6nJApDWyFTswzSCTbQ`) is linked to the `NicoaraIoanAlexandru/alexnicoara` GitHub repo under team `nicoaraioanalexandrus-projects`. No local `vercel.json`/`.vercel/`/`vercel.ts` exists in the repo — the link is account-side (GitHub integration), not a local project config. Deployment branch/workflow (preview vs. production triggers, env vars) NOT further inspected — do not assume production-push behavior without checking.
-- **Domain (VERIFIED, referenced only):** `https://alexnicoara.com` is hardcoded as `siteUrl`/`baseUrl` in `layout.tsx`, `sitemap.ts`, `robots.ts` — actual DNS/domain ownership/live status NOT VALIDATED from this session.
+- **Domain (VERIFIED, referenced only):** `https://alexnicoara.com` is hardcoded as `siteUrl`/`baseUrl` in `layout.tsx`, `sitemap.ts`, `robots.ts` — actual DNS/domain ownership/live status NOT VALIDATED from this session. Production currently serves from Vercel-issued domains (`alexnicoara.vercel.app` and team aliases); no custom domain was confirmed attached to the Vercel project in this session.
 - **Analytics:** NOT FOUND — no analytics package or script identified.
 - **Email/contact:** no email-sending service; contact is a raw `mailto:` link.
 - **Other:** LinkedIn profile link (`linkedin.com/in/nicoara-ioan-alexandru-44a59978`) and one external live client project (`72ore-swim4dreams.ro`) are referenced as outbound links only, not integrations.
@@ -127,9 +127,9 @@ Future agents should read, in this order:
 
 ## 14. Open questions
 
-- What is the actual Vercel deployment branch/workflow (preview vs. production triggers, env var setup)? Project linkage is confirmed (§11), but workflow specifics were not inspected.
-- Is the WhatsApp value in `Contact.tsx` intentionally non-clickable text rather than a `wa.me` link?
-- What lead-capture/analytics strategy (if any) is planned, given the site's stated commercial/conversion purpose but current reliance on `mailto:`/LinkedIn only?
+- ~~What is the actual Vercel deployment branch/workflow?~~ RESOLVED 2026-09-19: `main` is the production branch; pushing to `main` auto-deploys to production with no separate promotion step (see §3/§11).
+- ~~Is the WhatsApp value in `Contact.tsx` intentionally non-clickable text?~~ RESOLVED 2026-09-19: removed in Sprint 1/1B (commit `05bd5d0`) rather than wired up, since no real WhatsApp destination existed.
+- What lead-capture/analytics strategy (if any) is planned, given the site's stated commercial/conversion purpose but current reliance on `mailto:`/LinkedIn only? (Explicitly out of scope for Sprint 1/1B — see project history for that decision.)
 - Should `alex_hero.jpeg` (284KB) or `swim4dreams_admin.png` (704KB) also be optimized, or are they already at an acceptable size/quality tradeoff?
 
 ---
