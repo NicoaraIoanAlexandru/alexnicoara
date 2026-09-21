@@ -129,6 +129,7 @@
     "headline1": "Cu ce mă poți angaja",
     "headline2": "să te ajut.",
     "description": "Trei moduri de a colabora cu mine — ca partener de produs AI, consultant de securitate sau partener de livrare end-to-end.",
+    "ctaLabel": "Începe un proiect →",
 
     "ai": {
       "title": "AI Product Development",
@@ -162,7 +163,83 @@
     "description": "Ajut echipele să construiască soluții bazate pe AI, platforme sigure și produse digitale scalabile. Sunt disponibil pentru proiecte și colaborări selectate.",
     "conversation": "Hai să discutăm →",
     "linkedin": "Conectează-te pe LinkedIn →",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+
+    "form": {
+      "nameLabel": "Nume",
+      "namePlaceholder": "Numele tău complet",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@companie.com",
+      "projectTypeLabel": "Tipul proiectului",
+      "projectTypePlaceholder": "Alege un tip de proiect",
+      "projectTypeOptions": {
+        "ai": "AI Product Development",
+        "security": "Consultanță Cybersecurity",
+        "delivery": "Digital Product Delivery",
+        "other": "Altceva / nu sunt sigur încă"
+      },
+      "descriptionLabel": "Descrierea proiectului",
+      "descriptionPlaceholder": "Spune-mi pe scurt ce vrei să construiești și de ce ai nevoie.",
+      "companyLabel": "Companie",
+      "companyPlaceholder": "Numele companiei (dacă este cazul)",
+      "budgetLabel": "Buget aproximativ",
+      "budgetPlaceholder": "Alege un interval",
+      "budgetOptions": {
+        "under5k": "Sub 5.000 $",
+        "5kTo20k": "5.000 – 20.000 $",
+        "over20k": "Peste 20.000 $",
+        "notSure": "Nu sunt sigur încă"
+      },
+      "timelineLabel": "Termen dorit",
+      "timelinePlaceholder": "Alege un termen",
+      "timelineOptions": {
+        "asap": "Cât mai curând posibil",
+        "oneToThreeMonths": "1–3 luni",
+        "threePlusMonths": "3+ luni",
+        "notSure": "Nu sunt sigur încă"
+      },
+      "optionalLabel": "(opțional)",
+      "submit": "Trimite solicitarea",
+      "submitting": "Se trimite…",
+      "privacyNotice": "Informațiile tale sunt folosite doar pentru a răspunde acestei solicitări.",
+      "fallbackHint": "Poți să mă contactezi și direct, prin email sau LinkedIn, folosind butoanele de mai jos.",
+      "errors": {
+        "validation": "Te rugăm să verifici câmpurile evidențiate și să încerci din nou.",
+        "rateLimited": "Prea multe încercări. Te rugăm să aștepți câteva minute și să încerci din nou, sau să mă contactezi direct mai jos.",
+        "deliveryFailed": "Mesajul tău nu a putut fi trimis momentan. Te rugăm să încerci din nou, sau să mă contactezi direct mai jos.",
+        "unknown": "A apărut o eroare. Te rugăm să încerci din nou, sau să mă contactezi direct mai jos."
+      },
+      "fieldErrors": {
+        "name": {
+          "invalidLength": "Te rugăm să introduci numele tău (2–100 de caractere)."
+        },
+        "email": {
+          "required": "Adresa de email este obligatorie.",
+          "invalidFormat": "Te rugăm să introduci o adresă de email validă."
+        },
+        "projectType": {
+          "invalidOption": "Te rugăm să selectezi un tip de proiect."
+        },
+        "description": {
+          "invalidLength": "Te rugăm să descrii proiectul tău (20–5000 de caractere)."
+        },
+        "company": {
+          "invalidLength": "Numele companiei este prea lung."
+        },
+        "budget": {
+          "invalidOption": "Te rugăm să selectezi un interval de buget valid."
+        },
+        "timeline": {
+          "invalidOption": "Te rugăm să selectezi un termen valid."
+        }
+      }
+    },
+
+    "successModal": {
+      "title": "Mesaj trimis",
+      "body": "Îți mulțumesc pentru mesaj — îți voi răspunde în 1–2 zile lucrătoare.",
+      "ok": "OK"
+    }
   },
 
   "Footer": {

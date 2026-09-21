@@ -129,6 +129,7 @@
     "headline1": "What you can hire me",
     "headline2": "to deliver.",
     "description": "Three ways to work with me — as an AI product partner, a security advisor, or an end-to-end delivery partner.",
+    "ctaLabel": "Start a Project →",
 
     "ai": {
       "title": "AI Product Development",
@@ -162,7 +163,83 @@
     "description": "I help teams build AI-powered solutions, secure platforms and scalable digital products. Available for selected projects and collaborations.",
     "conversation": "Start a Conversation →",
     "linkedin": "Connect on LinkedIn →",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "projectTypeLabel": "Project type",
+      "projectTypePlaceholder": "Select a project type",
+      "projectTypeOptions": {
+        "ai": "AI Product Development",
+        "security": "Cybersecurity Consulting",
+        "delivery": "Digital Product Delivery",
+        "other": "Other / not sure yet"
+      },
+      "descriptionLabel": "Project description",
+      "descriptionPlaceholder": "Tell me a bit about what you're building and what you need.",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Your company (if applicable)",
+      "budgetLabel": "Approximate budget",
+      "budgetPlaceholder": "Select a range",
+      "budgetOptions": {
+        "under5k": "Under $5k",
+        "5kTo20k": "$5k – $20k",
+        "over20k": "$20k+",
+        "notSure": "Not sure yet"
+      },
+      "timelineLabel": "Desired timeline",
+      "timelinePlaceholder": "Select a timeline",
+      "timelineOptions": {
+        "asap": "As soon as possible",
+        "oneToThreeMonths": "1–3 months",
+        "threePlusMonths": "3+ months",
+        "notSure": "Not sure yet"
+      },
+      "optionalLabel": "(optional)",
+      "submit": "Send Inquiry",
+      "submitting": "Sending…",
+      "privacyNotice": "Your information is used only to respond to this inquiry.",
+      "fallbackHint": "You can also reach out directly using the email or LinkedIn button below.",
+      "errors": {
+        "validation": "Please check the highlighted fields and try again.",
+        "rateLimited": "Too many attempts. Please wait a few minutes and try again, or reach out directly below.",
+        "deliveryFailed": "Your message couldn't be sent right now. Please try again, or reach out directly below.",
+        "unknown": "Something went wrong. Please try again, or reach out directly below."
+      },
+      "fieldErrors": {
+        "name": {
+          "invalidLength": "Please enter your name (2–100 characters)."
+        },
+        "email": {
+          "required": "Email is required.",
+          "invalidFormat": "Please enter a valid email address."
+        },
+        "projectType": {
+          "invalidOption": "Please select a project type."
+        },
+        "description": {
+          "invalidLength": "Please describe your project (20–5000 characters)."
+        },
+        "company": {
+          "invalidLength": "Company name is too long."
+        },
+        "budget": {
+          "invalidOption": "Please select a valid budget range."
+        },
+        "timeline": {
+          "invalidOption": "Please select a valid timeline."
+        }
+      }
+    },
+
+    "successModal": {
+      "title": "Message sent",
+      "body": "Thanks for reaching out — I'll get back to you within 1–2 business days.",
+      "ok": "OK"
+    }
   },
 
   "Footer": {

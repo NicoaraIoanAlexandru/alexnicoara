@@ -1,11 +1,13 @@
-import {useTranslations} from "next-intl";
+import {getTranslations, getLocale} from "next-intl/server";
 
 import {Badge} from "@/components/ui/Badge";
+import {Button} from "@/components/ui/Button";
 import {Container} from "@/components/ui/Container";
 import {Section} from "@/components/ui/Section";
 
-export function Services() {
-  const t = useTranslations("Services");
+export async function Services() {
+  const t = await getTranslations("Services");
+  const locale = await getLocale();
 
   const services = [
     {
@@ -141,6 +143,12 @@ export function Services() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12">
+            <Button href={`/${locale}#contact`}>
+              {t("ctaLabel")}
+            </Button>
           </div>
         </div>
       </Container>

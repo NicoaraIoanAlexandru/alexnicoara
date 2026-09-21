@@ -1,5 +1,6 @@
 import {useTranslations} from "next-intl";
 
+import {ContactForm} from "@/components/sections/ContactForm";
 import {Badge} from "@/components/ui/Badge";
 import {Button} from "@/components/ui/Button";
 import {Container} from "@/components/ui/Container";
@@ -60,6 +61,23 @@ export function Contact() {
           >
             {t("description")}
           </p>
+
+          <div
+            className="
+              mx-auto
+              mt-10
+              max-w-3xl
+              rounded-3xl
+              border
+              border-white/10
+              bg-black/20
+              p-6
+              text-left
+              sm:p-8
+            "
+          >
+            <ContactForm />
+          </div>
 
           <div
             className="
