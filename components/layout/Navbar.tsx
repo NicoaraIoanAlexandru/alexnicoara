@@ -46,28 +46,19 @@ export function Navbar() {
       return;
     }
 
+    // Overflow-only locking works on desktop and avoids the position: fixed
+    // body technique, which can trap or jump the document in iOS Safari.
     const html = document.documentElement.style;
     const body = document.body.style;
     const previousHtmlOverflow = html.overflow;
     const previousBodyOverflow = body.overflow;
-    const previousBodyPosition = body.position;
-    const previousBodyTop = body.top;
-    const previousBodyWidth = body.width;
-    const scrollY = window.scrollY;
 
     html.overflow = "hidden";
     body.overflow = "hidden";
-    body.position = "fixed";
-    body.top = `-${scrollY}px`;
-    body.width = "100%";
 
     return () => {
       html.overflow = previousHtmlOverflow;
       body.overflow = previousBodyOverflow;
-      body.position = previousBodyPosition;
-      body.top = previousBodyTop;
-      body.width = previousBodyWidth;
-      window.scrollTo(0, scrollY);
     };
   }, [isOpen]);
 
@@ -87,6 +78,27 @@ export function Navbar() {
     nextLocale === "ro"
       ? t("switchToRomanian")
       : t("switchToEnglish");
+
+  function handleMobileHashLinkClick(
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) {
+    event.preventDefault();
+    closeMenu();
+
+    // Wait for the menu effect cleanup to restore scrolling before resolving
+    // the hash. This prevents the old scroll-lock cleanup from undoing the
+    // navigation on mobile browsers.
+    window.requestAnimationFrame(() => {
+      const hash = href.slice(href.indexOf("#"));
+
+      if (scrollToHash(hash)) {
+        window.history.pushState(null, "", href);
+      } else {
+        window.location.assign(href);
+      }
+    });
+  }
 
   const desktopLinkClassName = `
     rounded-sm
@@ -358,10 +370,9 @@ export function Navbar() {
             >
               <Link
                 href={`/${locale}#projects`}
-                onClick={(event) => {
-                  handleHashLinkClick(event, `/${locale}#projects`);
-                  closeMenu();
-                }}
+                onClick={(event) =>
+                  handleMobileHashLinkClick(event, `/${locale}#projects`)
+                }
                 className={mobileLinkClassName}
               >
                 {t("projects")}
@@ -369,10 +380,9 @@ export function Navbar() {
 
               <Link
                 href={`/${locale}#about`}
-                onClick={(event) => {
-                  handleHashLinkClick(event, `/${locale}#about`);
-                  closeMenu();
-                }}
+                onClick={(event) =>
+                  handleMobileHashLinkClick(event, `/${locale}#about`)
+                }
                 className={mobileLinkClassName}
               >
                 {t("about")}
@@ -380,10 +390,9 @@ export function Navbar() {
 
               <Link
                 href={`/${locale}#services`}
-                onClick={(event) => {
-                  handleHashLinkClick(event, `/${locale}#services`);
-                  closeMenu();
-                }}
+                onClick={(event) =>
+                  handleMobileHashLinkClick(event, `/${locale}#services`)
+                }
                 className={mobileLinkClassName}
               >
                 {t("services")}
@@ -391,10 +400,9 @@ export function Navbar() {
 
               <Link
                 href={`/${locale}#contact`}
-                onClick={(event) => {
-                  handleHashLinkClick(event, `/${locale}#contact`);
-                  closeMenu();
-                }}
+                onClick={(event) =>
+                  handleMobileHashLinkClick(event, `/${locale}#contact`)
+                }
                 className="
                   py-4
                   text-lg

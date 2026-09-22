@@ -95,6 +95,15 @@ export async function sendInquiryEmail(
   const fromEmail = process.env.CONTACT_FORM_FROM_EMAIL;
 
   if (!apiKey || !toEmail || !fromEmail) {
+    const missing = [
+      !apiKey ? "RESEND_API_KEY" : null,
+      !toEmail ? "CONTACT_FORM_TO_EMAIL" : null,
+      !fromEmail ? "CONTACT_FORM_FROM_EMAIL" : null,
+    ].filter((key): key is string => key !== null);
+
+    console.error(
+      `sendInquiryEmail: missing configuration (${missing.join(", ")})`
+    );
     return {ok: false, reason: "not_configured"};
   }
 
@@ -122,8 +131,20 @@ export async function sendInquiryEmail(
     });
 
     if (!response.ok) {
+      let providerError = "unknown";
+
+      try {
+        const responseBody = (await response.json()) as {name?: unknown};
+
+        if (typeof responseBody.name === "string") {
+          providerError = responseBody.name;
+        }
+      } catch {
+        // Keep diagnostics useful even when the provider does not return JSON.
+      }
+
       console.error(
-        `sendInquiryEmail: Resend request rejected (status ${response.status})`
+        `sendInquiryEmail: Resend request rejected (status ${response.status}, error ${providerError})`
       );
       return {ok: false, reason: "rejected"};
     }

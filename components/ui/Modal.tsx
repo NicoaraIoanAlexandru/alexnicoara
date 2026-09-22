@@ -107,8 +107,9 @@ export function Modal({
     };
   }, [open, onClose]);
 
-  // Body-scroll-lock, same `position: fixed` + negative `top` offset
-  // technique used by Navbar.tsx's mobile menu.
+  // Overflow-only locking avoids the position: fixed body technique, which
+  // can trap or jump the document in iOS Safari. Cleanup restores exactly
+  // the inline values that were present before the modal opened.
   useEffect(() => {
     if (!open) {
       return;
@@ -118,24 +119,13 @@ export function Modal({
     const body = document.body.style;
     const previousHtmlOverflow = html.overflow;
     const previousBodyOverflow = body.overflow;
-    const previousBodyPosition = body.position;
-    const previousBodyTop = body.top;
-    const previousBodyWidth = body.width;
-    const scrollY = window.scrollY;
 
     html.overflow = "hidden";
     body.overflow = "hidden";
-    body.position = "fixed";
-    body.top = `-${scrollY}px`;
-    body.width = "100%";
 
     return () => {
       html.overflow = previousHtmlOverflow;
       body.overflow = previousBodyOverflow;
-      body.position = previousBodyPosition;
-      body.top = previousBodyTop;
-      body.width = previousBodyWidth;
-      window.scrollTo(0, scrollY);
     };
   }, [open]);
 
