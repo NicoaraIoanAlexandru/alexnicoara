@@ -148,7 +148,7 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* RIGHT SIDE - IMAGE */}
+          {/* RIGHT SIDE - VIDEO */}
           <motion.div
             initial={
               shouldReduceMotion
@@ -174,14 +174,37 @@ export function Hero() {
                 bg-black
               "
             >
-              <Image
-                src="/alex_hero.jpeg"
-                alt={t("imageAlt")}
-                fill
-                priority
-                className="scale-105 object-cover object-[center_40%]"
-                sizes="(max-width: 1023px) 100vw, 50vw"
-              />
+              {shouldReduceMotion ? (
+                <Image
+                  src="/hero-ocean-cinematic-poster.jpg"
+                  alt={t("imageAlt")}
+                  fill
+                  priority
+                  className="scale-105 object-cover object-[center_40%]"
+                  sizes="(max-width: 1023px) 100vw, 50vw"
+                />
+              ) : (
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="/hero-ocean-cinematic-poster.jpg"
+                  preload="metadata"
+                  aria-hidden="true"
+                  className="absolute inset-0 h-full w-full scale-105 object-cover object-[center_40%]"
+                >
+                  <source src="/hero-ocean-cinematic.mp4" type="video/mp4" />
+                  <Image
+                    src="/hero-ocean-cinematic-poster.jpg"
+                    alt={t("imageAlt")}
+                    fill
+                    priority
+                    className="scale-105 object-cover object-[center_40%]"
+                    sizes="(max-width: 1023px) 100vw, 50vw"
+                  />
+                </video>
+              )}
 
               <div
                 className="
