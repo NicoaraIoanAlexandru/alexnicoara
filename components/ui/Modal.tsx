@@ -107,28 +107,6 @@ export function Modal({
     };
   }, [open, onClose]);
 
-  // Overflow-only locking avoids the position: fixed body technique, which
-  // can trap or jump the document in iOS Safari. Cleanup restores exactly
-  // the inline values that were present before the modal opened.
-  useEffect(() => {
-    if (!open) {
-      return;
-    }
-
-    const html = document.documentElement.style;
-    const body = document.body.style;
-    const previousHtmlOverflow = html.overflow;
-    const previousBodyOverflow = body.overflow;
-
-    html.overflow = "hidden";
-    body.overflow = "hidden";
-
-    return () => {
-      html.overflow = previousHtmlOverflow;
-      body.overflow = previousBodyOverflow;
-    };
-  }, [open]);
-
   return (
     <AnimatePresence>
       {open && (
