@@ -3,6 +3,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import {NextIntlClientProvider} from "next-intl";
 import {getMessages, setRequestLocale} from "next-intl/server";
 import {notFound} from "next/navigation";
+import Script from "next/script";
 import {Analytics} from "@vercel/analytics/next";
 
 import {Footer} from "@/components/layout/Footer";
@@ -22,6 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = "https://alexnicoara.com";
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -171,6 +173,27 @@ export default async function LocaleLayout({
 
           <Footer />
           <Analytics />
+
+          {gaMeasurementId ? (
+            <>
+              <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+                strategy="afterInteractive"
+              />
+              <Script
+                id="google-analytics-init"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', ${JSON.stringify(gaMeasurementId)});
+                  `,
+                }}
+              />
+            </>
+          ) : null}
         </NextIntlClientProvider>
       </body>
     </html>
