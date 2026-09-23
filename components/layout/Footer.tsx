@@ -149,6 +149,20 @@ export function Footer() {
             >
               {t("contact")}
             </Link>
+
+            <Link
+              href={`/${locale}/privacy`}
+              className={footerLinkClassName}
+            >
+              {t("privacy")}
+            </Link>
+
+            <Link
+              href={`/${locale}/cookies`}
+              className={footerLinkClassName}
+            >
+              {t("cookies")}
+            </Link>
           </nav>
         </div>
 

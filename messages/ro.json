@@ -241,12 +241,32 @@
       "ok": "OK"
     }
   },
+  
+    "CookieConsent": {
+      "eyebrow": "Confidențialitate",
+      "title": "Datele tale, alegerea ta.",
+      "description": "Folosesc opțional servicii de analiză pentru a înțelege cum este utilizat site-ul și pentru a îmbunătăți experiența. Funcționalitățile esențiale funcționează fără analytics.",
+      "essentialTitle": "Esențiale",
+      "essentialDescription": "Necesare pentru funcționarea corectă a site-ului.",
+      "alwaysOn": "Mereu active",
+      "analyticsTitle": "Analytics",
+      "analyticsDescription": "Permite măsurarea anonimă a utilizării site-ului prin Google Analytics.",
+      "accept": "Accept analytics",
+      "reject": "Refuz opționalele",
+      "preferences": "Preferințe",
+      "savePreferences": "Salvează preferințele",
+      "settings": "Setări cookies",
+      "privacyPolicy": "Politica de confidențialitate",
+      "cookiePolicy": "Politica privind cookies"
+    },
 
   "Footer": {
     "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",
     "projects": "Proiecte",
     "services": "Servicii",
     "contact": "Contact",
+    "privacy": "Confidențialitate",
+    "cookies": "Cookies",
     "rights": "Toate drepturile rezervate."
   }
 }

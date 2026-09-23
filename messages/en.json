@@ -241,12 +241,32 @@
       "ok": "OK"
     }
   },
+  
+    "CookieConsent": {
+      "eyebrow": "Privacy",
+      "title": "Your privacy, your choice.",
+      "description": "I use optional analytics to understand how this website is used and improve the experience. Essential functionality works without analytics.",
+      "essentialTitle": "Essential",
+      "essentialDescription": "Required for the website to function properly.",
+      "alwaysOn": "Always on",
+      "analyticsTitle": "Analytics",
+      "analyticsDescription": "Allows anonymous usage measurement through Google Analytics.",
+      "accept": "Accept analytics",
+      "reject": "Reject optional",
+      "preferences": "Preferences",
+     "savePreferences": "Save preferences",
+      "settings": "Cookie settings",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy"
+    },
 
   "Footer": {
     "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",
     "projects": "Projects",
     "services": "Services",
     "contact": "Contact",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
     "rights": "All rights reserved."
   }
 }
