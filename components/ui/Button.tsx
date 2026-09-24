@@ -1,16 +1,21 @@
 "use client";
 
+import type {MouseEventHandler, ReactNode} from "react";
 import Link from "next/link";
 
 import {handleHashLinkClick} from "@/lib/scrollToHash";
 
+type ButtonProps = {
+  href: string;
+  children: ReactNode;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
+};
+
 export function Button({
   href,
   children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
+  onClick,
+}: ButtonProps) {
   const isExternal = href.startsWith("http");
   const isMail = href.startsWith("mailto:");
 
@@ -43,6 +48,7 @@ export function Button({
         className={className}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
+        onClick={onClick}
       >
         {children}
       </a>
@@ -52,7 +58,10 @@ export function Button({
   return (
     <Link
       href={href}
-      onClick={(event) => handleHashLinkClick(event, href)}
+      onClick={(event) => {
+        onClick?.(event);
+        handleHashLinkClick(event, href);
+      }}
       className={className}
     >
       {children}

@@ -7,7 +7,8 @@ import {
   useState,
   type ChangeEvent,
 } from "react";
-import {useTranslations} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
+import {trackEvent} from "@/lib/analytics/ga";
 
 import {FormField} from "@/components/ui/FormField";
 import {Modal} from "@/components/ui/Modal";
@@ -127,6 +128,7 @@ const submitButtonClassName = `
 export function ContactForm() {
   const t = useTranslations("Contact.form");
   const tSuccess = useTranslations("Contact.successModal");
+  const locale = useLocale();
 
   const [state, formAction, pending] = useActionState(
     submitContactInquiry,
@@ -137,6 +139,7 @@ export function ContactForm() {
   const previousPendingRef = useRef(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const leadTrackedRef = useRef(false);
 
   // Real (non-honeypot) field values are lifted into component state so
   // they survive React 19's automatic uncontrolled-field reset that runs
@@ -232,6 +235,21 @@ export function ContactForm() {
         : "error"
       : "idle";
 
+  useEffect(() => {
+    if (
+      status === "success" &&
+      !leadTrackedRef.current
+    ) {
+      trackEvent("generate_lead", {
+        source: "contact_form",
+        locale,
+        project_type: values.projectType,
+      });
+
+      leadTrackedRef.current = true;
+    }
+  }, [status, locale, values.projectType]);
+
   const modalOpen = status === "success" && !dismissed;
 
   const fieldErrors =
@@ -252,6 +270,7 @@ export function ContactForm() {
     setDismissed(true);
     setHasSubmitted(false);
     setValues(initialFormValues);
+    leadTrackedRef.current = false;
     formRef.current?.reset();
   }
 

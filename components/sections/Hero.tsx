@@ -8,6 +8,7 @@ import {Badge} from "@/components/ui/Badge";
 import {Button} from "@/components/ui/Button";
 import {Container} from "@/components/ui/Container";
 import {Section} from "@/components/ui/Section";
+import {trackEvent} from "@/lib/analytics/ga";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -92,7 +93,15 @@ export function Hero() {
                 sm:flex-wrap
               "
             >
-              <Button href={`/${locale}#contact`}>
+              <Button
+                href={`/${locale}#contact`}
+                onClick={() =>
+                  trackEvent("start_project_click", {
+                    location: "hero",
+                    locale,
+                  })
+                }
+              >
                 {t("primaryCta")}
               </Button>
 
