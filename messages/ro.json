@@ -14,52 +14,52 @@
 
   "Hero": {
     "studio": "Alex Nicoară Studio",
-    "headline1": "Construiesc produse digitale.",
-    "headline2": "Securizez sisteme.",
-    "headline3": "Depășesc limite.",
-    "description": "Ajut companiile să transforme idei în produse digitale sigure, folosind inteligență artificială, inginerie modernă și tehnologii enterprise.",
-    "primaryCta": "Începe un proiect →",
-    "secondaryCta": "Vezi proiectele mele →",
+    "headline1": "Produse AI sigure.",
+    "headline2": "Construite pentru afacerea ta.",
+    "headline3": "Dezvoltate de Alex Nicoară.",
+    "description": "Transform idei de produs și procese manuale în sisteme digitale utile, îmbinând dezvoltarea de produse AI cu expertiza în securitate cibernetică, de la validare până la lansare.",
+    "primaryCta": "Descoperă dezvoltarea de produse AI →",
+    "secondaryCta": "Începe un proiect →",
     "role1": "AI Product Developer",
     "role2": "Cybersecurity Engineer",
     "role3": "Digital Builder",
     "yearsValue": "10+",
     "yearsLabel": "Ani în inginerie",
     "enduranceValue": "72h",
-    "enduranceLabel": "Proiect de anduranță",
+    "enduranceLabel": "Disciplina anduranței",
     "productsValue": "3+",
     "productsLabel": "Produse digitale",
-    "imageAlt": "Alex Nicoară",
-    "imageBadge": "AI · Securitate · Anduranță"
+    "imageAlt": "Spațiu de lucru pentru dezvoltare, cu vedere spre ocean, noaptea",
+    "imageBadge": "Inginerie de produs · Securitate"
   },
 
   "WhatIBuild": {
-    "eyebrow": "Ce construiesc",
-    "title": "Genul de produse digitale pe care le creez.",
-    "description": "O privire asupra sistemelor pe care le construiesc — acolo unde inteligența artificială, ingineria de securitate și arhitectura modernă se întâlnesc.",
+    "eyebrow": "Competențe de inginerie",
+    "title": "De la o idee utilă la un sistem fiabil.",
+    "description": "Bazele unui produs pregătit pentru utilizare: procese conectate, arhitectură sigură și funcționare fiabilă.",
 
     "ai": {
-      "title": "Produse bazate pe AI",
-      "description": "Produse inteligente cu AI integrat în miezul experienței, nu adăugat ulterior.",
-      "tag1": "Funcționalități AI-native",
-      "tag2": "Automatizare inteligentă",
-      "tag3": "Interfețe adaptive"
+      "title": "Procese conectate",
+      "description": "Conectez instrumentele și datele, automatizez sarcinile repetitive și păstrez verificarea umană acolo unde contează.",
+      "tag1": "Integrări",
+      "tag2": "Automatizare",
+      "tag3": "Control uman"
     },
 
     "security": {
-      "title": "Infrastructură digitală securizată",
-      "description": "Sisteme construite pe o fundație security-first — rețele, medii cloud și fluxuri de date proiectate să reziste amenințărilor reale.",
-      "tag1": "Arhitectură securizată",
-      "tag2": "Reziliență cloud",
-      "tag3": "Design orientat spre risc"
+      "title": "Securitate din proiectare",
+      "description": "Integrez controlul accesului, protecția datelor și o arhitectură rezilientă încă de la început.",
+      "tag1": "Controlul accesului",
+      "tag2": "Protecția datelor",
+      "tag3": "Reziliență"
     },
 
     "platforms": {
-      "title": "Platforme de înaltă performanță",
-      "description": "Platforme web rapide și fiabile, construite să funcționeze sub trafic real și presiune reală de business.",
-      "tag1": "Inginerie de performanță",
-      "tag2": "Fiabilitate",
-      "tag3": "Sisteme scalabile"
+      "title": "Pregătire pentru producție",
+      "description": "Construiesc întregul sistem: interfețe, infrastructură, lansare și funcționare ușor de întreținut.",
+      "tag1": "Dezvoltare full-stack",
+      "tag2": "Lansare",
+      "tag3": "Mentenabilitate"
     }
   },
 
@@ -67,7 +67,7 @@
     "badge": "Proiecte reprezentative",
     "visitPlatform": "Vezi platforma live ↗",
     "title": "Produse digitale construite de la idee până în producție.",
-    "description": "Aplicații reale care combină ingineria modernă, arhitectura sigură și fluxurile de lucru bazate pe AI.",
+    "description": "Produse construite pentru utilizare reală: înscrieri, plăți, procese de coaching și administrare.",
     "caseStudy": "Studiu de caz",
     "projectTitle": "Platforma Swim4Dreams",
     "projectDescription1": "Un ecosistem digital complet construit pentru un eveniment real de anduranță.",
@@ -88,7 +88,7 @@
     "headline1": "Mentalitate de inginer.",
     "headline2": "Mentalitate de builder.",
     "headline3": "Disciplina anduranței.",
-    "paragraph1": "Sunt inginer de securitate cibernetică și dezvoltator de produse digitale, concentrat pe construirea unor soluții sigure și scalabile.",
+    "paragraph1": "Sunt Alex Nicoară, AI Product Developer, Cybersecurity Engineer și Digital Builder. Construiesc produse digitale sigure.",
     "paragraph2": "Activitatea mea combină securitatea enterprise, dezvoltarea asistată de AI și implementarea produselor în lumea reală — de la infrastructuri securizate până la platforme digitale complete.",
     "paragraph3": "Dincolo de tehnologie, aplic în construirea sistemelor aceeași disciplină pe care am dezvoltat-o în sporturile de anduranță: reziliență, fiabilitate și gândire pe termen lung."
   },
@@ -113,8 +113,8 @@
 
     "endurance": {
       "year": "72 ORE",
-      "title": "Endurance Engineering",
-      "description": "Un proiect real de anduranță care combină disciplina, reziliența și capacitatea de execuție în condiții fizice și mentale extreme."
+      "title": "Disciplină sub presiune",
+      "description": "Un proiect de anduranță care reflectă felul în care lucrez: cu disciplină, reziliență, fiabilitate și capacitatea de a duce lucrurile la capăt sub presiune."
     },
 
     "ai": {
@@ -126,33 +126,28 @@
 
   "Services": {
     "badge": "Servicii",
-    "headline1": "Cu ce mă poți angaja",
-    "headline2": "să te ajut.",
-    "description": "Trei moduri de a colabora cu mine — ca partener de produs AI, consultant de securitate sau partener de livrare end-to-end.",
-    "ctaLabel": "Începe un proiect →",
+    "headline1": "Construiește produsul AI.",
+    "headline2": "Consolidează securitatea.",
+    "description": "Colaborează direct cu Alex Nicoară pentru a dezvolta un produs AI util sau pentru a reduce riscurile din sistemele existente.",
 
     "ai": {
+      "eyebrow": "Direcția principală",
       "title": "AI Product Development",
-      "description": "Proiectez și construiesc funcționalități și produse bazate pe AI pentru afacerea ta, de la prototip până în producție.",
-      "tag1": "Descoperire & scop",
-      "tag2": "Dezvoltare funcționalități AI",
-      "tag3": "Implementare în producție"
+      "description": "Validează un produs AI înainte de a investi în dezvoltarea completă. Automatizează munca manuală și conectează instrumentele și datele printr-un produs util, cu securitatea integrată în arhitectură.",
+      "tag1": "Definirea produsului și validarea prototipului",
+      "tag2": "Procese AI, integrări și dezvoltare full-stack",
+      "tag3": "Lansare în producție și îmbunătățire continuă",
+      "cta": "Descoperă dezvoltarea de produse AI →"
     },
 
     "security": {
-      "title": "Consultanță Cybersecurity",
-      "description": "Evaluez, securizez și consiliez asupra sistemelor și infrastructurii tale pentru a reduce riscul real.",
-      "tag1": "Audituri de securitate",
-      "tag2": "Hardening infrastructură",
-      "tag3": "Consultanță continuă"
-    },
-
-    "delivery": {
-      "title": "Digital Product Delivery",
-      "description": "Duc produsul tău de la idee la o platformă live, pregătită pentru producție — arhitectură, dezvoltare și deployment incluse.",
-      "tag1": "Dezvoltare full-stack",
-      "tag2": "Deployment & lansare",
-      "tag3": "Suport post-lansare"
+      "eyebrow": "Expertiză specializată",
+      "title": "Consultanță în securitate cibernetică",
+      "description": "Înțelege și redu riscurile infrastructurii. Evaluez sistemele, consolidez măsurile de securitate și ajut echipa să ia decizii tehnice pragmatice.",
+      "tag1": "Evaluări de securitate",
+      "tag2": "Securizarea infrastructurii și a mediilor cloud",
+      "tag3": "Consultanță tehnică",
+      "cta": "Discută nevoile de securitate →"
     }
   },
 
@@ -241,24 +236,178 @@
       "ok": "OK"
     }
   },
-  
-    "CookieConsent": {
-      "eyebrow": "Confidențialitate",
-      "title": "Datele tale, alegerea ta.",
-      "description": "Folosesc opțional servicii de analiză pentru a înțelege cum este utilizat site-ul și pentru a îmbunătăți experiența. Funcționalitățile esențiale funcționează fără analytics.",
-      "essentialTitle": "Esențiale",
-      "essentialDescription": "Necesare pentru funcționarea corectă a site-ului.",
-      "alwaysOn": "Mereu active",
-      "analyticsTitle": "Analytics",
-      "analyticsDescription": "Permite măsurarea anonimă a utilizării site-ului prin Google Analytics.",
-      "accept": "Accept analytics",
-      "reject": "Refuz opționalele",
-      "preferences": "Preferințe",
-      "savePreferences": "Salvează preferințele",
-      "settings": "Setări cookies",
-      "privacyPolicy": "Politica de confidențialitate",
-      "cookiePolicy": "Politica privind cookies"
+  "CookieConsent": {
+    "eyebrow": "Confidențialitate",
+    "title": "Datele tale, alegerea ta.",
+    "description": "Folosesc opțional servicii de analiză pentru a înțelege cum este utilizat site-ul și pentru a îmbunătăți experiența. Funcționalitățile esențiale funcționează fără analytics.",
+    "essentialTitle": "Esențiale",
+    "essentialDescription": "Necesare pentru funcționarea corectă a site-ului.",
+    "alwaysOn": "Mereu active",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "Permite măsurarea anonimă a utilizării site-ului prin Google Analytics.",
+    "accept": "Accept analytics",
+    "reject": "Refuz opționalele",
+    "preferences": "Preferințe",
+    "savePreferences": "Salvează preferințele",
+    "settings": "Setări cookies",
+    "privacyPolicy": "Politica de confidențialitate",
+    "cookiePolicy": "Politica privind cookies"
+  },
+  "AIProductDevelopment": {
+    "hero": {
+      "eyebrow": "AI Product Development",
+      "title": "Construiește produsul AI potrivit — înainte să petreci luni construind produsul greșit.",
+      "description": "Ajut companiile să transforme idei, probleme operaționale și procese manuale în produse AI sigure și pregătite pentru producție.",
+      "supporting": "De la discovery și arhitectură până la dezvoltarea MVP-ului, deployment și dezvoltare continuă.",
+      "primaryCta": "Începe cu un Discovery Sprint",
+      "secondaryCta": "Discută proiectul"
     },
+    "problems": {
+      "eyebrow": "Unde AI poate crea valoare reală",
+      "title": "AI trebuie să rezolve o problemă de business — nu să devină încă un experiment.",
+      "description": "Multe echipe știu că vor să folosească AI. Întrebarea dificilă este ce merită cu adevărat construit. Ajut la identificarea use-case-ului potrivit, reducerea incertitudinii tehnice și transformarea oportunității într-un produs utilizabil în lumea reală.",
+      "items": {
+        "manual": {
+          "title": "Procese manuale",
+          "description": "Înlocuirea muncii repetitive cu procese și automatizări asistate de AI."
+        },
+        "systems": {
+          "title": "Sisteme deconectate",
+          "description": "Conectarea instrumentelor, datelor și fluxurilor într-un sistem operațional mai inteligent."
+        },
+        "ideas": {
+          "title": "Idei de produse AI",
+          "description": "Transformarea unui concept într-o arhitectură clară, roadmap și MVP pregătit pentru producție."
+        },
+        "existing": {
+          "title": "Produse existente",
+          "description": "Adăugarea unor capabilități AI utile produselor care au deja utilizatori, date și fluxuri."
+        }
+      }
+    },
+    "discovery": {
+      "eyebrow": "Cel mai bun punct de pornire",
+      "title": "AI Product Discovery Sprint",
+      "subtitle": "Un engagement concentrat de 5–7 zile care răspunde unei întrebări importante: ce ar trebui să construim?",
+      "description": "Înainte de a investi săptămâni sau luni în dezvoltare, clarificăm problema de business, validăm use-case-ul AI și definim direcția tehnică.",
+      "deliverables": {
+        "businessDiscovery": "Business & product discovery",
+        "useCaseValidation": "Validarea use-case-ului AI",
+        "architecture": "Arhitectură tehnică",
+        "security": "Securitate și date",
+        "stack": "Stack tehnologic recomandat",
+        "scope": "Scope pentru MVP",
+        "roadmap": "Roadmap de implementare",
+        "effort": "Estimarea efortului de dezvoltare"
+      },
+      "result": "La finalul sprintului ai o decizie clară: îl construim, îl schimbăm sau evităm investiția într-o idee greșită.",
+      "cta": "Rezervă un Discovery Sprint"
+    },
+    "process": {
+      "eyebrow": "Cum lucrăm",
+      "title": "Un traseu practic de la idee la producție.",
+      "steps": {
+        "discover": {
+          "title": "Discover",
+          "description": "Înțelegem problema de business, utilizatorii, fluxurile, datele și rezultatul dorit."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Definim arhitectura, capabilitățile AI, fluxurile produsului și scope-ul MVP."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Dezvoltăm aplicația, integrările, fluxurile AI și instrumentele operaționale."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Deploy, testare, monitorizare și pregătirea produsului pentru utilizare reală."
+        },
+        "improve": {
+          "title": "Improve",
+          "description": "Folosim date reale pentru a îmbunătăți produsul, fluxurile și capabilitățile AI."
+        }
+      }
+    },
+    "build": {
+      "eyebrow": "Build",
+      "title": "De la idee validată la MVP pregătit pentru producție.",
+      "description": "După ce oportunitatea este clară, pot duce produsul de la arhitectură până la deployment în producție.",
+      "callout": "Obiectivul nu este un demo. Obiectivul este un produs pe care utilizatorii reali îl pot folosi.",
+      "scope": {
+        "apps": "Aplicații web cu AI",
+        "tools": "Instrumente interne de business",
+        "automation": "Automatizarea fluxurilor",
+        "llm": "Integrări LLM",
+        "dashboards": "Dashboard-uri administrative",
+        "auth": "Autentificare și management utilizatori",
+        "database": "Arhitectură baze de date",
+        "payments": "Integrări de plăți",
+        "apis": "API-uri externe",
+        "analytics": "Analytics",
+        "deployment": "Deployment și monitorizare",
+        "security": "Security baseline"
+      }
+    },
+
+    "security": {
+      "eyebrow": "Security by design",
+      "title": "Produsele AI au nevoie în continuare de inginerie reală.",
+      "description": "Experiența mea în cybersecurity enterprise înseamnă că securitatea este luată în calcul de la început — nu adăugată după ce produsul este deja în producție.",
+      "items": {
+        "access": "Controlul accesului",
+        "data": "Riscuri privind datele",
+        "api": "Securitatea API",
+        "secrets": "Secrets management",
+        "infrastructure": "Arhitectură infrastructură",
+        "authentication": "Autentificare",
+        "integrations": "Integrări third-party",
+        "resilience": "Reziliență operațională"
+      },
+      "closing": "Capabilitățile AI sunt valoroase doar atunci când sistemul din jurul lor este fiabil."
+    },
+    "proof": {
+      "eyebrow": "Proiecte selectate",
+      "title": "Produse construite pentru utilizare reală.",
+      "swim4dreams": "Un ecosistem digital complet pentru un eveniment real de anduranță, incluzând înscrieri, plăți, fluxuri pentru participanți, administrare și procesarea rezultatelor.",
+      "marilena": "O platformă digitală de coaching pentru onboarding, antrenamente, nutriție, progres, plăți securizate și fluxuri administrative."
+    },
+    "faq": {
+      "title": "Întrebări frecvente.",
+      "items": {
+        "specification": {
+          "question": "Am nevoie de o specificație tehnică completă?",
+          "answer": "Nu. Proiectul poate începe cu o problemă de business, un proces sau o idee. Discovery Sprint-ul transformă această idee într-un plan tehnic."
+        },
+        "team": {
+          "question": "Poți lucra cu echipa mea existentă?",
+          "answer": "Da. Pot lucra independent sau împreună cu dezvoltatori, echipe de produs, agenții sau echipe de infrastructură."
+        },
+        "onlyAI": {
+          "question": "Construiești doar produse AI?",
+          "answer": "Nu. Soluțiile AI utile necesită de obicei product engineering clasic, API-uri, baze de date, autentificare, dashboard-uri și integrări în jurul componentei AI."
+        },
+        "models": {
+          "question": "Ce modele AI folosești?",
+          "answer": "Modelul depinde de use-case. Arhitectura poate folosi OpenAI, Anthropic sau alți furnizori, în funcție de capabilități, securitate, costuri și cerințe operaționale."
+        },
+        "internalTools": {
+          "question": "Poți construi instrumente interne pentru companii?",
+          "answer": "Da. Instrumentele interne, automatizarea fluxurilor și platformele operaționale asistate de AI sunt use-case-uri foarte bune."
+        },
+        "afterLaunch": {
+          "question": "Ce se întâmplă după lansare?",
+          "answer": "Proiectele pot continua printr-un parteneriat de product engineering pentru îmbunătățiri, funcționalități noi, securitate și mentenanță."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Ai o idee de produs AI sau un proces care merită automatizat?",
+      "description": "Hai să vedem dacă merită construit și care este cea mai rapidă cale practică spre producție.",
+      "primary": "Începe un proiect",
+      "secondary": "Înapoi la Home"
+    }
+  },
 
   "Footer": {
     "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",

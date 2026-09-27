@@ -93,6 +93,10 @@ export function Hero() {
                 sm:flex-wrap
               "
             >
+              <Button href={`/${locale}/services/ai-product-development`}>
+                {t("primaryCta")}
+              </Button>
+
               <Button
                 href={`/${locale}#contact`}
                 onClick={() =>
@@ -102,10 +106,6 @@ export function Hero() {
                   })
                 }
               >
-                {t("primaryCta")}
-              </Button>
-
-              <Button href={`/${locale}#projects`}>
                 {t("secondaryCta")}
               </Button>
             </div>

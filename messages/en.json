@@ -14,52 +14,52 @@
 
   "Hero": {
     "studio": "Alex Nicoară Studio",
-    "headline1": "Building digital products.",
-    "headline2": "Securing systems.",
-    "headline3": "Challenging limits.",
-    "description": "I help businesses transform ideas into secure digital products using AI, modern engineering and enterprise-grade technology.",
-    "primaryCta": "Start a Project →",
-    "secondaryCta": "Explore My Work →",
+    "headline1": "Secure AI products.",
+    "headline2": "Built for your business.",
+    "headline3": "Engineered by Alex Nicoară.",
+    "description": "I turn product ideas and manual workflows into usable digital systems, combining AI product engineering with cybersecurity expertise from validation to launch.",
+    "primaryCta": "Explore AI Product Development →",
+    "secondaryCta": "Start a Project →",
     "role1": "AI Product Developer",
     "role2": "Cybersecurity Engineer",
     "role3": "Digital Builder",
     "yearsValue": "10+",
     "yearsLabel": "Years Engineering",
     "enduranceValue": "72h",
-    "enduranceLabel": "Endurance Project",
+    "enduranceLabel": "Endurance discipline",
     "productsValue": "3+",
     "productsLabel": "Digital Products",
-    "imageAlt": "Alex Nicoară",
-    "imageBadge": "AI · Security · Endurance"
+    "imageAlt": "Ocean-facing engineering workspace at night",
+    "imageBadge": "Product engineering · Security"
   },
 
   "WhatIBuild": {
-    "eyebrow": "What I Build",
-    "title": "The kind of digital products I create.",
-    "description": "A look at the systems I build — where artificial intelligence, security engineering and modern architecture come together.",
+    "eyebrow": "Engineering capabilities",
+    "title": "From a useful idea to a dependable system.",
+    "description": "The foundations behind product delivery: connected workflows, secure architecture and reliable operation.",
 
     "ai": {
-      "title": "AI-Powered Products",
-      "description": "Intelligent products with AI woven into the core experience, not bolted on as an afterthought.",
-      "tag1": "AI-Native Features",
-      "tag2": "Intelligent Automation",
-      "tag3": "Adaptive Interfaces"
+      "title": "Connected workflows",
+      "description": "Connect tools and data, automate routine tasks and keep human review where it matters.",
+      "tag1": "Integrations",
+      "tag2": "Automation",
+      "tag3": "Human oversight"
     },
 
     "security": {
-      "title": "Secure Digital Infrastructure",
-      "description": "Systems built on a security-first foundation — networks, cloud environments and data flows designed to withstand real threats.",
-      "tag1": "Hardened Architecture",
-      "tag2": "Cloud Resilience",
-      "tag3": "Threat-Aware Design"
+      "title": "Security by design",
+      "description": "Build access controls, data protection and resilient architecture into the product from the start.",
+      "tag1": "Access control",
+      "tag2": "Data protection",
+      "tag3": "Resilience"
     },
 
     "platforms": {
-      "title": "High-Performance Platforms",
-      "description": "Fast, reliable web platforms engineered to perform under real traffic and real business pressure.",
-      "tag1": "Performance Engineering",
-      "tag2": "Reliability",
-      "tag3": "Scalable Systems"
+      "title": "Production readiness",
+      "description": "Deliver the full system: interfaces, infrastructure, deployment and maintainable operation.",
+      "tag1": "Full-stack engineering",
+      "tag2": "Deployment",
+      "tag3": "Maintainability"
     }
   },
 
@@ -67,7 +67,7 @@
     "badge": "Featured Projects",
     "visitPlatform": "Visit Live Platform ↗",
     "title": "Digital products built from idea to production.",
-    "description": "Real-world applications combining modern engineering, secure architecture and AI-driven workflows.",
+    "description": "Products built for real-world use: registrations, payments, coaching workflows and administration.",
     "caseStudy": "Case Study",
     "projectTitle": "Swim4Dreams Platform",
     "projectDescription1": "A complete digital ecosystem engineered for a real-world endurance event.",
@@ -88,7 +88,7 @@
     "headline1": "Engineering mindset.",
     "headline2": "Builder mentality.",
     "headline3": "Endurance discipline.",
-    "paragraph1": "I am a cybersecurity engineer and digital product builder focused on creating secure, scalable solutions.",
+    "paragraph1": "I’m Alex Nicoară, an AI Product Developer, Cybersecurity Engineer and Digital Builder focused on secure digital products.",
     "paragraph2": "My work combines enterprise security, AI-driven development and real-world product execution — from secure infrastructure to complete digital platforms.",
     "paragraph3": "Beyond technology, I apply the same discipline from endurance sports to building systems that require resilience, reliability and long-term thinking."
   },
@@ -113,8 +113,8 @@
 
     "endurance": {
       "year": "72 HOURS",
-      "title": "Endurance Engineering",
-      "description": "A real-world endurance project combining discipline, resilience and execution under extreme physical and mental conditions."
+      "title": "Discipline under pressure",
+      "description": "An endurance project that reflects how I work: with discipline, resilience, reliability and the ability to execute under pressure."
     },
 
     "ai": {
@@ -126,33 +126,28 @@
 
   "Services": {
     "badge": "Services",
-    "headline1": "What you can hire me",
-    "headline2": "to deliver.",
-    "description": "Three ways to work with me — as an AI product partner, a security advisor, or an end-to-end delivery partner.",
-    "ctaLabel": "Start a Project →",
+    "headline1": "Build your AI product.",
+    "headline2": "Strengthen your security.",
+    "description": "Work directly with Alex Nicoară to develop a useful AI product or reduce risk in your existing systems.",
 
     "ai": {
+      "eyebrow": "Primary focus",
       "title": "AI Product Development",
-      "description": "I design and build AI-powered features and products for your business, from prototype to production.",
-      "tag1": "Discovery & Scoping",
-      "tag2": "AI Feature Development",
-      "tag3": "Production Deployment"
+      "description": "Validate an AI product before committing to a full build. Automate manual work and connect fragmented tools and data through a usable product, with security built into its architecture.",
+      "tag1": "Product discovery and prototype validation",
+      "tag2": "AI workflows, integrations and full-stack engineering",
+      "tag3": "Production launch and continued improvement",
+      "cta": "Explore AI Product Development →"
     },
 
     "security": {
+      "eyebrow": "Specialist expertise",
       "title": "Cybersecurity Consulting",
-      "description": "I assess, harden and advise on your systems and infrastructure to reduce real-world risk.",
-      "tag1": "Security Audits",
-      "tag2": "Infrastructure Hardening",
-      "tag3": "Ongoing Advisory"
-    },
-
-    "delivery": {
-      "title": "Digital Product Delivery",
-      "description": "I take your product from idea to a live, production-ready platform — architecture, build and deployment included.",
-      "tag1": "Full-Stack Build",
-      "tag2": "Deployment & Launch",
-      "tag3": "Post-Launch Support"
+      "description": "Understand and reduce infrastructure risk. I assess your systems, strengthen security controls and help your team make practical engineering decisions.",
+      "tag1": "Security assessments",
+      "tag2": "Infrastructure and cloud hardening",
+      "tag3": "Engineering advice",
+      "cta": "Discuss your security needs →"
     }
   },
 
@@ -241,24 +236,178 @@
       "ok": "OK"
     }
   },
-  
-    "CookieConsent": {
-      "eyebrow": "Privacy",
-      "title": "Your privacy, your choice.",
-      "description": "I use optional analytics to understand how this website is used and improve the experience. Essential functionality works without analytics.",
-      "essentialTitle": "Essential",
-      "essentialDescription": "Required for the website to function properly.",
-      "alwaysOn": "Always on",
-      "analyticsTitle": "Analytics",
-      "analyticsDescription": "Allows anonymous usage measurement through Google Analytics.",
-      "accept": "Accept analytics",
-      "reject": "Reject optional",
-      "preferences": "Preferences",
-     "savePreferences": "Save preferences",
-      "settings": "Cookie settings",
-      "privacyPolicy": "Privacy Policy",
-      "cookiePolicy": "Cookie Policy"
+  "CookieConsent": {
+    "eyebrow": "Privacy",
+    "title": "Your privacy, your choice.",
+    "description": "I use optional analytics to understand how this website is used and improve the experience. Essential functionality works without analytics.",
+    "essentialTitle": "Essential",
+    "essentialDescription": "Required for the website to function properly.",
+    "alwaysOn": "Always on",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "Allows anonymous usage measurement through Google Analytics.",
+    "accept": "Accept analytics",
+    "reject": "Reject optional",
+    "preferences": "Preferences",
+    "savePreferences": "Save preferences",
+    "settings": "Cookie settings",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "AIProductDevelopment": {
+    "hero": {
+      "eyebrow": "AI Product Development",
+      "title": "Build the right AI product — before spending months building the wrong one.",
+      "description": "I help businesses turn ideas, operational problems and manual workflows into secure, production-ready AI products.",
+      "supporting": "From discovery and architecture to MVP development, deployment and ongoing product engineering.",
+      "primaryCta": "Start with a Discovery Sprint",
+      "secondaryCta": "Discuss Your Project"
     },
+    "problems": {
+      "eyebrow": "Where AI can create real value",
+      "title": "AI should solve a business problem — not become another experiment.",
+      "description": "Many teams know they want to use AI. The harder question is what is actually worth building. I help identify the right use case, reduce technical uncertainty and turn the opportunity into something that can operate in the real world.",
+      "items": {
+        "manual": {
+          "title": "Manual workflows",
+          "description": "Replace repetitive operational work with reliable AI-assisted processes and automation."
+        },
+        "systems": {
+          "title": "Disconnected systems",
+          "description": "Connect tools, data and workflows into a more intelligent operating layer."
+        },
+        "ideas": {
+          "title": "AI product ideas",
+          "description": "Turn an early concept into a clear architecture, roadmap and production-ready MVP."
+        },
+        "existing": {
+          "title": "Existing products",
+          "description": "Add useful AI capabilities to products that already have users, data and workflows."
+        }
+      }
+    },
+    "discovery": {
+      "eyebrow": "Best place to start",
+      "title": "AI Product Discovery Sprint",
+      "subtitle": "A focused 5–7 day engagement designed to answer one important question: what should we actually build?",
+      "description": "Before investing weeks or months into development, we clarify the business problem, validate the AI use case and define the technical path forward.",
+      "deliverables": {
+        "businessDiscovery": "Business & product discovery",
+        "useCaseValidation": "AI use-case validation",
+        "architecture": "Technical architecture",
+        "security": "Security & data considerations",
+        "stack": "Recommended technology stack",
+        "scope": "MVP feature scope",
+        "roadmap": "Implementation roadmap",
+        "effort": "Estimated development effort"
+      },
+      "result": "At the end of the sprint, you have a clear decision: build it, change it, or avoid investing in the wrong idea.",
+      "cta": "Book a Discovery Sprint"
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "title": "A practical path from idea to production.",
+      "steps": {
+        "discover": {
+          "title": "Discover",
+          "description": "Understand the business problem, users, workflows, data and desired outcome."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Define the architecture, AI capabilities, product flows and MVP scope."
+        },
+        "build": {
+          "title": "Build",
+          "description": "Develop the application, integrations, AI workflows and operational tools."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Deploy, test, monitor and prepare the product for real-world use."
+        },
+        "improve": {
+          "title": "Improve",
+          "description": "Use real usage data to improve the product, workflows and AI capabilities."
+        }
+      }
+    },
+    "build": {
+      "eyebrow": "Build",
+      "title": "From validated idea to production-ready MVP.",
+      "description": "Once the opportunity is clear, I can take the product from architecture to a working production deployment.",
+      "callout": "The objective is not a demo. The objective is a product that real users can actually use.",
+      "scope": {
+        "apps": "AI-powered web applications",
+        "tools": "Internal business tools",
+        "automation": "Workflow automation",
+        "llm": "LLM integrations",
+        "dashboards": "Admin dashboards",
+        "auth": "Authentication & user management",
+        "database": "Database architecture",
+        "payments": "Payment integrations",
+        "apis": "External APIs",
+        "analytics": "Analytics",
+        "deployment": "Deployment & monitoring",
+        "security": "Security baseline"
+      }
+    },
+
+    "security": {
+      "eyebrow": "Security by design",
+      "title": "AI products still need real engineering.",
+      "description": "My background in enterprise cybersecurity means security is considered from the beginning — not added after the product is already in production.",
+      "items": {
+        "access": "Access control",
+        "data": "Data exposure risks",
+        "api": "API security",
+        "secrets": "Secrets management",
+        "infrastructure": "Infrastructure design",
+        "authentication": "Authentication",
+        "integrations": "Third-party integrations",
+        "resilience": "Operational resilience"
+      },
+      "closing": "AI capability is valuable only when the system around it is reliable."
+    },
+    "proof": {
+      "eyebrow": "Selected work",
+      "title": "Products built for real-world use.",
+      "swim4dreams": "A complete digital ecosystem for a real-world endurance event, including registrations, payments, participant workflows, administration and results processing.",
+      "marilena": "A digital coaching platform for onboarding, training, nutrition, progress tracking, secure payments and administration workflows."
+    },
+    "faq": {
+      "title": "Common questions.",
+      "items": {
+        "specification": {
+          "question": "Do I need a complete technical specification?",
+          "answer": "No. The project can start with a business problem, workflow or product idea. The Discovery Sprint is designed to turn that into a technical plan."
+        },
+        "team": {
+          "question": "Can you work with my existing team?",
+          "answer": "Yes. I can work independently or alongside internal developers, product teams, agencies and infrastructure teams."
+        },
+        "onlyAI": {
+          "question": "Do you only build AI products?",
+          "answer": "No. Useful AI solutions usually require standard product engineering, APIs, databases, authentication, dashboards and integrations around the AI layer."
+        },
+        "models": {
+          "question": "What AI models do you use?",
+          "answer": "The model depends on the use case. Architecture can use OpenAI, Anthropic or other providers depending on capability, security, cost and operational requirements."
+        },
+        "internalTools": {
+          "question": "Can you build internal company tools?",
+          "answer": "Yes. Internal tools, workflow automation and AI-assisted operational platforms are strong use cases."
+        },
+        "afterLaunch": {
+          "question": "What happens after launch?",
+          "answer": "Projects can continue through an ongoing product engineering partnership for improvements, new features, security and maintenance."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Have an AI product idea or a process worth automating?",
+      "description": "Let's find out whether it is worth building — and what the fastest practical path to production looks like.",
+      "primary": "Start a Project",
+      "secondary": "Back to Home"
+    }
+  },
 
   "Footer": {
     "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",

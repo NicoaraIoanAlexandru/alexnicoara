@@ -21,6 +21,8 @@ export default async function HomePage({
     <>
       <Hero />
 
+      <Services />
+
       <WhatIBuild />
 
       <FeaturedProjects />
@@ -28,8 +30,6 @@ export default async function HomePage({
       <About />
 
       <Experience />
-
-      <Services />
 
       <Contact />
     </>

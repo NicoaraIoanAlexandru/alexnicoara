@@ -9,146 +9,46 @@ export async function Services() {
   const t = await getTranslations("Services");
   const locale = await getLocale();
 
-  const services = [
-    {
-      id: "ai",
-      title: t("ai.title"),
-      description: t("ai.description"),
-      tags: [
-        t("ai.tag1"),
-        t("ai.tag2"),
-        t("ai.tag3"),
-      ],
-    },
-    {
-      id: "security",
-      title: t("security.title"),
-      description: t("security.description"),
-      tags: [
-        t("security.tag1"),
-        t("security.tag2"),
-        t("security.tag3"),
-      ],
-    },
-    {
-      id: "delivery",
-      title: t("delivery.title"),
-      description: t("delivery.description"),
-      tags: [
-        t("delivery.tag1"),
-        t("delivery.tag2"),
-        t("delivery.tag3"),
-      ],
-    },
-  ];
-
   return (
     <Section>
       <Container>
-        <div
-          id="services"
-          className="scroll-mt-24"
-        >
-          <Badge>
-            {t("badge")}
-          </Badge>
-
-          <h2
-            className="
-              mt-6
-              max-w-4xl
-              text-3xl
-              font-semibold
-              tracking-tight
-              text-white
-              sm:text-5xl
-            "
-          >
-            {t("headline1")}
-            <br />
-            {t("headline2")}
+        <div id="services" className="scroll-mt-24">
+          <Badge>{t("badge")}</Badge>
+          <h2 className="mt-6 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+            {t("headline1")}<br />{t("headline2")}
           </h2>
-
-          <p
-            className="
-              mt-6
-              max-w-2xl
-              text-lg
-              leading-relaxed
-              text-white/60
-            "
-          >
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
             {t("description")}
           </p>
 
-          <div
-            className="
-              mt-12
-              grid
-              gap-6
-              lg:grid-cols-3
-            "
-          >
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="
-                  rounded-3xl
-                  border
-                  border-[rgba(0,240,248,0.14)]
-                  bg-white/[0.03]
-                  p-6
-                  shadow-[0_0_24px_rgba(0,240,248,0.035)]
-                  transition
-                  duration-300
-                  hover:border-[rgba(0,240,248,0.30)]
-                  hover:bg-white/[0.05]
-                  hover:shadow-[0_0_32px_rgba(0,240,248,0.07)]
-                  sm:p-8
-                "
-              >
-                <h3
-                  className="
-                    text-2xl
-                    font-semibold
-                    text-white
-                  "
-                >
-                  {service.title}
-                </h3>
-
-                <p
-                  className="
-                    mt-5
-                    leading-relaxed
-                    text-white/60
-                  "
-                >
-                  {service.description}
-                </p>
-
-                <div
-                  className="
-                    mt-8
-                    flex
-                    flex-wrap
-                    gap-3
-                  "
-                >
-                  {service.tags.map((tag) => (
-                    <Badge key={tag}>
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
+          <div className="mt-12 grid gap-12 border-t border-white/10 pt-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
+            <article>
+              <p className="text-xs uppercase tracking-[0.2em] text-[var(--brand-cyan)]">{t("ai.eyebrow")}</p>
+              <h3 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">{t("ai.title")}</h3>
+              <p className="mt-5 max-w-xl leading-relaxed text-white/70">{t("ai.description")}</p>
+              <ul className="mt-6 space-y-3 text-sm text-white/60">
+                {["tag1", "tag2", "tag3"].map((key) => (
+                  <li key={key} className="border-l border-[var(--brand-cyan)]/40 pl-4">{t(`ai.${key}`)}</li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <Button href={`/${locale}/services/ai-product-development`}>{t("ai.cta")}</Button>
               </div>
-            ))}
-          </div>
+            </article>
 
-          <div className="mt-12">
-            <Button href={`/${locale}#contact`}>
-              {t("ctaLabel")}
-            </Button>
+            <article className="border-t border-white/10 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+              <p className="text-xs uppercase tracking-[0.2em] text-white/50">{t("security.eyebrow")}</p>
+              <h3 className="mt-4 text-2xl font-semibold tracking-tight text-white">{t("security.title")}</h3>
+              <p className="mt-5 leading-relaxed text-white/60">{t("security.description")}</p>
+              <ul className="mt-6 space-y-3 text-sm text-white/50">
+                {["tag1", "tag2", "tag3"].map((key) => (
+                  <li key={key}>{t(`security.${key}`)}</li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <Button href={`/${locale}#contact`}>{t("security.cta")}</Button>
+              </div>
+            </article>
           </div>
         </div>
       </Container>
