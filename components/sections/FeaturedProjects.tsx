@@ -1,4 +1,5 @@
-import {useTranslations} from "next-intl";
+import Link from "next/link";
+import {useLocale, useTranslations} from "next-intl";
 
 import {Badge} from "@/components/ui/Badge";
 import {Container} from "@/components/ui/Container";
@@ -7,6 +8,8 @@ import {ProjectVideo} from "@/components/sections/ProjectVideo";
 
 export function FeaturedProjects() {
   const t = useTranslations("FeaturedProjects");
+  const locale = useLocale();
+  const caseStudy = useTranslations("Swim4DreamsCaseStudy");
 
   return (
     <Section>
@@ -82,10 +85,8 @@ export function FeaturedProjects() {
                     sm:text-3xl
                   "
                 >
-                  <a
-                    href="https://72ore-swim4dreams.ro"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/${locale}/work/swim4dreams`}
                     className="
                       transition
                       hover:text-[var(--brand-cyan)]
@@ -97,7 +98,7 @@ export function FeaturedProjects() {
                     "
                   >
                     {t("projectTitle")}
-                  </a>
+                  </Link>
                 </h3>
 
                 <p
@@ -138,6 +139,10 @@ export function FeaturedProjects() {
                   <Badge>Supabase</Badge>
                   <Badge>Stripe</Badge>
                   <Badge>Vercel</Badge>
+                </div>
+
+                <div className="mt-8">
+                  <Link href={`/${locale}/work/swim4dreams`} className="text-sm text-[var(--brand-cyan)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-cyan)]">{caseStudy("read")}</Link>
                 </div>
 
                 <a

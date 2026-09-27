@@ -524,5 +524,133 @@
     },
     "finalTitle": "Have a security problem that is difficult to untangle?",
     "finalBody": "Let’s review the environment, the risks and a practical next step."
+  },
+  "Swim4DreamsCaseStudy": {
+    "metaTitle": "Swim4Dreams Digital Platform Case Study | Alex Nicoară",
+    "metaDescription": "How Alex Nicoară built the bilingual registration, payments and event operations platform behind Swim4Dreams.",
+    "eyebrow": "Case study / Swim4Dreams",
+    "title": "Building the digital infrastructure behind a real endurance event.",
+    "intro": "A bilingual registration, payment and operations platform built for Swim4Dreams / 72ore Swim for Dreams.",
+    "visit": "Visit Swim4Dreams ↗",
+    "facts": {
+      "role": "Role",
+      "roleValue": "Product / Engineering",
+      "system": "System",
+      "systemValue": "Event platform",
+      "stack": "Stack",
+      "status": "Status",
+      "statusValue": "Production"
+    },
+    "challengeTitle": "One event. Many connected decisions.",
+    "challengeBody": "A physical endurance event needed more than a public website. Race selection, registrations, payments and participant information had to connect to the people operating the event. Multiple race formats, capacity limits and administrative validation made the operational rules part of the product.",
+    "constraintsTitle": "Built within real operational constraints.",
+    "constraints": {
+      "deadline": {
+        "title": "A fixed event date",
+        "body": "The physical event set the readiness deadline for registration and operational workflows."
+      },
+      "payments": {
+        "title": "Real payments",
+        "body": "Checkout had to connect payment status to registration state, not simply redirect to a payment page."
+      },
+      "rules": {
+        "title": "Different race rules",
+        "body": "Multiple formats and capacity limits required distinct registration behavior, including pending validation for the 15 km race."
+      },
+      "review": {
+        "title": "Manual and automated operations",
+        "body": "Administrative review and bank-transfer approval complemented online payment workflows."
+      },
+      "languages": {
+        "title": "Two public languages",
+        "body": "Participants needed access to the public experience in Romanian and English."
+      },
+      "production": {
+        "title": "Changes with operational impact",
+        "body": "Updates around the event had to account for existing registrations and the team running the platform."
+      }
+    },
+    "systemTitle": "A registration becomes an operational record.",
+    "flow": {
+      "races": "Race selection",
+      "cart": "Cart",
+      "checkout": "Checkout / Stripe",
+      "registration": "Registration",
+      "participants": "Participant data",
+      "admin": "Admin operations"
+    },
+    "branches": "Validation · Payments · Results · Standings",
+    "architectureTitle": "Technology organized around the workflow.",
+    "layers": {
+      "public": {
+        "title": "Public product",
+        "body": "Next.js 16, TypeScript and Tailwind support the bilingual interface."
+      },
+      "logic": {
+        "title": "Application logic",
+        "body": "Race selection, cart and registration logic connect participant choices to event rules."
+      },
+      "data": {
+        "title": "Data",
+        "body": "Supabase stores the platform’s operational records."
+      },
+      "payments": {
+        "title": "Payments",
+        "body": "Stripe Checkout and webhook flows connect online payments to application state."
+      },
+      "operations": {
+        "title": "Operations",
+        "body": "Administrative tools support participant and race management, result import and standings."
+      },
+      "delivery": {
+        "title": "Delivery",
+        "body": "Vercel provides the production deployment environment."
+      }
+    },
+    "executionTitle": "The product evolved with the event.",
+    "executionIntro": "This was an operational system that had to adapt before, during and after the event. Registration rules, manual review and result management all shaped the implementation.",
+    "execution": {
+      "before": {
+        "title": "Before the event",
+        "body": "Configure race formats and capacities, connect checkout to registrations and support administrative validation and manual payment handling."
+      },
+      "during": {
+        "title": "Event operations",
+        "body": "Give administrators control over participant and race workflows, with tools for result management and imports."
+      },
+      "after": {
+        "title": "Beyond registration",
+        "body": "Extend the platform into results, standings and post-event functionality as the event’s needs evolve."
+      }
+    },
+    "resultTitle": "A production platform used around a physical event.",
+    "resultBody": "The system supported real registrations and online payment flows, bilingual participant access and administrative control over participant and race workflows. Results and standings extended its role beyond checkout.",
+    "proofTitle": "What this project demonstrates.",
+    "proof": {
+      "product": {
+        "title": "Product engineering",
+        "body": "Translate operational requirements into software people can use."
+      },
+      "payment": {
+        "title": "Payment workflows",
+        "body": "Connect transactions to meaningful registration state."
+      },
+      "admin": {
+        "title": "Administrative systems",
+        "body": "Build tools for the team responsible for operating the product."
+      },
+      "iteration": {
+        "title": "Production iteration",
+        "body": "Adapt the system as real event requirements change."
+      },
+      "security": {
+        "title": "Security-aware engineering",
+        "body": "Treat payment, participant data and administrative workflows as production responsibilities."
+      }
+    },
+    "finalTitle": "Need a product that has to work in the real world?",
+    "finalBody": "Let’s turn the operational requirements into a system your team can actually run.",
+    "cta": "Discuss Your Product →",
+    "read": "Read the case study →"
   }
 }

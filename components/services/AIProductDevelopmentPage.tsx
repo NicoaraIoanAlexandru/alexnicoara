@@ -842,6 +842,7 @@ export function AIProductDevelopmentPage() {
               <ProjectRow
                 number="01"
                 title="Swim4Dreams"
+                href={`/${locale}/work/swim4dreams`}
                 description={t("proof.swim4dreams")}
                 meta="Registrations / Payments / Operations / Results"
               />
@@ -1400,11 +1401,13 @@ function ProjectRow({
   title,
   description,
   meta,
+  href,
 }: {
   number: string;
   title: string;
   description: string;
   meta: string;
+  href?: string;
 }) {
   return (
     <article
@@ -1440,7 +1443,9 @@ function ProjectRow({
             text-white
           "
         >
-          {title}
+          {href ? (
+            <Link href={href} className="hover:text-[var(--brand-cyan)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-cyan)]">{title}</Link>
+          ) : title}
         </h3>
 
         <p

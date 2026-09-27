@@ -10,6 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...(["en", "ro"] as const).map((locale) => ({
+      url: `${baseUrl}/${locale}/work/swim4dreams`,
+      changeFrequency: "monthly" as const, priority: 0.8,
+      alternates: {languages: {en: `${baseUrl}/en/work/swim4dreams`, ro: `${baseUrl}/ro/work/swim4dreams`}},
+    })),
+    ...(["en", "ro"] as const).map((locale) => ({
       url: `${baseUrl}/${locale}/services/cybersecurity-consulting`,
       changeFrequency: "monthly" as const,
       priority: 0.8,

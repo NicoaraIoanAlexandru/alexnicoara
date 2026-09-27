@@ -524,5 +524,133 @@
     },
     "finalTitle": "Ai o problemă de securitate greu de clarificat?",
     "finalBody": "Hai să analizăm infrastructura, riscurile și următorul pas."
+  },
+  "Swim4DreamsCaseStudy": {
+    "metaTitle": "Swim4Dreams — Studiu de caz platformă digitală | Alex Nicoară",
+    "metaDescription": "Cum a construit Alex Nicoară platforma bilingvă de înscrieri, plăți și operațiuni pentru Swim4Dreams.",
+    "eyebrow": "Studiu de caz / Swim4Dreams",
+    "title": "Infrastructura digitală din spatele unui eveniment real de anduranță.",
+    "intro": "O platformă bilingvă de înscrieri, plăți și operațiuni construită pentru Swim4Dreams / 72ore Swim for Dreams.",
+    "visit": "Vizitează Swim4Dreams ↗",
+    "facts": {
+      "role": "Rol",
+      "roleValue": "Produs / Inginerie",
+      "system": "Sistem",
+      "systemValue": "Platformă de eveniment",
+      "stack": "Tehnologii",
+      "status": "Stare",
+      "statusValue": "În producție"
+    },
+    "challengeTitle": "Un eveniment. Multe decizii conectate.",
+    "challengeBody": "Un eveniment fizic de anduranță avea nevoie de mai mult decât un site de prezentare. Alegerea probelor, înscrierile, plățile și informațiile participanților trebuiau conectate cu echipa care organiza evenimentul. Formatele multiple, limitele de capacitate și validarea administrativă au transformat regulile operaționale în cerințe de produs.",
+    "constraintsTitle": "Construit pentru constrângeri operaționale reale.",
+    "constraints": {
+      "deadline": {
+        "title": "O dată fixă pentru eveniment",
+        "body": "Data evenimentului a stabilit termenul pentru funcționarea înscrierilor și a fluxurilor operaționale."
+      },
+      "payments": {
+        "title": "Plăți reale",
+        "body": "Checkout-ul trebuia să conecteze starea plății cu starea înscrierii, nu doar să trimită utilizatorul către o pagină de plată."
+      },
+      "rules": {
+        "title": "Reguli diferite pentru probe",
+        "body": "Formatele multiple și limitele de capacitate au cerut comportamente distincte, inclusiv validare în așteptare pentru proba de 15 km."
+      },
+      "review": {
+        "title": "Operațiuni manuale și automate",
+        "body": "Verificarea administrativă și aprobarea transferurilor bancare au completat fluxurile de plată online."
+      },
+      "languages": {
+        "title": "Două limbi pentru participanți",
+        "body": "Experiența publică trebuia să fie accesibilă în română și engleză."
+      },
+      "production": {
+        "title": "Schimbări cu impact operațional",
+        "body": "Actualizările din perioada evenimentului trebuiau să țină cont de înscrierile existente și de echipa care opera platforma."
+      }
+    },
+    "systemTitle": "Din înscriere, o înregistrare operațională.",
+    "flow": {
+      "races": "Alegerea probei",
+      "cart": "Coș",
+      "checkout": "Checkout / Stripe",
+      "registration": "Înscriere",
+      "participants": "Date participanți",
+      "admin": "Administrare"
+    },
+    "branches": "Validare · Plăți · Rezultate · Clasamente",
+    "architectureTitle": "Tehnologia, organizată în jurul fluxului.",
+    "layers": {
+      "public": {
+        "title": "Produs public",
+        "body": "Next.js 16, TypeScript și Tailwind susțin interfața bilingvă."
+      },
+      "logic": {
+        "title": "Logica aplicației",
+        "body": "Alegerea probelor, coșul și logica înscrierilor conectează opțiunile participanților cu regulile evenimentului."
+      },
+      "data": {
+        "title": "Date",
+        "body": "Supabase stochează înregistrările operaționale ale platformei."
+      },
+      "payments": {
+        "title": "Plăți",
+        "body": "Stripe Checkout și fluxurile webhook conectează plățile online cu starea din aplicație."
+      },
+      "operations": {
+        "title": "Operațiuni",
+        "body": "Instrumentele administrative susțin gestionarea participanților și a probelor, importul rezultatelor și clasamentele."
+      },
+      "delivery": {
+        "title": "Lansare",
+        "body": "Vercel asigură mediul de deployment în producție."
+      }
+    },
+    "executionTitle": "Produsul a evoluat odată cu evenimentul.",
+    "executionIntro": "Sistemul operațional a trebuit să se adapteze înainte, în timpul și după eveniment. Regulile înscrierilor, verificările manuale și gestionarea rezultatelor au conturat implementarea.",
+    "execution": {
+      "before": {
+        "title": "Înainte de eveniment",
+        "body": "Configurarea formatelor și capacităților, conectarea checkout-ului cu înscrierile și gestionarea validării administrative și a plăților manuale."
+      },
+      "during": {
+        "title": "Operațiunile evenimentului",
+        "body": "Control administrativ asupra participanților și probelor, cu instrumente pentru gestionarea și importul rezultatelor."
+      },
+      "after": {
+        "title": "Dincolo de înscrieri",
+        "body": "Extinderea platformei către rezultate, clasamente și funcționalități post-eveniment, pe măsură ce nevoile evoluează."
+      }
+    },
+    "resultTitle": "O platformă de producție folosită în jurul unui eveniment fizic.",
+    "resultBody": "Sistemul a susținut înscrieri reale și plăți online, acces bilingv pentru participanți și control administrativ asupra participanților și probelor. Rezultatele și clasamentele i-au extins rolul dincolo de checkout.",
+    "proofTitle": "Ce demonstrează acest proiect.",
+    "proof": {
+      "product": {
+        "title": "Inginerie de produs",
+        "body": "Transformarea cerințelor operaționale în software utilizabil."
+      },
+      "payment": {
+        "title": "Fluxuri de plată",
+        "body": "Conectarea tranzacțiilor cu starea înscrierilor."
+      },
+      "admin": {
+        "title": "Sisteme administrative",
+        "body": "Instrumente pentru echipa care operează produsul."
+      },
+      "iteration": {
+        "title": "Iterație în producție",
+        "body": "Adaptarea sistemului la schimbarea cerințelor reale ale evenimentului."
+      },
+      "security": {
+        "title": "Inginerie atentă la securitate",
+        "body": "Plățile, datele participanților și administrarea sunt tratate ca responsabilități de producție."
+      }
+    },
+    "finalTitle": "Ai nevoie de un produs care să funcționeze în condiții reale?",
+    "finalBody": "Hai să transformăm cerințele operaționale într-un sistem pe care echipa ta îl poate folosi.",
+    "cta": "Discută despre produsul tău →",
+    "read": "Citește studiul de caz →"
   }
 }
