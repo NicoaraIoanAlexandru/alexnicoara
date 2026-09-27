@@ -652,5 +652,61 @@
     "finalBody": "Hai să transformăm cerințele operaționale într-un sistem pe care echipa ta îl poate folosi.",
     "cta": "Discută despre produsul tău →",
     "read": "Citește studiul de caz →"
+  },
+  "FounderProfile": {
+    "metaTitle": "Alex Nicoară | Dezvoltator de produse AI și inginer cybersecurity",
+    "metaDescription": "Alex Nicoară este AI Product Developer, Cybersecurity Engineer și Digital Builder, cu focus pe produse digitale sigure, sisteme AI și securitate enterprise.",
+    "eyebrow": "Despre / Alex Nicoară",
+    "title": "Inginer. Constructor de produse. Disciplina anduranței.",
+    "name": "Alex Nicoară",
+    "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",
+    "intro": "Construiesc produse digitale sigure și lucrez la intersecția dintre dezvoltarea de produse AI și securitatea cibernetică enterprise. Alex Nicoară Studio exprimă această activitate: o colaborare directă cu mine, de la problemă până la un sistem utilizabil.",
+    "storyTitle": "O bază de inginerie. Două discipline conectate.",
+    "story1": "Peste 10 ani de experiență în inginerie îmi conturează abordarea sistemelor complexe. Securitatea enterprise pune fiabilitatea, riscul și schimbările controlate în centrul muncii.",
+    "story2": "Dezvoltarea de produse adaugă o altă responsabilitate: înțelegerea nevoilor utilizatorilor și ale afacerii, apoi transformarea lor în software util. AI aduce un nou nivel de funcționalitate prin automatizare, procese conectate și capabilități de produs.",
+    "story3": "Aceste discipline se completează. Deciziile de produs beneficiază de gândirea orientată spre securitate, iar securitatea beneficiază de înțelegerea modului în care sistemele sunt folosite și operate.",
+    "pathsTitle": "Două direcții de colaborare.",
+    "aiTitle": "AI Product Development",
+    "aiBody": "Direcția principală: transformarea unei idei sau probleme operaționale într-un produs AI util, de la validare și dezvoltare până în producție.",
+    "aiCta": "Descoperă dezvoltarea de produse AI →",
+    "securityTitle": "Inginerie de securitate cibernetică",
+    "securityBody": "Expertiză enterprise pentru evaluarea infrastructurii, consolidarea controalelor și decizii tehnice pragmatice. Un serviciu distinct și o bază pentru produse sigure.",
+    "securityCta": "Descoperă consultanța de securitate →",
+    "workTitle": "Construite pentru utilizare reală.",
+    "swimBody": "Swim4Dreams conectează înscrierile bilingve, plățile, fluxurile participanților și administrarea într-o platformă de producție. Studiul de caz arată cum cerințele operaționale au conturat sistemul.",
+    "caseCta": "Citește studiul de caz Swim4Dreams →",
+    "marilenaBody": "MarilenaFitCoach este o platformă digitală de coaching pentru onboarding, antrenamente, nutriție și urmărirea progresului, cu plăți și fluxuri administrative.",
+    "principlesTitle": "Principiile din spatele muncii.",
+    "principles": {
+      "production": {
+        "title": "Construiesc pentru producție",
+        "body": "Funcționarea și întreținerea fac parte din deciziile de produs."
+      },
+      "security": {
+        "title": "Securitate din proiectare",
+        "body": "Datele, accesul și riscurile sunt parte din arhitectură."
+      },
+      "complexity": {
+        "title": "Reduc complexitatea inutilă",
+        "body": "Aleg sisteme pe care echipa le poate înțelege și opera."
+      },
+      "outcomes": {
+        "title": "Definesc rezultate utile",
+        "body": "Stabilim ce înseamnă succesul înainte de a decide ce construim."
+      },
+      "iteration": {
+        "title": "Învăț din utilizarea reală",
+        "body": "Feedbackul operațional ghidează următoarea îmbunătățire."
+      }
+    },
+    "enduranceTitle": "Anduranța este un mod de lucru.",
+    "enduranceBody": "Înotul pe distanțe lungi face parte din identitatea mea. Întărește disciplina, pregătirea și consecvența pe care le aduc în inginerie, alături de reziliență și capacitatea de execuție sub presiune. Este un reper personal, nu un serviciu separat.",
+    "focusTitle": "Focusul actual",
+    "focusBody": "Dezvoltarea de produse AI, automatizarea și sistemele digitale sigure sunt direcția principală. Securitatea enterprise rămâne o arie distinctă de lucru și un diferențiator tehnic. Mă interesează parteneriate directe de produs, în care cel care construiește rămâne aproape de problemă și de oamenii care folosesc sistemul.",
+    "finalTitle": "Construiești ceva care trebuie să funcționeze în condiții reale?",
+    "aiDiscuss": "Discută despre un produs AI →",
+    "securityDiscuss": "Discută o provocare de securitate →",
+    "profileLink": "Mai multe despre Alex Nicoară →",
+    "footerLink": "Despre Alex"
   }
 }

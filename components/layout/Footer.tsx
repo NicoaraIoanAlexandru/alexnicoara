@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import {useLocale, useTranslations} from "next-intl";
 
+import {getProfilePath} from "@/lib/profile";
+
 import {Container} from "@/components/ui/Container";
 
 export function Footer() {
   const t = useTranslations("Footer");
+  const profile = useTranslations("FounderProfile");
   const locale = useLocale();
   const year = new Date().getFullYear();
 
@@ -129,6 +132,10 @@ export function Footer() {
               text-white/60
             "
           >
+            <Link href={getProfilePath(locale)} className={footerLinkClassName}>
+              {profile("footerLink")}
+            </Link>
+
             <Link
               href={`/${locale}#projects`}
               className={footerLinkClassName}

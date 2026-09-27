@@ -1,4 +1,6 @@
-import {useTranslations} from "next-intl";
+import Link from "next/link";
+import {getProfilePath} from "@/lib/profile";
+import {useLocale, useTranslations} from "next-intl";
 
 import {Badge} from "@/components/ui/Badge";
 import {Container} from "@/components/ui/Container";
@@ -6,6 +8,8 @@ import {Section} from "@/components/ui/Section";
 
 export function About() {
   const t = useTranslations("About");
+  const profile = useTranslations("FounderProfile");
+  const locale = useLocale();
 
   return (
     <Section>
@@ -71,6 +75,7 @@ export function About() {
               >
                 {t("paragraph3")}
               </p>
+              <Link href={getProfilePath(locale)} className="mt-6 inline-flex rounded-sm text-sm text-[var(--brand-cyan)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-cyan)]">{profile("profileLink")}</Link>
             </div>
 
           </div>

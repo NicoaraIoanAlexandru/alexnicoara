@@ -652,5 +652,61 @@
     "finalBody": "Let’s turn the operational requirements into a system your team can actually run.",
     "cta": "Discuss Your Product →",
     "read": "Read the case study →"
+  },
+  "FounderProfile": {
+    "metaTitle": "Alex Nicoară | AI Product Developer & Cybersecurity Engineer",
+    "metaDescription": "Alex Nicoară is an AI Product Developer, Cybersecurity Engineer and Digital Builder focused on secure digital products, AI systems and enterprise security.",
+    "eyebrow": "About / Alex Nicoară",
+    "title": "Engineer. Builder. Endurance mindset.",
+    "name": "Alex Nicoară",
+    "descriptor": "AI Product Developer · Cybersecurity Engineer · Digital Builder",
+    "intro": "I build secure digital products and work across AI product engineering and enterprise cybersecurity. Alex Nicoară Studio is the founder-led expression of that work: direct collaboration, from the problem to a system people can use.",
+    "storyTitle": "One engineering background. Two connected disciplines.",
+    "story1": "More than 10 years of engineering experience shape how I approach complex systems. Enterprise security puts reliability, risk and controlled change at the center of the work.",
+    "story2": "Product development adds a different responsibility: understanding what users and businesses need, then translating that into usable software. AI creates another layer of capability through automation, connected workflows and product features.",
+    "story3": "These disciplines reinforce each other. Product decisions benefit from security thinking; security work benefits from understanding how systems are used and operated.",
+    "pathsTitle": "Two ways to work together.",
+    "aiTitle": "AI Product Development",
+    "aiBody": "The primary focus: turn an idea or operational problem into a useful AI product, from validation and engineering to production.",
+    "aiCta": "Explore AI Product Development →",
+    "securityTitle": "Cybersecurity Engineering",
+    "securityBody": "Enterprise security expertise for infrastructure review, stronger controls and practical engineering decisions. A distinct service and a foundation for secure product work.",
+    "securityCta": "Explore Cybersecurity Consulting →",
+    "workTitle": "Built for real-world use.",
+    "swimBody": "Swim4Dreams connects bilingual event registrations, payments, participant workflows and administration in a production platform. The case study explains how operational requirements shaped the system.",
+    "caseCta": "Read the Swim4Dreams case study →",
+    "marilenaBody": "MarilenaFitCoach is a digital coaching platform covering onboarding, training, nutrition and progress tracking, with payments and administrative workflows.",
+    "principlesTitle": "The principles behind the work.",
+    "principles": {
+      "production": {
+        "title": "Build for production",
+        "body": "Include operation and maintenance in product decisions."
+      },
+      "security": {
+        "title": "Security by design",
+        "body": "Consider data, access and risk as part of the architecture."
+      },
+      "complexity": {
+        "title": "Reduce unnecessary complexity",
+        "body": "Choose systems that the team can understand and operate."
+      },
+      "outcomes": {
+        "title": "Define useful outcomes",
+        "body": "Agree what success means before deciding what to build."
+      },
+      "iteration": {
+        "title": "Learn from real usage",
+        "body": "Let operational feedback guide the next improvement."
+      }
+    },
+    "enduranceTitle": "Endurance is an operating mindset.",
+    "enduranceBody": "Long-distance swimming is part of my personal identity. It reinforces the discipline, preparation and consistency I bring to engineering, along with resilience and execution under pressure. It is a personal proof point, not a separate service.",
+    "focusTitle": "Current focus",
+    "focusBody": "AI product development, automation and secure digital systems are the primary focus. Enterprise cybersecurity remains a distinct area of work and a strong engineering differentiator. I’m interested in direct product partnerships where the builder stays close to the problem and the people using the system.",
+    "finalTitle": "Building something that has to work in the real world?",
+    "aiDiscuss": "Discuss an AI Product →",
+    "securityDiscuss": "Discuss a Security Challenge →",
+    "profileLink": "About Alex Nicoară →",
+    "footerLink": "About Alex"
   }
 }

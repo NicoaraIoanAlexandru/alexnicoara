@@ -1,4 +1,5 @@
 import type {MetadataRoute} from "next";
+import {profilePaths} from "@/lib/profile";
 
 const baseUrl = "https://alexnicoara.com";
 
@@ -9,6 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   };
 
   return [
+    ...Object.values(profilePaths).map((path) => ({
+      url: `${baseUrl}${path}`, changeFrequency: "monthly" as const, priority: 0.8,
+      alternates: {languages: {en: `${baseUrl}${profilePaths.en}`, ro: `${baseUrl}${profilePaths.ro}`, "x-default": `${baseUrl}${profilePaths.en}`}},
+    })),
     ...(["en", "ro"] as const).map((locale) => ({
       url: `${baseUrl}/${locale}/work/swim4dreams`,
       changeFrequency: "monthly" as const, priority: 0.8,
