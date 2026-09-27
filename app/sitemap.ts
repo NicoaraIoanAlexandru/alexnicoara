@@ -10,6 +10,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   };
 
   return [
+    ...(["en", "ro"] as const).map((locale) => ({
+      url: `${baseUrl}/${locale}/services/ai-product-development`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/services/ai-product-development`,
+          ro: `${baseUrl}/ro/services/ai-product-development`,
+          "x-default": `${baseUrl}/en/services/ai-product-development`,
+        },
+      },
+    })),
     ...Object.values(profilePaths).map((path) => ({
       url: `${baseUrl}${path}`, changeFrequency: "monthly" as const, priority: 0.8,
       alternates: {languages: {en: `${baseUrl}${profilePaths.en}`, ro: `${baseUrl}${profilePaths.ro}`, "x-default": `${baseUrl}${profilePaths.en}`}},
@@ -32,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     {
       url: `${baseUrl}/en`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
       alternates: {
@@ -41,7 +52,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/ro`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
       alternates: {

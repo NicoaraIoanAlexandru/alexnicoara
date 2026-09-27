@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {Metadata, ResolvingMetadata} from "next";
 import {notFound} from "next/navigation";
 
 import {LegalPage} from "@/components/legal/LegalPage";
@@ -9,23 +9,47 @@ type PageProps = {
   }>;
 };
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata(
+  {params}: PageProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const {locale} = await params;
-
-  if (locale === "ro") {
-    return {
-      title: "Politica privind cookies | Alex Nicoară",
-      description:
-        "Informații despre utilizarea cookies și a serviciilor de analiză pe alexnicoara.com.",
-    };
-  }
+  const parentMetadata = await parent;
+  const isRomanian = locale === "ro";
+  const title = isRomanian ? "Politica privind cookies | Alex Nicoară" : "Cookie Policy | Alex Nicoară";
+  const description = isRomanian
+    ? "Informații despre utilizarea cookies și a serviciilor de analiză pe alexnicoara.com."
+    : "Information about cookies and analytics technologies used on alexnicoara.com.";
+  const baseUrl = "https://alexnicoara.com";
+  const path = "/cookies";
+  const url = `${baseUrl}/${isRomanian ? "ro" : "en"}${path}`;
 
   return {
-    title: "Cookie Policy | Alex Nicoară",
-    description:
-      "Information about cookies and analytics technologies used on alexnicoara.com.",
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${baseUrl}/en${path}`,
+        ro: `${baseUrl}/ro${path}`,
+        "x-default": `${baseUrl}/en${path}`,
+      },
+    },
+    openGraph: {
+      images: parentMetadata.openGraph?.images,
+      title,
+      description,
+      url,
+      type: "website",
+      locale: isRomanian ? "ro_RO" : "en_US",
+      alternateLocale: isRomanian ? ["en_US"] : ["ro_RO"],
+    },
+    twitter: {
+      images: parentMetadata.twitter?.images,
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 

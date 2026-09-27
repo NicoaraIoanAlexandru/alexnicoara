@@ -10,6 +10,8 @@ import {Navbar} from "@/components/layout/Navbar";
 import {CookieConsent} from "@/components/privacy/CookieConsent";
 import {routing} from "@/i18n/routing";
 
+import {personIdentity} from "@/lib/profile";
+
 import "../globals.css";
 
 const geistSans = Geist({
@@ -132,11 +134,7 @@ export async function generateMetadata({
 
 const personJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Alex Nicoară",
-  url: siteUrl,
-  jobTitle: "AI Product Developer | Cybersecurity Engineer | Digital Builder",
-  sameAs: ["https://www.linkedin.com/in/nicoara-ioan-alexandru-44a59978/"],
+  ...personIdentity,
 };
 
 export default async function LocaleLayout({

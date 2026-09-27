@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {getLocale, getTranslations} from "next-intl/server";
 import {Container} from "@/components/ui/Container";
-import {getProfilePath} from "@/lib/profile";
+import {getProfilePath, personIdentity} from "@/lib/profile";
 
 const heading = "text-3xl font-semibold tracking-tight text-white sm:text-4xl";
 const linkStyle = "inline-flex rounded-sm text-sm text-[var(--brand-cyan)] transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-cyan)]";
@@ -16,12 +16,8 @@ export async function FounderProfile() {
     "@context": "https://schema.org", "@type": "ProfilePage",
     url: `https://alexnicoara.com${getProfilePath(locale)}`, inLanguage: locale,
     mainEntity: {
-      "@type": "Person", "@id": "https://alexnicoara.com/#person",
-      name: "Alex Nicoară", alternateName: "Alex Nicoara",
-      url: "https://alexnicoara.com",
-      jobTitle: "AI Product Developer · Cybersecurity Engineer · Digital Builder",
+      ...personIdentity,
       description: t("metaDescription"),
-      sameAs: ["https://www.linkedin.com/in/nicoara-ioan-alexandru-44a59978/"],
     },
   };
   return (

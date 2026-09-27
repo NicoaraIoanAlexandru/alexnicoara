@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {getLocale, getTranslations} from "next-intl/server";
+import {personIdentity} from "@/lib/profile";
 import {Container} from "@/components/ui/Container";
 
 const heading = "text-3xl font-semibold tracking-tight text-white sm:text-4xl";
@@ -13,7 +14,7 @@ export async function Swim4DreamsCaseStudy() {
     "@context": "https://schema.org", "@type": "CreativeWork",
     name: t("metaTitle"), description: t("metaDescription"), inLanguage: locale,
     url: `https://alexnicoara.com/${locale}/work/swim4dreams`,
-    author: {"@type": "Person", name: "Alex Nicoară", url: "https://alexnicoara.com"},
+    author: personIdentity,
   };
   return (
     <Container>

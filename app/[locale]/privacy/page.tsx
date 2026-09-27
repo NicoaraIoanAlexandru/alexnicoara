@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {Metadata, ResolvingMetadata} from "next";
 import {notFound} from "next/navigation";
 
 import {LegalPage} from "@/components/legal/LegalPage";
@@ -9,23 +9,47 @@ type PageProps = {
   }>;
 };
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata(
+  {params}: PageProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const {locale} = await params;
-
-  if (locale === "ro") {
-    return {
-      title: "Politica de confidențialitate | Alex Nicoară",
-      description:
-        "Informații despre modul în care alexnicoara.com colectează și utilizează datele.",
-    };
-  }
+  const parentMetadata = await parent;
+  const isRomanian = locale === "ro";
+  const title = isRomanian ? "Politica de confidențialitate | Alex Nicoară" : "Privacy Policy | Alex Nicoară";
+  const description = isRomanian
+    ? "Informații despre modul în care alexnicoara.com colectează și utilizează datele."
+    : "Information about how alexnicoara.com collects and uses personal data.";
+  const baseUrl = "https://alexnicoara.com";
+  const path = "/privacy";
+  const url = `${baseUrl}/${isRomanian ? "ro" : "en"}${path}`;
 
   return {
-    title: "Privacy Policy | Alex Nicoară",
-    description:
-      "Information about how alexnicoara.com collects and uses personal data.",
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${baseUrl}/en${path}`,
+        ro: `${baseUrl}/ro${path}`,
+        "x-default": `${baseUrl}/en${path}`,
+      },
+    },
+    openGraph: {
+      images: parentMetadata.openGraph?.images,
+      title,
+      description,
+      url,
+      type: "website",
+      locale: isRomanian ? "ro_RO" : "en_US",
+      alternateLocale: isRomanian ? ["en_US"] : ["ro_RO"],
+    },
+    twitter: {
+      images: parentMetadata.twitter?.images,
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
