@@ -9,6 +9,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   };
 
   return [
+    ...(["en", "ro"] as const).map((locale) => ({
+      url: `${baseUrl}/${locale}/services/cybersecurity-consulting`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/services/cybersecurity-consulting`,
+          ro: `${baseUrl}/ro/services/cybersecurity-consulting`,
+        },
+      },
+    })),
     {
       url: `${baseUrl}/en`,
       lastModified: new Date(),

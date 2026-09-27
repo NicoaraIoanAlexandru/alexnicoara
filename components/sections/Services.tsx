@@ -46,7 +46,7 @@ export async function Services() {
                 ))}
               </ul>
               <div className="mt-8">
-                <Button href={`/${locale}#contact`}>{t("security.cta")}</Button>
+                <Button href={`/${locale}/services/cybersecurity-consulting`}>{t("security.cta")}</Button>
               </div>
             </article>
           </div>

@@ -147,7 +147,7 @@
       "tag1": "Security assessments",
       "tag2": "Infrastructure and cloud hardening",
       "tag3": "Engineering advice",
-      "cta": "Discuss your security needs →"
+      "cta": "Explore Cybersecurity Consulting →"
     }
   },
 
@@ -417,5 +417,112 @@
     "privacy": "Privacy",
     "cookies": "Cookies",
     "rights": "All rights reserved."
+  },
+  "CybersecurityConsulting": {
+    "metaTitle": "Cybersecurity Consulting & Network Security | Alex Nicoară",
+    "metaDescription": "Enterprise network security, infrastructure hardening and practical security engineering with Alex Nicoară. Reduce exposure and plan reliable change.",
+    "eyebrow": "Cybersecurity Engineering",
+    "title": "Secure complex infrastructure. Keep the business moving.",
+    "intro": "Enterprise network and security engineering for teams that need controlled change, dependable systems and a clear view of risk. Work directly with Alex Nicoară, Cybersecurity Engineer.",
+    "primary": "Discuss a Security Challenge →",
+    "secondary": "Review Your Environment ↓",
+    "riskTitle": "Where complexity becomes exposure.",
+    "riskIntro": "Start with the environment you have. Understand the paths, controls and operational constraints before deciding what to change.",
+    "riskLabel": "Risk area",
+    "controlLabel": "Engineering response",
+    "risks": {
+      "policy": {
+        "title": "Unclear security policies",
+        "control": "Review access decisions and identify controls that need clearer ownership."
+      },
+      "paths": {
+        "title": "Complex traffic paths",
+        "control": "Map network and cloud connectivity to understand where controls apply."
+      },
+      "access": {
+        "title": "Access boundaries",
+        "control": "Review access control and separation between systems."
+      },
+      "cloud": {
+        "title": "Cloud and remote connectivity",
+        "control": "Assess the architecture and security implications of connected environments."
+      },
+      "change": {
+        "title": "Configuration and change risk",
+        "control": "Define validation, verification and rollback before implementation."
+      }
+    },
+    "helpTitle": "Turn findings into practical engineering decisions.",
+    "areas": {
+      "architecture": {
+        "title": "Network & cloud architecture",
+        "body": "Understand connectivity and security boundaries so infrastructure decisions reduce exposure without creating unnecessary operational friction."
+      },
+      "controls": {
+        "title": "Policy & access controls",
+        "body": "Review how security controls protect systems and data. Clarify access requirements and the changes needed to strengthen them."
+      },
+      "hardening": {
+        "title": "Infrastructure hardening",
+        "body": "Assess security configuration and prioritize improvements across network and cloud infrastructure."
+      },
+      "operations": {
+        "title": "Technical review & troubleshooting",
+        "body": "Investigate the interaction between infrastructure and security controls. Give engineering teams a clearer basis for resolving issues."
+      }
+    },
+    "flowTitle": "A security change is a sequence of decisions.",
+    "steps": {
+      "assess": {
+        "title": "Assess",
+        "body": "Understand the environment, business impact and risk."
+      },
+      "design": {
+        "title": "Design",
+        "body": "Define the intended controls and a rollback approach."
+      },
+      "validate": {
+        "title": "Validate",
+        "body": "Check assumptions and agree acceptance criteria."
+      },
+      "implement": {
+        "title": "Implement",
+        "body": "Coordinate a controlled change with the responsible team."
+      },
+      "verify": {
+        "title": "Verify",
+        "body": "Confirm behavior and document the resulting state."
+      }
+    },
+    "enterpriseTitle": "Availability and security belong in the same plan.",
+    "enterpriseBody": "Production environments need more than a fast configuration change. The engagement should account for business impact, maintenance windows, validation, rollback and documentation. Security and infrastructure teams need a shared understanding of what changes and how success is verified.",
+    "proofLabel": "Engineering background",
+    "proofValue": "10+",
+    "proofUnit": "years of engineering experience",
+    "proofBody": "Alex Nicoară’s public background spans enterprise security engineering, network security and cloud infrastructure, alongside building digital platforms for real-world use.",
+    "fitTitle": "For teams managing consequential infrastructure.",
+    "fitBody": "CTOs, Heads of Infrastructure, Security Managers and network security teams who need an independent engineering perspective or additional technical capacity. Particularly relevant when network and cloud complexity makes risk, access or change difficult to reason about.",
+    "notFit": "Not a fit for requests to bypass access controls or obtain a security guarantee without reviewing the environment.",
+    "faqTitle": "Before we work together.",
+    "faq": {
+      "team": {
+        "question": "Can you work with our existing security team?",
+        "answer": "Yes. The work can support your security and infrastructure teams through technical review, design and agreed engineering tasks."
+      },
+      "production": {
+        "question": "Do you work on production environments?",
+        "answer": "Production work requires agreed access, scope, validation and rollback responsibilities. The approach is defined with your team before changes are made."
+      },
+      "review": {
+        "question": "Can you review an existing architecture?",
+        "answer": "Yes. An initial review can help clarify connectivity, security boundaries and the risks that deserve further investigation."
+      },
+      "delivery": {
+        "question": "Is this advisory or implementation?",
+        "answer": "The scope can include review and advice or agreed engineering work. We define the deliverables, responsibilities and operating constraints together."
+      }
+    },
+    "finalTitle": "Have a security problem that is difficult to untangle?",
+    "finalBody": "Let’s review the environment, the risks and a practical next step."
   }
 }

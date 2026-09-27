@@ -147,7 +147,7 @@
       "tag1": "Evaluări de securitate",
       "tag2": "Securizarea infrastructurii și a mediilor cloud",
       "tag3": "Consultanță tehnică",
-      "cta": "Discută nevoile de securitate →"
+      "cta": "Descoperă consultanța de securitate →"
     }
   },
 
@@ -417,5 +417,112 @@
     "privacy": "Confidențialitate",
     "cookies": "Cookies",
     "rights": "Toate drepturile rezervate."
+  },
+  "CybersecurityConsulting": {
+    "metaTitle": "Consultanță Cybersecurity & Network Security | Alex Nicoară",
+    "metaDescription": "Securitate de rețea enterprise, consolidarea infrastructurii și consultanță tehnică cu Alex Nicoară. Redu expunerea și planifică schimbări controlate.",
+    "eyebrow": "Inginerie de securitate cibernetică",
+    "title": "Infrastructură complexă, securizată. Activitate fără blocaje inutile.",
+    "intro": "Inginerie de rețea și securitate pentru echipe care au nevoie de schimbări controlate, sisteme fiabile și o perspectivă clară asupra riscurilor. Colaborezi direct cu Alex Nicoară, Cybersecurity Engineer.",
+    "primary": "Discută o provocare de securitate →",
+    "secondary": "Analizează infrastructura ↓",
+    "riskTitle": "Unde complexitatea devine expunere.",
+    "riskIntro": "Pornim de la infrastructura existentă. Înțelegem traseele, măsurile de securitate și constrângerile operaționale înainte de a decide ce schimbăm.",
+    "riskLabel": "Zonă de risc",
+    "controlLabel": "Abordare tehnică",
+    "risks": {
+      "policy": {
+        "title": "Politici de securitate neclare",
+        "control": "Analizăm deciziile de acces și identificăm măsurile care au nevoie de responsabilități mai clare."
+      },
+      "paths": {
+        "title": "Trasee de trafic complexe",
+        "control": "Analizăm conectivitatea de rețea și cloud pentru a înțelege unde se aplică măsurile de securitate."
+      },
+      "access": {
+        "title": "Limitele accesului",
+        "control": "Evaluăm controlul accesului și separarea dintre sisteme."
+      },
+      "cloud": {
+        "title": "Conectivitate cloud și la distanță",
+        "control": "Evaluăm arhitectura și implicațiile de securitate ale mediilor conectate."
+      },
+      "change": {
+        "title": "Riscuri de configurare și schimbare",
+        "control": "Definim validarea, verificarea și revenirea la configurația anterioară înainte de implementare."
+      }
+    },
+    "helpTitle": "Din constatări, decizii tehnice aplicabile.",
+    "areas": {
+      "architecture": {
+        "title": "Arhitectură de rețea și cloud",
+        "body": "Clarificăm conectivitatea și limitele de securitate, pentru decizii care reduc expunerea fără complicații operaționale inutile."
+      },
+      "controls": {
+        "title": "Politici și controlul accesului",
+        "body": "Analizăm modul în care măsurile de securitate protejează sistemele și datele. Clarificăm cerințele de acces și îmbunătățirile necesare."
+      },
+      "hardening": {
+        "title": "Consolidarea infrastructurii",
+        "body": "Evaluăm configurația de securitate și prioritizăm îmbunătățirile pentru infrastructura de rețea și cloud."
+      },
+      "operations": {
+        "title": "Analiză tehnică și depanare",
+        "body": "Investigăm interacțiunea dintre infrastructură și măsurile de securitate, pentru a oferi echipelor o bază mai clară în rezolvarea problemelor."
+      }
+    },
+    "flowTitle": "O schimbare de securitate începe cu decizii clare.",
+    "steps": {
+      "assess": {
+        "title": "Evaluare",
+        "body": "Înțelegem infrastructura, impactul asupra activității și riscurile."
+      },
+      "design": {
+        "title": "Proiectare",
+        "body": "Definim măsurile dorite și un plan de revenire."
+      },
+      "validate": {
+        "title": "Validare",
+        "body": "Verificăm ipotezele și stabilim criteriile de acceptare."
+      },
+      "implement": {
+        "title": "Implementare",
+        "body": "Coordonăm schimbarea cu echipa responsabilă."
+      },
+      "verify": {
+        "title": "Verificare",
+        "body": "Confirmăm funcționarea și documentăm starea finală."
+      }
+    },
+    "enterpriseTitle": "Disponibilitatea și securitatea fac parte din același plan.",
+    "enterpriseBody": "Mediile de producție au nevoie de mai mult decât o modificare rapidă de configurație. Colaborarea trebuie să țină cont de impactul asupra activității, ferestrele de mentenanță, validare, revenire și documentație. Echipele de securitate și infrastructură trebuie să înțeleagă împreună ce se schimbă și cum verificăm rezultatul.",
+    "proofLabel": "Experiență în inginerie",
+    "proofValue": "10+",
+    "proofUnit": "ani de experiență în inginerie",
+    "proofBody": "Experiența publică a lui Alex Nicoară acoperă securitatea enterprise, securitatea rețelelor și infrastructura cloud, alături de construirea unor platforme digitale pentru utilizare reală.",
+    "fitTitle": "Pentru echipe cu infrastructură critică pentru activitate.",
+    "fitBody": "CTO, responsabili de infrastructură, manageri de securitate și echipe de securitate de rețea care au nevoie de o perspectivă tehnică independentă sau de capacitate suplimentară. Relevant mai ales când complexitatea rețelelor și a mediilor cloud îngreunează analiza riscurilor, a accesului și a schimbărilor.",
+    "notFit": "Nu este potrivit pentru solicitări de ocolire a controalelor de acces sau pentru garanții de securitate fără evaluarea infrastructurii.",
+    "faqTitle": "Înainte de colaborare.",
+    "faq": {
+      "team": {
+        "question": "Poți colabora cu echipa noastră de securitate?",
+        "answer": "Da. Pot sprijini echipele de securitate și infrastructură prin analiză tehnică, proiectare și activități de inginerie agreate."
+      },
+      "production": {
+        "question": "Lucrezi pe medii de producție?",
+        "answer": "Lucrul în producție presupune acces, obiective și responsabilități clare pentru validare și revenire. Abordarea se stabilește împreună cu echipa înainte de modificări."
+      },
+      "review": {
+        "question": "Poți evalua o arhitectură existentă?",
+        "answer": "Da. O analiză inițială poate clarifica legăturile dintre sisteme, limitele de securitate și riscurile care merită investigate."
+      },
+      "delivery": {
+        "question": "Oferi consultanță sau și implementare?",
+        "answer": "Colaborarea poate include evaluare și recomandări sau activități tehnice agreate. Stabilim împreună livrabilele, responsabilitățile și constrângerile operaționale."
+      }
+    },
+    "finalTitle": "Ai o problemă de securitate greu de clarificat?",
+    "finalBody": "Hai să analizăm infrastructura, riscurile și următorul pas."
   }
 }
