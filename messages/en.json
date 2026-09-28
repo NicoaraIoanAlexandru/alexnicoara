@@ -201,6 +201,7 @@
       "errors": {
         "validation": "Please check the highlighted fields and try again.",
         "rateLimited": "Too many attempts. Please wait a few minutes and try again, or reach out directly below.",
+        "verificationFailed": "Verification failed. Please try again.",
         "deliveryFailed": "Your message couldn't be sent right now. Please try again, or reach out directly below.",
         "unknown": "Something went wrong. Please try again, or reach out directly below."
       },

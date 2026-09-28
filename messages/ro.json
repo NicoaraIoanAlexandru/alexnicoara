@@ -201,6 +201,7 @@
       "errors": {
         "validation": "Te rugăm să verifici câmpurile evidențiate și să încerci din nou.",
         "rateLimited": "Prea multe încercări. Te rugăm să aștepți câteva minute și să încerci din nou, sau să mă contactezi direct mai jos.",
+        "verificationFailed": "Verificarea nu a reușit. Te rugăm să încerci din nou.",
         "deliveryFailed": "Mesajul tău nu a putut fi trimis momentan. Te rugăm să încerci din nou, sau să mă contactezi direct mai jos.",
         "unknown": "A apărut o eroare. Te rugăm să încerci din nou, sau să mă contactezi direct mai jos."
       },

@@ -4,6 +4,7 @@ import {headers} from "next/headers";
 
 import {isRateLimited} from "@/lib/rateLimit";
 import {sendInquiryEmail, type ProjectType} from "@/lib/email/sendInquiryEmail";
+import {verifyTurnstile} from "@/lib/security/verifyTurnstile";
 
 export type FieldName =
   | "name"
@@ -18,7 +19,12 @@ export type ContactActionResult =
   | {status: "success"}
   | {
       status: "error";
-      code: "validation" | "rate_limited" | "delivery_failed" | "unknown";
+      code:
+        | "validation"
+        | "rate_limited"
+        | "bot_verification_failed"
+        | "delivery_failed"
+        | "unknown";
       fieldErrors?: Partial<Record<FieldName, string>>;
     };
 
@@ -174,6 +180,13 @@ export async function submitContactInquiry(
 
   if (isRateLimited(rateLimitKey)) {
     return {status: "error", code: "rate_limited"};
+  }
+
+  const turnstileToken = getStringField(formData, "cf-turnstile-response");
+  const verification = await verifyTurnstile(turnstileToken);
+
+  if (!verification.ok) {
+    return {status: "error", code: "bot_verification_failed"};
   }
 
   const result = await sendInquiryEmail({

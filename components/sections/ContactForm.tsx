@@ -2,6 +2,7 @@
 
 import {
   useActionState,
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -10,6 +11,7 @@ import {
 import {useLocale, useTranslations} from "next-intl";
 import {trackEvent} from "@/lib/analytics/ga";
 
+import {TurnstileWidget} from "@/components/security/TurnstileWidget";
 import {FormField} from "@/components/ui/FormField";
 import {Modal} from "@/components/ui/Modal";
 import {Select} from "@/components/ui/Select";
@@ -139,7 +141,18 @@ export function ContactForm() {
   const previousPendingRef = useRef(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const [hasTurnstileToken, setHasTurnstileToken] = useState(false);
+  const [turnstileResetSignal, setTurnstileResetSignal] = useState(0);
+  const [turnstileClientError, setTurnstileClientError] = useState(false);
   const leadTrackedRef = useRef(false);
+
+  const handleTurnstileTokenChange = useCallback((hasToken: boolean) => {
+    setHasTurnstileToken(hasToken);
+
+    if (hasToken) {
+      setTurnstileClientError(false);
+    }
+  }, []);
 
   // Real (non-honeypot) field values are lifted into component state so
   // they survive React 19's automatic uncontrolled-field reset that runs
@@ -201,6 +214,8 @@ export function ContactForm() {
       setHasSubmitted(true);
       setDismissed(false);
       setFormInstanceKey((key) => key + 1);
+      setHasTurnstileToken(false);
+      setTurnstileResetSignal((signal) => signal + 1);
     }
 
     previousPendingRef.current = pending;
@@ -274,15 +289,28 @@ export function ContactForm() {
     formRef.current?.reset();
   }
 
-  const topLevelErrorMessage =
-    status === "error" && state.status === "error"
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    if (hasTurnstileToken) {
+      setTurnstileClientError(false);
+      return;
+    }
+
+    event.preventDefault();
+    setTurnstileClientError(true);
+  }
+
+  const topLevelErrorMessage = turnstileClientError
+    ? t("errors.verificationFailed")
+    : status === "error" && state.status === "error"
       ? state.code === "rate_limited"
         ? t("errors.rateLimited")
-        : state.code === "delivery_failed"
-          ? t("errors.deliveryFailed")
-          : state.code === "validation"
-            ? t("errors.validation")
-            : t("errors.unknown")
+        : state.code === "bot_verification_failed"
+          ? t("errors.verificationFailed")
+          : state.code === "delivery_failed"
+            ? t("errors.deliveryFailed")
+            : state.code === "validation"
+              ? t("errors.validation")
+              : t("errors.unknown")
       : undefined;
 
   return (
@@ -290,6 +318,7 @@ export function ContactForm() {
       <form
         ref={formRef}
         action={formAction}
+        onSubmit={handleSubmit}
         noValidate
         className="grid gap-5 text-left sm:grid-cols-2"
       >
@@ -451,6 +480,15 @@ export function ContactForm() {
         </div>
 
         <div className="sm:col-span-2">
+          <div className="mb-5">
+            <TurnstileWidget
+              locale={locale}
+              resetSignal={turnstileResetSignal}
+              errorMessage={t("errors.verificationFailed")}
+              onTokenChange={handleTurnstileTokenChange}
+            />
+          </div>
+
           {topLevelErrorMessage && (
             <p
               role="alert"
@@ -462,7 +500,7 @@ export function ContactForm() {
 
           <button
             type="submit"
-            disabled={pending}
+            disabled={pending || !hasTurnstileToken}
             className={submitButtonClassName}
           >
             {pending ? t("submitting") : t("submit")}
