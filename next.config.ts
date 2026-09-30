@@ -3,7 +3,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
-const contentSecurityPolicyReportOnly = [
+const contentSecurityPolicy = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline'",
@@ -22,8 +22,12 @@ const contentSecurityPolicyReportOnly = [
 
 const securityHeaders = [
   {
+    key: "Content-Security-Policy",
+    value: contentSecurityPolicy,
+  },
+  {
     key: "Content-Security-Policy-Report-Only",
-    value: contentSecurityPolicyReportOnly,
+    value: contentSecurityPolicy,
   },
   {
     key: "X-Content-Type-Options",
